@@ -1,7 +1,5 @@
 //
 // File name : Preferences.swift
-// Project name: Blueshift Common Framework
-// XCode Project name : BSCommon
 
 // Copyright (c) 2021 iChrogene, Inc. All right reserved.
 

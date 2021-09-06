@@ -1,7 +1,5 @@
 //
 // File name : APIRouter+Parameter.swift
-// Project name: Blueshift Common Framework
-// XCode Project name : BSCommon
 
 // Copyright (c) 2021 Blueshift Corporation. All right reserved.
 

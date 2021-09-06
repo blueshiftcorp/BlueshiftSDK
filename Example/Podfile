@@ -8,6 +8,5 @@ target 'BlueshiftSDK_Example' do
   target 'BlueshiftSDK_Tests' do
     inherit! :search_paths
 
-    
   end
 end

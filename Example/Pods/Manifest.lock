@@ -1,16 +1,27 @@
 PODS:
-  - BlueshiftSDK (0.1.0)
+  - Alamofire (5.4.3)
+  - BlueshiftSDK (0.1.0):
+    - Alamofire (~> 5.4)
+    - PromisedFuture
+  - PromisedFuture (1.0.2)
 
 DEPENDENCIES:
   - BlueshiftSDK (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - PromisedFuture
 
 EXTERNAL SOURCES:
   BlueshiftSDK:
     :path: "../"
 
 SPEC CHECKSUMS:
-  BlueshiftSDK: f9166e4c796ccaaa464ebbe81d8bb498728fcfbb
+  Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
+  BlueshiftSDK: 378af9d4dd85b70966136f7440c08bbecb403dff
+  PromisedFuture: 15ab3542f9d9c9d62886e2228c606a3e0fd16ccd
 
-PODFILE CHECKSUM: cba7da1fb6c35d21ec72d695822297551d1a758e
+PODFILE CHECKSUM: b703d2e87362c6baefc0c679c6082e72b4ebc2a9
 
 COCOAPODS: 1.10.2

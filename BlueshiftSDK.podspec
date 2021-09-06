@@ -24,9 +24,9 @@ Pod::Spec.new do |s|
   s.platform         = :ios, '13.0'
   s.source           = { :git => 'https://github.com/blueshiftcorp/BlueshiftSDK.git', :tag => s.version.to_s }
   s.source_files     = 'Source/**/*'
-
   s.ios.deployment_target = '13.0'
-
-  s.source_files = 'BlueshiftSDK/Classes/**/*'
+  
+  s.dependency      'Alamofire', '~> 5.4'
+  s.dependency      'PromisedFuture'
 
 end

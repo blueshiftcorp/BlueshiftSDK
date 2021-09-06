@@ -1,14 +1,23 @@
 //
-//  ValidationError.swift
-//  punkpin
-//
-//  Created by James on 2021/04/21.
-//  Copyright © 2021 Blueshift. All rights reserved.
+// File name : BSError.swift
+
+// Copyright (c) 2021 iChrogene, Inc. All right reserved.
+
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+// FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+// COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+// IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+// CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+// Created by James, Blueshift Corporation on 2020/06/22
+// Website : www.blueshift.co.kr
+// Email : admin@blueshift.co.kr
 //
 
 import Foundation
 
-enum ICError: Error {
+enum BSError: Error {
     enum Validation {
         case invalidEmailFormat
         case invalidPasswordFormat
@@ -27,7 +36,7 @@ enum ICError: Error {
     }
 }
 
-extension ICError.Validation: LocalizedError {
+extension BSError.Validation: LocalizedError {
     public var localizedDescription: String? {
         switch self {
         case .invalidEmailFormat:           return "이메일 형식이 올바르지 않습니다."
@@ -37,7 +46,7 @@ extension ICError.Validation: LocalizedError {
     }
 }
 
-extension ICError.Registeration: LocalizedError {
+extension BSError.Registeration: LocalizedError {
     public var localizedDescription: String? {
         switch self {
         case .alreadyRegisterd:             return "이미 가입된 이메일입니다."
@@ -46,7 +55,7 @@ extension ICError.Registeration: LocalizedError {
     }
 }
 
-extension ICError.Login: LocalizedError {
+extension BSError.Login: LocalizedError {
     public var localizedDescription: String? {
         switch self {
         case .notRegistered:                return "입력하신 이메일로 가입된 정보가 없습니다."
