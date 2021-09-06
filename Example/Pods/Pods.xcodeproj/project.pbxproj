@@ -1,0 +1,789 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1FB2F2690BA2DA20EF132CE02FA48EAB /* Pods-BlueshiftSDK_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8721DDEE781870B0A54F59EB7C6B3383 /* Pods-BlueshiftSDK_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3484201E3D8742C81C33FC9129EF88A0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		471C89B8E15C22B00D21638FE0662190 /* BlueshiftSDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CFED5179BF82421E99DF188D238785B5 /* BlueshiftSDK-dummy.m */; };
+		49DC26E3999194BA933A930FAC05BBE2 /* Pods-BlueshiftSDK_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 23C2ACD3B9DD939139F0199BB1F069AA /* Pods-BlueshiftSDK_Tests-dummy.m */; };
+		7B5F5F89E05A8E0AD6613B03C9BACC9D /* BlueshiftSDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C1201747C0ADC7CF1736A436D9A008DC /* BlueshiftSDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		88035E65AFCC7732B9D0F5BD76F1EA66 /* Pods-BlueshiftSDK_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B3365B5BE64F7BA32BB93929DA40650 /* Pods-BlueshiftSDK_Example-dummy.m */; };
+		D09B5BBBC40BC409AF762D14DCB1EC33 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		E6F9A82DEB7B4E0CF267A8D780C73175 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		F45EC44FEBD9FEFD4A5FB88866B7B496 /* Pods-BlueshiftSDK_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D639123E26D2BC2E4240FEF82A3587AD /* Pods-BlueshiftSDK_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9F0E00A507B7A97E86BAA965D3AA4441 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 630AAFAA6135ADEDDEA86A0E41084CE5;
+			remoteInfo = "Pods-BlueshiftSDK_Example";
+		};
+		C478FF7E66027533C11F99A7084F4867 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 15EC33BE5A3CD52BFB5BF61D5B7B55C3;
+			remoteInfo = BlueshiftSDK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0B3365B5BE64F7BA32BB93929DA40650 /* Pods-BlueshiftSDK_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BlueshiftSDK_Example-dummy.m"; sourceTree = "<group>"; };
+		12122940086CA636884D2A1E021C38B4 /* Pods-BlueshiftSDK_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BlueshiftSDK_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		1242C5D4C3B2A2436EF4DE98832683EF /* Pods-BlueshiftSDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BlueshiftSDK_Example.release.xcconfig"; sourceTree = "<group>"; };
+		1A7E86C4DC62F8B628B0E0E2FE19080F /* Pods-BlueshiftSDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BlueshiftSDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		23C2ACD3B9DD939139F0199BB1F069AA /* Pods-BlueshiftSDK_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BlueshiftSDK_Tests-dummy.m"; sourceTree = "<group>"; };
+		337E04B3A853C93974101F0201A52A58 /* Pods-BlueshiftSDK_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BlueshiftSDK_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		4988E1F80739A58FE2865F851A43B8F5 /* Pods-BlueshiftSDK_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BlueshiftSDK_Example.modulemap"; sourceTree = "<group>"; };
+		720F0BD82E6DD3F1B09B02FCD55530DD /* BlueshiftSDK-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "BlueshiftSDK-Info.plist"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		791B243825A60112D13E5B35BBFC6133 /* Pods-BlueshiftSDK_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BlueshiftSDK_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		86759046C619B9F2B396FCCA09A809A6 /* BlueshiftSDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = BlueshiftSDK.modulemap; sourceTree = "<group>"; };
+		8721DDEE781870B0A54F59EB7C6B3383 /* Pods-BlueshiftSDK_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BlueshiftSDK_Tests-umbrella.h"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A18E4AFFDF41EEEC54324D7706A239E7 /* BlueshiftSDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BlueshiftSDK-prefix.pch"; sourceTree = "<group>"; };
+		AB97272E34279EB322C93DF8117C4BAC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B555DE1E047D5C982FE957CB65F821B8 /* BlueshiftSDK.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = BlueshiftSDK.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BAFDDD1203999CCAAFECFFD775346346 /* Pods-BlueshiftSDK_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BlueshiftSDK_Tests.modulemap"; sourceTree = "<group>"; };
+		BF206B1CC72A3BC455631ECEF5DE6B35 /* Pods_BlueshiftSDK_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlueshiftSDK_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1201747C0ADC7CF1736A436D9A008DC /* BlueshiftSDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BlueshiftSDK-umbrella.h"; sourceTree = "<group>"; };
+		C825C048D157A0BD4485652D4B9DBBBB /* Pods-BlueshiftSDK_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BlueshiftSDK_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		CFED5179BF82421E99DF188D238785B5 /* BlueshiftSDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BlueshiftSDK-dummy.m"; sourceTree = "<group>"; };
+		D639123E26D2BC2E4240FEF82A3587AD /* Pods-BlueshiftSDK_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BlueshiftSDK_Example-umbrella.h"; sourceTree = "<group>"; };
+		D81D0614F0CC9CE61BF9850590484834 /* BlueshiftSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BlueshiftSDK.release.xcconfig; sourceTree = "<group>"; };
+		D97C2D94BB2546FD722324BADF1BBEFC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		DAA1F0D1B5832F264830679FB479BA19 /* BlueshiftSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BlueshiftSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDEE8EDB8AF07B46842B78E3B5F5B39F /* Pods-BlueshiftSDK_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BlueshiftSDK_Tests-Info.plist"; sourceTree = "<group>"; };
+		E589B753712177F5BD2831F909A491B1 /* Pods_BlueshiftSDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlueshiftSDK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5FA77C9A3E811A7422FCDCFDE1C6726 /* BlueshiftSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BlueshiftSDK.debug.xcconfig; sourceTree = "<group>"; };
+		F101A5408EC246EE7B99BC41D36EFA67 /* Pods-BlueshiftSDK_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BlueshiftSDK_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F8AA71C2BD0B75A35B5C6F4A9497F550 /* Pods-BlueshiftSDK_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BlueshiftSDK_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		FDA56A8058289D2560FB3BE71D1D2758 /* Pods-BlueshiftSDK_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BlueshiftSDK_Example-frameworks.sh"; sourceTree = "<group>"; };
+		FF4293938387DCD5375E0EC9B9924CA3 /* Pods-BlueshiftSDK_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BlueshiftSDK_Example-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		37D8E0A859ACD07886F3037A86A767F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D09B5BBBC40BC409AF762D14DCB1EC33 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F8D6F14766763D045512EA9230928AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3484201E3D8742C81C33FC9129EF88A0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC56AC7B8D6A8B773FE356341D4DF3BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6F9A82DEB7B4E0CF267A8D780C73175 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		109673E959896907F7751A2C83D309D8 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				57AC3CB4AFF4A941F0CE29A9A992BB86 /* Pods-BlueshiftSDK_Example */,
+				D1B8C7C5E0D1767CB1F6A4AF6C2EFA78 /* Pods-BlueshiftSDK_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		1AB92E2E26E600B6007BE9B1 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				1AB92E2F26E600BC007BE9B1 /* API */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		1AB92E2F26E600BC007BE9B1 /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		37D899F47859B6A2106F7E53A36E1FAB /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6A26917DE734F464F2FE9EB55801B4AE /* BlueshiftSDK */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		46C674098A5E77E8D60AF6F85D393FC4 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				B555DE1E047D5C982FE957CB65F821B8 /* BlueshiftSDK.podspec */,
+				D97C2D94BB2546FD722324BADF1BBEFC /* LICENSE */,
+				AB97272E34279EB322C93DF8117C4BAC /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		57AC3CB4AFF4A941F0CE29A9A992BB86 /* Pods-BlueshiftSDK_Example */ = {
+			isa = PBXGroup;
+			children = (
+				4988E1F80739A58FE2865F851A43B8F5 /* Pods-BlueshiftSDK_Example.modulemap */,
+				F101A5408EC246EE7B99BC41D36EFA67 /* Pods-BlueshiftSDK_Example-acknowledgements.markdown */,
+				F8AA71C2BD0B75A35B5C6F4A9497F550 /* Pods-BlueshiftSDK_Example-acknowledgements.plist */,
+				0B3365B5BE64F7BA32BB93929DA40650 /* Pods-BlueshiftSDK_Example-dummy.m */,
+				FDA56A8058289D2560FB3BE71D1D2758 /* Pods-BlueshiftSDK_Example-frameworks.sh */,
+				FF4293938387DCD5375E0EC9B9924CA3 /* Pods-BlueshiftSDK_Example-Info.plist */,
+				D639123E26D2BC2E4240FEF82A3587AD /* Pods-BlueshiftSDK_Example-umbrella.h */,
+				1A7E86C4DC62F8B628B0E0E2FE19080F /* Pods-BlueshiftSDK_Example.debug.xcconfig */,
+				1242C5D4C3B2A2436EF4DE98832683EF /* Pods-BlueshiftSDK_Example.release.xcconfig */,
+			);
+			name = "Pods-BlueshiftSDK_Example";
+			path = "Target Support Files/Pods-BlueshiftSDK_Example";
+			sourceTree = "<group>";
+		};
+		645C1B6F7964376D2023F574C785EE2E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DAA1F0D1B5832F264830679FB479BA19 /* BlueshiftSDK.framework */,
+				E589B753712177F5BD2831F909A491B1 /* Pods_BlueshiftSDK_Example.framework */,
+				BF206B1CC72A3BC455631ECEF5DE6B35 /* Pods_BlueshiftSDK_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6A26917DE734F464F2FE9EB55801B4AE /* BlueshiftSDK */ = {
+			isa = PBXGroup;
+			children = (
+				1AB92E2E26E600B6007BE9B1 /* Source */,
+				46C674098A5E77E8D60AF6F85D393FC4 /* Pod */,
+				BFAFA31A763DF283874030168474AFF4 /* Support Files */,
+			);
+			name = BlueshiftSDK;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		BFAFA31A763DF283874030168474AFF4 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				86759046C619B9F2B396FCCA09A809A6 /* BlueshiftSDK.modulemap */,
+				CFED5179BF82421E99DF188D238785B5 /* BlueshiftSDK-dummy.m */,
+				720F0BD82E6DD3F1B09B02FCD55530DD /* BlueshiftSDK-Info.plist */,
+				A18E4AFFDF41EEEC54324D7706A239E7 /* BlueshiftSDK-prefix.pch */,
+				C1201747C0ADC7CF1736A436D9A008DC /* BlueshiftSDK-umbrella.h */,
+				E5FA77C9A3E811A7422FCDCFDE1C6726 /* BlueshiftSDK.debug.xcconfig */,
+				D81D0614F0CC9CE61BF9850590484834 /* BlueshiftSDK.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/BlueshiftSDK";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				37D899F47859B6A2106F7E53A36E1FAB /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				645C1B6F7964376D2023F574C785EE2E /* Products */,
+				109673E959896907F7751A2C83D309D8 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D1B8C7C5E0D1767CB1F6A4AF6C2EFA78 /* Pods-BlueshiftSDK_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				BAFDDD1203999CCAAFECFFD775346346 /* Pods-BlueshiftSDK_Tests.modulemap */,
+				C825C048D157A0BD4485652D4B9DBBBB /* Pods-BlueshiftSDK_Tests-acknowledgements.markdown */,
+				337E04B3A853C93974101F0201A52A58 /* Pods-BlueshiftSDK_Tests-acknowledgements.plist */,
+				23C2ACD3B9DD939139F0199BB1F069AA /* Pods-BlueshiftSDK_Tests-dummy.m */,
+				DDEE8EDB8AF07B46842B78E3B5F5B39F /* Pods-BlueshiftSDK_Tests-Info.plist */,
+				8721DDEE781870B0A54F59EB7C6B3383 /* Pods-BlueshiftSDK_Tests-umbrella.h */,
+				12122940086CA636884D2A1E021C38B4 /* Pods-BlueshiftSDK_Tests.debug.xcconfig */,
+				791B243825A60112D13E5B35BBFC6133 /* Pods-BlueshiftSDK_Tests.release.xcconfig */,
+			);
+			name = "Pods-BlueshiftSDK_Tests";
+			path = "Target Support Files/Pods-BlueshiftSDK_Tests";
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1B94AF6FE8053B66A253F5085C8DA46F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F45EC44FEBD9FEFD4A5FB88866B7B496 /* Pods-BlueshiftSDK_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36B72BB6590F4AE02F75FBFB2B10820E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FB2F2690BA2DA20EF132CE02FA48EAB /* Pods-BlueshiftSDK_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E9328F57C30A599BB3982E7BB248A97 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B5F5F89E05A8E0AD6613B03C9BACC9D /* BlueshiftSDK-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		15EC33BE5A3CD52BFB5BF61D5B7B55C3 /* BlueshiftSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 739EDF03C9F20302BCEFD04F734A6E92 /* Build configuration list for PBXNativeTarget "BlueshiftSDK" */;
+			buildPhases = (
+				5E9328F57C30A599BB3982E7BB248A97 /* Headers */,
+				C0C1610BBFC1991B6EA06408E34EFB9C /* Sources */,
+				DC56AC7B8D6A8B773FE356341D4DF3BB /* Frameworks */,
+				C26E3FF279E060FF814695CB2338F651 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BlueshiftSDK;
+			productName = BlueshiftSDK;
+			productReference = DAA1F0D1B5832F264830679FB479BA19 /* BlueshiftSDK.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		630AAFAA6135ADEDDEA86A0E41084CE5 /* Pods-BlueshiftSDK_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80F5AE2E452BE13B972F9BFA42C3FBEB /* Build configuration list for PBXNativeTarget "Pods-BlueshiftSDK_Example" */;
+			buildPhases = (
+				1B94AF6FE8053B66A253F5085C8DA46F /* Headers */,
+				A53F9790129F3DFAF341EDF7A94C036A /* Sources */,
+				9F8D6F14766763D045512EA9230928AE /* Frameworks */,
+				5E92925F79A3BB035DD53C11E168166F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E3078C1EFAD242FD96846336ADBF7432 /* PBXTargetDependency */,
+			);
+			name = "Pods-BlueshiftSDK_Example";
+			productName = "Pods-BlueshiftSDK_Example";
+			productReference = E589B753712177F5BD2831F909A491B1 /* Pods_BlueshiftSDK_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FD317BC6CAE506F30D4B64E547C099B0 /* Pods-BlueshiftSDK_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A9D269659BE1282E980635AE287B8C1 /* Build configuration list for PBXNativeTarget "Pods-BlueshiftSDK_Tests" */;
+			buildPhases = (
+				36B72BB6590F4AE02F75FBFB2B10820E /* Headers */,
+				B150AC964DEF8B7F975D56E6B2202C1B /* Sources */,
+				37D8E0A859ACD07886F3037A86A767F1 /* Frameworks */,
+				EF370D152F93569379749B0A6231F9C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1B48D6C7329CF6D9D0D6A0AB04617442 /* PBXTargetDependency */,
+			);
+			name = "Pods-BlueshiftSDK_Tests";
+			productName = "Pods-BlueshiftSDK_Tests";
+			productReference = BF206B1CC72A3BC455631ECEF5DE6B35 /* Pods_BlueshiftSDK_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					15EC33BE5A3CD52BFB5BF61D5B7B55C3 = {
+						LastSwiftMigration = 1250;
+					};
+				};
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 645C1B6F7964376D2023F574C785EE2E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				15EC33BE5A3CD52BFB5BF61D5B7B55C3 /* BlueshiftSDK */,
+				630AAFAA6135ADEDDEA86A0E41084CE5 /* Pods-BlueshiftSDK_Example */,
+				FD317BC6CAE506F30D4B64E547C099B0 /* Pods-BlueshiftSDK_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5E92925F79A3BB035DD53C11E168166F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C26E3FF279E060FF814695CB2338F651 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF370D152F93569379749B0A6231F9C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A53F9790129F3DFAF341EDF7A94C036A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88035E65AFCC7732B9D0F5BD76F1EA66 /* Pods-BlueshiftSDK_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B150AC964DEF8B7F975D56E6B2202C1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49DC26E3999194BA933A930FAC05BBE2 /* Pods-BlueshiftSDK_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0C1610BBFC1991B6EA06408E34EFB9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				471C89B8E15C22B00D21638FE0662190 /* BlueshiftSDK-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1B48D6C7329CF6D9D0D6A0AB04617442 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-BlueshiftSDK_Example";
+			target = 630AAFAA6135ADEDDEA86A0E41084CE5 /* Pods-BlueshiftSDK_Example */;
+			targetProxy = 9F0E00A507B7A97E86BAA965D3AA4441 /* PBXContainerItemProxy */;
+		};
+		E3078C1EFAD242FD96846336ADBF7432 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BlueshiftSDK;
+			target = 15EC33BE5A3CD52BFB5BF61D5B7B55C3 /* BlueshiftSDK */;
+			targetProxy = C478FF7E66027533C11F99A7084F4867 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		3C6AD23FED18D4EBFC40CECD78DD7635 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A7E86C4DC62F8B628B0E0E2FE19080F /* Pods-BlueshiftSDK_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BlueshiftSDK_Example/Pods-BlueshiftSDK_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BlueshiftSDK_Example/Pods-BlueshiftSDK_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		420E84A2490EC835155EB7D0F45035C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 791B243825A60112D13E5B35BBFC6133 /* Pods-BlueshiftSDK_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BlueshiftSDK_Tests/Pods-BlueshiftSDK_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BlueshiftSDK_Tests/Pods-BlueshiftSDK_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		465C4D78EC6024A88868CE3D19A510EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D81D0614F0CC9CE61BF9850590484834 /* BlueshiftSDK.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/BlueshiftSDK/BlueshiftSDK-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BlueshiftSDK/BlueshiftSDK-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/BlueshiftSDK/BlueshiftSDK.modulemap";
+				PRODUCT_MODULE_NAME = BlueshiftSDK;
+				PRODUCT_NAME = BlueshiftSDK;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B7BC665F4B6A7482D1EDB95860588CFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5FA77C9A3E811A7422FCDCFDE1C6726 /* BlueshiftSDK.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/BlueshiftSDK/BlueshiftSDK-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BlueshiftSDK/BlueshiftSDK-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/BlueshiftSDK/BlueshiftSDK.modulemap";
+				PRODUCT_MODULE_NAME = BlueshiftSDK;
+				PRODUCT_NAME = BlueshiftSDK;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C3F2732C74DAA11B3C8733A3EE20BD67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1242C5D4C3B2A2436EF4DE98832683EF /* Pods-BlueshiftSDK_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BlueshiftSDK_Example/Pods-BlueshiftSDK_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BlueshiftSDK_Example/Pods-BlueshiftSDK_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		FFBA56A11730B0F55ECD6590793DCC7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12122940086CA636884D2A1E021C38B4 /* Pods-BlueshiftSDK_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BlueshiftSDK_Tests/Pods-BlueshiftSDK_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BlueshiftSDK_Tests/Pods-BlueshiftSDK_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2A9D269659BE1282E980635AE287B8C1 /* Build configuration list for PBXNativeTarget "Pods-BlueshiftSDK_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFBA56A11730B0F55ECD6590793DCC7D /* Debug */,
+				420E84A2490EC835155EB7D0F45035C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */,
+				CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		739EDF03C9F20302BCEFD04F734A6E92 /* Build configuration list for PBXNativeTarget "BlueshiftSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7BC665F4B6A7482D1EDB95860588CFB /* Debug */,
+				465C4D78EC6024A88868CE3D19A510EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		80F5AE2E452BE13B972F9BFA42C3FBEB /* Build configuration list for PBXNativeTarget "Pods-BlueshiftSDK_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C6AD23FED18D4EBFC40CECD78DD7635 /* Debug */,
+				C3F2732C74DAA11B3C8733A3EE20BD67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

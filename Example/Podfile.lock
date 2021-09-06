@@ -1,0 +1,16 @@
+PODS:
+  - BlueshiftSDK (0.1.0)
+
+DEPENDENCIES:
+  - BlueshiftSDK (from `../`)
+
+EXTERNAL SOURCES:
+  BlueshiftSDK:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  BlueshiftSDK: f9166e4c796ccaaa464ebbe81d8bb498728fcfbb
+
+PODFILE CHECKSUM: cba7da1fb6c35d21ec72d695822297551d1a758e
+
+COCOAPODS: 1.10.2

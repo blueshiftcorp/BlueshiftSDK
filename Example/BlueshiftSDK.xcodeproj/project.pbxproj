@@ -28,7 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		55655CF958C207E6FB1E2C4D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		55655CF958C207E6FB1E2C4D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* BlueshiftSDK_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlueshiftSDK_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -40,11 +40,11 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		6E40BB9790FC453CF8CE4469 /* Pods-BlueshiftSDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueshiftSDK_Example.debug.xcconfig"; path = "Target Support Files/Pods-BlueshiftSDK_Example/Pods-BlueshiftSDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		886AA7426F958E0D7F548C8F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		886AA7426F958E0D7F548C8F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		8960880473370EDAD35DC628 /* Pods-BlueshiftSDK_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueshiftSDK_Tests.debug.xcconfig"; path = "Target Support Files/Pods-BlueshiftSDK_Tests/Pods-BlueshiftSDK_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		9AE7D842D8F8072CB434FBA0 /* Pods_BlueshiftSDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlueshiftSDK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD611531EBB7C3B76CAB31AA /* Pods-BlueshiftSDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueshiftSDK_Example.release.xcconfig"; path = "Target Support Files/Pods-BlueshiftSDK_Example/Pods-BlueshiftSDK_Example.release.xcconfig"; sourceTree = "<group>"; };
-		C4E0418D2ADA2400ED525575 /* BlueshiftSDK.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = BlueshiftSDK.podspec; path = ../BlueshiftSDK.podspec; sourceTree = "<group>"; };
+		C4E0418D2ADA2400ED525575 /* BlueshiftSDK.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = BlueshiftSDK.podspec; path = ../BlueshiftSDK.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		DA29AC0CCDCB8CDC181A2A8B /* Pods_BlueshiftSDK_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlueshiftSDK_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E786701333C22F3E97D36F07 /* Pods-BlueshiftSDK_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueshiftSDK_Tests.release.xcconfig"; path = "Target Support Files/Pods-BlueshiftSDK_Tests/Pods-BlueshiftSDK_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -156,7 +156,6 @@
 				8960880473370EDAD35DC628 /* Pods-BlueshiftSDK_Tests.debug.xcconfig */,
 				E786701333C22F3E97D36F07 /* Pods-BlueshiftSDK_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -227,6 +226,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);

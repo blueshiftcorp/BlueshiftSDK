@@ -1,0 +1,6 @@
+framework module BlueshiftSDK {
+  umbrella header "BlueshiftSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}
