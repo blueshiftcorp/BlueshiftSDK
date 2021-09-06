@@ -23,6 +23,24 @@
     ],
     "PromisedFuture": [
 
+    ],
+    "Firebase/Messaging": [
+
+    ],
+    "GoogleSignIn": [
+
+    ],
+    "naveridlogin-sdk-ios": [
+
+    ],
+    "KakaoSDKAuth": [
+
+    ],
+    "KakaoSDKUser": [
+
+    ],
+    "CryptoSwift": [
+      "~> 1.4.1"
     ]
   }
 }

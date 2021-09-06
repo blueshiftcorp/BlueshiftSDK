@@ -26,7 +26,20 @@ Pod::Spec.new do |s|
   s.source_files     = 'Source/**/*'
   s.ios.deployment_target = '13.0'
   
+  # Networking
   s.dependency      'Alamofire', '~> 5.4'
   s.dependency      'PromisedFuture'
+  
+  # Firebase Messaing / Push Notification
+  s.dependency      'Firebase/Messaging'    # Firebase Cloud Messaging
+  
+  # Social Login
+  s.dependency      'GoogleSignIn'          # Google Login
+  s.dependency      'naveridlogin-sdk-ios'  # Naver Login
+  s.dependency      'KakaoSDKAuth'          # 카카오 로그인
+  s.dependency      'KakaoSDKUser'          # 사용자 관리
+  
+  # AES 암호화
+  s.dependency      'CryptoSwift', '~> 1.4.1'
 
 end
