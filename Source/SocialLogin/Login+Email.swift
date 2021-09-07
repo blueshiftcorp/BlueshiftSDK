@@ -31,11 +31,11 @@ extension Login {
             guard try valid.email(email), try valid.password(password) else { return }
         } catch {
             switch error {
-            case ICError.Validation.invalidEmailFormat: break
-                parentVC.showToast(message: ICError.Validation.invalidEmailFormat.localizedDescription)
+            case BSError.Validation.invalidEmailFormat: break
+                parentVC.showToast(message: BSError.Validation.invalidEmailFormat.localizedDescription)
                 return
-            case ICError.Validation.invalidPasswordFormat: break
-                parentVC.showToast(message: ICError.Validation.invalidPasswordFormat.localizedDescription)
+            case BSError.Validation.invalidPasswordFormat: break
+                parentVC.showToast(message: BSError.Validation.invalidPasswordFormat.localizedDescription)
                 return
             default: break
             }

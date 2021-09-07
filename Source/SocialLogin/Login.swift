@@ -67,7 +67,7 @@ class Login: NSObject {
                 return
             }
             guard error != nil else {
-                self.parentVC.showToast(message: ICError.Login.bioAuth.localizedDescription)
+                self.parentVC.showToast(message: BSError.Login.bioAuth.localizedDescription)
                 print ("*** 생체인증 중 오류가 발생했습니다. 다른 방법으로 로그인해주세요.")
                 return
             }

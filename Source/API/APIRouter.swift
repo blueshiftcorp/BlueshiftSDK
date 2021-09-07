@@ -40,19 +40,19 @@ internal enum APIRouter: URLRequestConvertible {
         dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
         let hdr_timestamp = dateFormatter.string(from: Date())
         
-        let hdr_sign = Util.AES256.encrypt(string: method.rawValue
-                                                 + "^"
-                                                 + path
-                                                 + "^"
-                                                 + hdr_timestamp
-                                                 + "^"
-                                                 + CV.API.accessKey)
+//        let hdr_sign = Util.AES256.encrypt(string: method.rawValue
+//                                                 + "^"
+//                                                 + path
+//                                                 + "^"
+//                                                 + hdr_timestamp
+//                                                 + "^"
+//                                                 + CV.API.accessKey)
         
         urlRequest.setValue(ContentType.json.rawValue, forHTTPHeaderField: HTTPHeaderField.contentType.rawValue)
         urlRequest.setValue(ContentType.json.rawValue, forHTTPHeaderField: HTTPHeaderField.acceptType.rawValue)
         urlRequest.setValue(hdr_timestamp, forHTTPHeaderField: HTTPHeaderField.hdr_timestamp.rawValue)
         urlRequest.setValue(CV.API.accessKey, forHTTPHeaderField: HTTPHeaderField.hdr_acckey.rawValue)
-        urlRequest.setValue(hdr_sign, forHTTPHeaderField: HTTPHeaderField.hdr_sign.rawValue)
+//        urlRequest.setValue(hdr_sign, forHTTPHeaderField: HTTPHeaderField.hdr_sign.rawValue)
         
         switch method {
         case .get:
