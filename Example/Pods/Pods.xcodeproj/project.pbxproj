@@ -109,13 +109,13 @@
 		19D605A3233499828FB6B790869F3E9C /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F883AE22F795DEC017114567BC41BF /* NetworkReachabilityManager.swift */; };
 		1A1C49C2972AD8F4D5FA494999E48324 /* FBLPromise+All.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 4E89EDAC9B4252A7C964B90D78413022 /* FBLPromise+All.h */; };
 		1A42F9F591BB33CB94F8AE794126F3FF /* FIRInstallationsAuthTokenResultInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 51254AD90E5A317E0547A7F556321D9F /* FIRInstallationsAuthTokenResultInternal.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		1A70FFCB26E6FC7500BE268F /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A70FFCA26E6FC7500BE268F /* Validation.swift */; };
 		1A70FFD226E6FD6000BE268F /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A70FFCD26E6FD6000BE268F /* UIView+Extension.swift */; };
 		1A70FFD326E6FD6000BE268F /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A70FFCE26E6FD6000BE268F /* UILabel+Extension.swift */; };
 		1A70FFD426E6FD6000BE268F /* NSAttributedString+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A70FFCF26E6FD6000BE268F /* NSAttributedString+Extension.swift */; };
 		1A70FFD526E6FD6000BE268F /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A70FFD026E6FD6000BE268F /* UIViewController+Extension.swift */; };
 		1A70FFD626E6FD6000BE268F /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A70FFD126E6FD6000BE268F /* UIColor+Extension.swift */; };
 		1A70FFD926E6FD9900BE268F /* UILabelPadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A70FFD826E6FD9900BE268F /* UILabelPadding.swift */; };
+		1A70FFDB26E6FF2A00BE268F /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A70FFDA26E6FF2A00BE268F /* Validation.swift */; };
 		1A84B2E1C711A37AED1CE298D63E35CB /* KakaoSDKAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F10C095909E47ECE307881408746B1C8 /* KakaoSDKAuth.framework */; };
 		1AAD36BB18410B8424174BCFBAD67283 /* FIRInstallationsStoredItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 20C1CEE5ED5E09F6CBAEB96045D3E93A /* FIRInstallationsStoredItem.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		1CA1D4EEF195D906D5FDBD96508E7BAD /* GDTCORRegistrar.h in Headers */ = {isa = PBXBuildFile; fileRef = F14BB2F2F0C229766EA6A9013C856E55 /* GDTCORRegistrar.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -1295,13 +1295,13 @@
 		191977FF6E7DDCE392529709FFB2699A /* ca.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = ca.lproj; path = GoogleSignIn/Sources/Strings/ca.lproj; sourceTree = "<group>"; };
 		195CD1D8731A1C660DB49D199B8293AA /* FIRConfigurationInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRConfigurationInternal.h; path = FirebaseCore/Sources/FIRConfigurationInternal.h; sourceTree = "<group>"; };
 		1A5E2D130A8CAB89A9B1C9CABAB9BD89 /* FIRInstallationsIDController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRInstallationsIDController.m; path = FirebaseInstallations/Source/Library/InstallationsIDController/FIRInstallationsIDController.m; sourceTree = "<group>"; };
-		1A70FFCA26E6FC7500BE268F /* Validation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
 		1A70FFCD26E6FD6000BE268F /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		1A70FFCE26E6FD6000BE268F /* UILabel+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
 		1A70FFCF26E6FD6000BE268F /* NSAttributedString+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+Extension.swift"; sourceTree = "<group>"; };
 		1A70FFD026E6FD6000BE268F /* UIViewController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		1A70FFD126E6FD6000BE268F /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		1A70FFD826E6FD9900BE268F /* UILabelPadding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelPadding.swift; sourceTree = "<group>"; };
+		1A70FFDA26E6FF2A00BE268F /* Validation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Common/Validation.swift; sourceTree = "<group>"; };
 		1A7E86C4DC62F8B628B0E0E2FE19080F /* Pods-BlueshiftSDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BlueshiftSDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		1A80BD0DA1C3DBEF3C247655BC8EABAB /* OIDFieldMapping.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDFieldMapping.m; path = Source/AppAuthCore/OIDFieldMapping.m; sourceTree = "<group>"; };
 		1B01B710E14A75897F1604109DD3836F /* FIRHeartbeatInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRHeartbeatInfo.m; path = FirebaseCore/Sources/FIRHeartbeatInfo.m; sourceTree = "<group>"; };
@@ -3143,7 +3143,7 @@
 				DC340D00F0A67A9CBBCBB29CEE04D7E2 /* CommonEnum.swift */,
 				E0F7FD6BCEAFD9D9673761231EF35661 /* CommonKeyValue.swift */,
 				3517D9AA4350F3FB366531478744A09E /* CommonValue.swift */,
-				1A70FFCA26E6FC7500BE268F /* Validation.swift */,
+				1A70FFDA26E6FF2A00BE268F /* Validation.swift */,
 				ECEB8E6391BE9BA577ED07681996FC68 /* Preferences.swift */,
 				9A6E6F54352F3B19F4301899689AA80A /* API */,
 				627FC8D803EAB90D1366862FFE44637D /* Pod */,
@@ -5184,11 +5184,11 @@
 				E6B0C4ED15DEDB7045C445FAE0D722DA /* CommonKeyValue.swift in Sources */,
 				1A70FFD926E6FD9900BE268F /* UILabelPadding.swift in Sources */,
 				894859ABDB398262EDB694DB14C9B3D1 /* CommonValue.swift in Sources */,
+				1A70FFDB26E6FF2A00BE268F /* Validation.swift in Sources */,
 				1A70FFD526E6FD6000BE268F /* UIViewController+Extension.swift in Sources */,
 				A222CAE5B333E81C521E3F58A9029E09 /* DefaultTableViewController.swift in Sources */,
 				CD8AD01ADF99AD8AB2D7AE6302282F97 /* DefaultViewController.swift in Sources */,
 				786DB2AAE67CC617ADD5459F8AE7BC62 /* DefaultWebViewController.swift in Sources */,
-				1A70FFCB26E6FC7500BE268F /* Validation.swift in Sources */,
 				4C1208607110B9B56A69AA6202D8413B /* Login.swift in Sources */,
 				6B23C93710FE8E0E9EAD4D55D0EC6840 /* Login+Apple.swift in Sources */,
 				880D2FCDB2C27DFA4AB3BF16E0F1C55E /* Login+Email.swift in Sources */,
