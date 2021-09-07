@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Validation {
+open class Validation {
 //    
 //    public func nickname(_ nickname: String) throws -> Bool {
 //        guard nickname.count > 0 else {

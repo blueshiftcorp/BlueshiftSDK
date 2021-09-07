@@ -18,7 +18,7 @@
 import Alamofire
 import PromisedFuture
 
-class API {
+public class API {
     @discardableResult
     
     private static func performRequest<T:Decodable>(route:APIRouter, decoder: JSONDecoder = JSONDecoder()) -> Future<T, Error>? {
@@ -70,26 +70,26 @@ class API {
     
     
     //MARK:-
-    class Signup {
+    public class Signup {
         
-        class Duplicated {
-            static func email(email: String) -> Future <ServerResponse.SignUp.Duplication, Error>? {
+        public class Duplicated {
+            public static func email(email: String) -> Future <ServerResponse.SignUp.Duplication, Error>? {
                 return API.performRequest(route: .signup(.duplicate(.email(email: email))))
             }
             
-            static func mobile(mobile: String) -> Future <ServerResponse.SignUp.Duplication, Error>? {
+            public static func mobile(mobile: String) -> Future <ServerResponse.SignUp.Duplication, Error>? {
                 return API.performRequest(route: .signup(.duplicate(.mobile(mobile: mobile))))
             }
         }
         
-        static func insert(nick_name: String, mobile: String, email: String, gender: String, birth: String, password: String, name: String, di: String, co: String, mkt: String) -> Future <ServerResponse.SignUp.Insert, Error>? {
+        public static func insert(nick_name: String, mobile: String, email: String, gender: String, birth: String, password: String, name: String, di: String, co: String, mkt: String) -> Future <ServerResponse.SignUp.Insert, Error>? {
             return API.performRequest(route: .signup(.insert(nick_name: nick_name, mobile: mobile, email: email, gender: gender, birth: birth, password: password, name: name, di: di, co: co, mkt: mkt)))
         }
     }
     
     //MARK:-
-    class Member {
-        static func info(email: String) -> Future <ServerResponse.Member.Info, Error>? {
+    public class Member {
+        public static func info(email: String) -> Future <ServerResponse.Member.Info, Error>? {
             return API.performRequest(route: .member(.info(email: email)))
         }
     }

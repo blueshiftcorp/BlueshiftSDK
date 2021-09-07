@@ -17,7 +17,7 @@
 
 import Foundation
 
-class Pref {
+open class Pref {
     
     static let prefix: String = Bundle.main.bundleIdentifier!
     static let userDefaults: UserDefaults = UserDefaults.standard
@@ -31,7 +31,7 @@ class Pref {
     static let kAccessKey = prefix + "kAccessKey"
     static let kSecretKey = prefix + "kSecretKey"
     
-    static var hasLoginKey: Bool {
+    public static var hasLoginKey: Bool {
         get {
             return userDefaults.bool(forKey: kHasLoginKey)
         }
@@ -42,7 +42,7 @@ class Pref {
         }
     }
     
-    static var isReturned: Bool {
+    public static var isReturned: Bool {
         get {
             return userDefaults.bool(forKey: kReturened)
         }
@@ -53,7 +53,7 @@ class Pref {
         }
     }
     
-    static var accessKey: String? {
+    public static var accessKey: String? {
         get {
             return userDefaults.string(forKey: kAccessKey)
         }
@@ -68,7 +68,7 @@ class Pref {
         }
     }
     
-    static var secretKey: String? {
+    public static var secretKey: String? {
         get {
             return userDefaults.string(forKey: kSecretKey)
         }
@@ -83,7 +83,7 @@ class Pref {
         }
     }
     
-    static var uIdx: String? {
+    public static var uIdx: String? {
         get {
             return userDefaults.string(forKey: kUidx)
         }
@@ -98,7 +98,7 @@ class Pref {
         }
     }
     
-    static var loginToken: String? {
+    public static var loginToken: String? {
         get {
             return userDefaults.string(forKey: kLoginToken)
         }
@@ -113,7 +113,7 @@ class Pref {
         }
     }
     
-    static var cIdx: String? {
+    public static var cIdx: String? {
         get {
             return userDefaults.string(forKey: kCompanyIdx)
         }
@@ -128,7 +128,7 @@ class Pref {
         }
     }
     
-    static func reset() {
+    public static func reset() {
         uIdx = nil
         loginToken = nil
     }

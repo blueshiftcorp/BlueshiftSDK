@@ -19,16 +19,16 @@
 
 import Foundation
 
-struct sUser: Codable {
-    var gene_agree: String? = nil
-    var gender: String? = nil
-    var mkt_agree: String? = nil
-    var nick_name: String? = nil
-    var name: String? = nil
-    var mobile: String? = nil
-    var prv_agree: String? = nil
-    var birth: String? = nil
-    var svr_agree: String? = nil
-    var email: String? = nil
-    var last_login_dtm: String? = nil
+public struct sUser: Codable {
+    public var gene_agree: String? = nil
+    public var gender: String? = nil
+    public var mkt_agree: String? = nil
+    public var nick_name: String? = nil
+    public var name: String? = nil
+    public var mobile: String? = nil
+    public var prv_agree: String? = nil
+    public var birth: String? = nil
+    public var svr_agree: String? = nil
+    public var email: String? = nil
+    public var last_login_dtm: String? = nil
 }

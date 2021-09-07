@@ -15,53 +15,53 @@
 
 import Foundation
 
-class ServerResponse {
-    class User {
+public class ServerResponse {
+    public class User {
         
-        struct Add: Codable {
-            let uIdx: Int
-            let chkEmail: Bool
+        public struct Add: Codable {
+            public let uIdx: Int
+            public let chkEmail: Bool
         }
         
-        struct Login: Codable {
-            let loggedin: Bool
-            let rCode: Int                  // return code
-            let result: sUser?
+        public struct Login: Codable {
+            public let loggedin: Bool
+            public let rCode: Int                  // return code
+            public let result: sUser?
         }
         
-        struct Get: Codable {
-            let loggedin: Bool
-            let result: sUser
+        public struct Get: Codable {
+            public let loggedin: Bool
+            public let result: sUser
         }
         
-        struct Update:Codable {
-            let loggedin: Bool
-            let result: Int
+        public struct Update:Codable {
+            public let loggedin: Bool
+            public let result: Int
         }
     }
     
-    class SignUp {
-        struct Duplication: Codable {
-            let RES_DTM: String
-            let RES_CD: String
-            let RESULT: String
-            let RES_MSG: String
+    public class SignUp {
+        public struct Duplication: Codable {
+            public let RES_DTM: String
+            public let RES_CD: String
+            public let RESULT: String
+            public let RES_MSG: String
         }
         
-        struct Insert: Codable {
-            let RES_DTM: String
-            let RES_CD: String
-            let RES_MSG: String
+        public struct Insert: Codable {
+            public let RES_DTM: String
+            public let RES_CD: String
+            public let RES_MSG: String
         }
     }
     
-    class Member {
-        struct Info: Codable {
-            let RES_DTM: String
-            let RES_CD: String
-            let INFO: sUser
-            let RESULT_CD: String
-            let RES_MSG: String
+    public class Member {
+        public struct Info: Codable {
+            public let RES_DTM: String
+            public let RES_CD: String
+            public let INFO: sUser
+            public let RESULT_CD: String
+            public let RES_MSG: String
         }
     }
 }

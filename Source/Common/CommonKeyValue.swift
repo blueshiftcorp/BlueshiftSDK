@@ -30,13 +30,13 @@
 */
 
 //MARK:- Common
-let kEmail          = "email"           // eMail
-let kMobile         = "mobile"
-let kNickname       = "nick_name"
-let kGender         = "gender"          // 남성: 1, 여성: 0
-let kBirth          = "birth"           // yyyyMMdd
-let kPassword       = "password"        // 패스워드 Bcrypt를 이용한 암호화
-let kName           = "name"
-let kDi             = "di"              // 모바일 리턴값
-let kCo             = "co"              // 통신사
-let kMkt            = "mkt"             // 마케팅 및 상품안내를 위한 개인정보 제공 동의, Y 또는 N
+public let kEmail          = "email"           // eMail
+public let kMobile         = "mobile"
+public let kNickname       = "nick_name"
+public let kGender         = "gender"          // 남성: 1, 여성: 0
+public let kBirth          = "birth"           // yyyyMMdd
+public let kPassword       = "password"        // 패스워드 Bcrypt를 이용한 암호화
+public let kName           = "name"
+public let kDi             = "di"              // 모바일 리턴값
+public let kCo             = "co"              // 통신사
+public let kMkt            = "mkt"             // 마케팅 및 상품안내를 위한 개인정보 제공 동의, Y 또는 N
