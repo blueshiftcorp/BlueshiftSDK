@@ -44,7 +44,7 @@ Pod::Spec.new do |s|
 #  s.dependency      'CryptoSwift', '~> 1.4.1'
   
   s.subspec 'API' do |ss|
-    ss.name         = 'BlueshiftSDK/API'
+    ss.name         = 'API'
     ss.source_files = 'Source/API/**/*'
     
     # Networking
@@ -53,19 +53,19 @@ Pod::Spec.new do |s|
   end
   
   s.subspec 'Util' do |ss|
-    ss.name         = 'BlueshiftSDK/Util'
+    ss.name         = 'Util'
     ss.source_files = 'Source/Util/**/*'
   end
   
   s.subspec 'UI' do |ss|
-    ss.name         = 'BlueshiftSDK/UI'
+    ss.name         = 'UI'
     ss.source_files = 'Source/UI/**/*'
     
     ss.dependency 'BlueshiftSDK/Util'
   end
   
   s.subspec 'SocialLogin' do |ss|
-    ss.name         = 'BlueshiftSDK/SocialLogin'
+    ss.name         = 'SocialLogin'
     ss.source_files = 'Source/SocialLogin/**/*'
     
     ss.dependency 'BlueshiftSDK/API'
@@ -78,7 +78,7 @@ Pod::Spec.new do |s|
   end
   
   s.subspec 'Messaging' do |ss|
-    ss.name         = 'BlueshiftSDK/Messaging'
+    ss.name         = 'Messaging'
     ss.source_files = 'Source/Messaging'
     
     ss.dependency 'BlueshiftSDK/API'
