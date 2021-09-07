@@ -19,8 +19,7 @@ Pod::Spec.new do |s|
   DESC
   
   s.homepage              = 'https://github.com/blueshiftcorp/BlueshiftSDK'
-#  s.license               = { :type => 'Blueshift SDK License', :file => 'LICENSE' }
-  s.license               = 'Blueshift SDK License', :file => 'LICENSE'
+  s.license               = { :type => 'Blueshift SDK License', :file => 'LICENSE' }
   s.author                = 'Blueshift'
   s.homepage              = 'http://www.blueshift.co.kr'
   s.platform              = :ios, '13.0'
