@@ -17,7 +17,7 @@
 
 import Foundation
 
-var CurrentUser = sUser()
+//var CurrentUser = sUser()
 
 public class CV {
     

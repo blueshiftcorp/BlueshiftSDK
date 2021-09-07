@@ -53,15 +53,6 @@ class Util {
         }
     }
     
-    static func toast(message: String, from vc: UIViewController, duration: TimeInterval? = nil) {
-        let toast = ToastViewController(title: message)
-        
-        vc.present(toast, animated: true)
-        Timer.scheduledTimer(withTimeInterval: duration ?? 2, repeats: false) { _ in
-            toast.dismiss(animated: true)
-        }
-    }
-    
     static var isHomeButton: Bool {
         
         if let keyWindow = UIApplication.shared.windows.filter({$0.isKeyWindow}).first, keyWindow.safeAreaInsets.bottom > 0 {

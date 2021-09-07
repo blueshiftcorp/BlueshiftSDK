@@ -20,11 +20,11 @@
 import UIKit
 import WebKit
 
-class DefaultWebViewController: DefaultViewController {
+open class DefaultWebViewController: DefaultViewController {
     
     var url: String!
       
-    override func initializeUI() {
+    open override func initializeUI() {
         guard Util.Connectivity.isConnected else {
             showRefreshButton()
             return }

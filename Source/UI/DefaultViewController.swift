@@ -19,7 +19,7 @@
 
 import UIKit
 
-class DefaultViewController: UIViewController {
+open class DefaultViewController: UIViewController {
 
     var scrollView:UIScrollView?
     var isBackButton = false
@@ -28,14 +28,14 @@ class DefaultViewController: UIViewController {
     var isKeyboardUse = false
     
     //MARK:- Lifecycle
-    override func viewDidLoad() {
+    open override func viewDidLoad() {
         super.viewDidLoad()
         
         initializeUI()
     }
     
     //MARK:- Methods
-    internal func initializeUI() {
+    open func initializeUI() {
         self.view.backgroundColor = .white
         
         self.navigationController?.navigationBar.isTranslucent = true

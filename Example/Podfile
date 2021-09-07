@@ -4,6 +4,7 @@ platform :ios, '13.0'
 
 target 'BlueshiftSDK_Example' do
   pod 'BlueshiftSDK', :path => '../'
+#  pod 'BlueshiftSDK/Common', :path => '../'
 
   target 'BlueshiftSDK_Tests' do
     inherit! :search_paths

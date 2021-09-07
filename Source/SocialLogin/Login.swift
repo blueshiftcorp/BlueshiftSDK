@@ -47,7 +47,7 @@ class Login: NSObject {
 //        let _user = sUser(uIdx: "1", token: "tempToken")
         let _user = sUser()
         
-        Util.setUserPreference(_user)
+//        Util.setUserPreference(_user)
         
 //        guard let name = user.uNick, name.count > 0 else {
 //            let vc = GetNicknameViewController()
@@ -57,7 +57,7 @@ class Login: NSObject {
 //            return
 //        }
         
-        Util.setRootViewController()
+//        Util.setRootViewController()
     }
     
     //TODO: 로그인 정보 저장상태인 경우 실행하도록 프로세스 정의

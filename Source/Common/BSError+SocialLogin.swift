@@ -17,7 +17,7 @@
 
 import Foundation
 
-enum BSError: Error {
+extension BSError {
     enum Validation {
         case invalidEmailFormat
         case invalidPasswordFormat
