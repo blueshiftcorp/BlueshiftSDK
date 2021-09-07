@@ -106,7 +106,9 @@
 		198B15CC46D533CBF85A5456770947ED /* FIRInstallationsErrorUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 33C57C7319243BA7222FF44F8D3176B5 /* FIRInstallationsErrorUtil.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		19FBE230329F2A23729874EFFD56F343 /* FIRApp.m in Sources */ = {isa = PBXBuildFile; fileRef = 749EC7475187BD23E5BD62C582BD4C5A /* FIRApp.m */; };
 		1A70000126E7174500BE268F /* BSError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A70000026E7174500BE268F /* BSError.swift */; };
-		1A70000826E7322B00BE268F /* Utility+HealthKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A70000726E7322B00BE268F /* Utility+HealthKit.swift */; };
+		1A70000C26E751A400BE268F /* Utility+HealthKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A70000B26E751A400BE268F /* Utility+HealthKit.swift */; };
+		1A70000E26E751C100BE268F /* Utility+SocialLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A70000D26E751C100BE268F /* Utility+SocialLogin.swift */; };
+		1A70001026E751D800BE268F /* Utility+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A70000F26E751D800BE268F /* Utility+UI.swift */; };
 		1AF457E9A4D7F87B0F1EE17F6E20BCC4 /* FBLPromise+Testing.h in Headers */ = {isa = PBXBuildFile; fileRef = 78845CE86D63A9E1DD10EB298CB5CA31 /* FBLPromise+Testing.h */; };
 		1B25B6ED40FA7EDA82CCE6FDE0C7963E /* FIRInstallationsAPIService.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B1BCCB60ADD5C86A8F435B91603A701 /* FIRInstallationsAPIService.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		1B407EDED4F360DB87500AECC7091D7D /* FIRMessagingAPNSInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = A654F2168EB5A654C984796A69AE23D8 /* FIRMessagingAPNSInfo.m */; };
@@ -1267,7 +1269,9 @@
 		195CD1D8731A1C660DB49D199B8293AA /* FIRConfigurationInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRConfigurationInternal.h; path = FirebaseCore/Sources/FIRConfigurationInternal.h; sourceTree = "<group>"; };
 		1A5E2D130A8CAB89A9B1C9CABAB9BD89 /* FIRInstallationsIDController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRInstallationsIDController.m; path = FirebaseInstallations/Source/Library/InstallationsIDController/FIRInstallationsIDController.m; sourceTree = "<group>"; };
 		1A70000026E7174500BE268F /* BSError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BSError.swift; sourceTree = "<group>"; };
-		1A70000726E7322B00BE268F /* Utility+HealthKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Utility+HealthKit.swift"; sourceTree = "<group>"; };
+		1A70000B26E751A400BE268F /* Utility+HealthKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Utility+HealthKit.swift"; path = "Source/Common/Utility+HealthKit.swift"; sourceTree = "<group>"; };
+		1A70000D26E751C100BE268F /* Utility+SocialLogin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Utility+SocialLogin.swift"; path = "Source/SocialLogin/Utility+SocialLogin.swift"; sourceTree = "<group>"; };
+		1A70000F26E751D800BE268F /* Utility+UI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Utility+UI.swift"; path = "Source/UI/Utility+UI.swift"; sourceTree = "<group>"; };
 		1A7E86C4DC62F8B628B0E0E2FE19080F /* Pods-BlueshiftSDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BlueshiftSDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		1A80BD0DA1C3DBEF3C247655BC8EABAB /* OIDFieldMapping.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDFieldMapping.m; path = Source/AppAuthCore/OIDFieldMapping.m; sourceTree = "<group>"; };
 		1B01B710E14A75897F1604109DD3836F /* FIRHeartbeatInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRHeartbeatInfo.m; path = FirebaseCore/Sources/FIRHeartbeatInfo.m; sourceTree = "<group>"; };
@@ -2169,7 +2173,7 @@
 			path = AppAuth;
 			sourceTree = "<group>";
 		};
-		02A840BFF2719E4A09E7178659EC4BB6 /* SocialLogin */ = {
+		02A840BFF2719E4A09E7178659EC4BB6 /* Login */ = {
 			isa = PBXGroup;
 			children = (
 				9591506C1A6CC2CE302D7CBCC4EC4133 /* Login.swift */,
@@ -2179,8 +2183,9 @@
 				5E7274A9E001CBD2F240B1EB5D655EE5 /* Login+Kakao.swift */,
 				A7C238F1AB0A8F4773BF73B6C82C4EBD /* Login+Naver.swift */,
 				5A1806C2F6F557A70710C6D8F4D1442F /* BSError+SocialLogin.swift */,
+				1A70000D26E751C100BE268F /* Utility+SocialLogin.swift */,
 			);
-			name = SocialLogin;
+			name = Login;
 			sourceTree = "<group>";
 		};
 		1011A6CA96AECA666909442A307949FF /* Support Files */ = {
@@ -2838,6 +2843,7 @@
 				881886682683D1A93646B5A5A867800F /* PresentationController.swift */,
 				D9E2B61F5E10EF383209CE75B6CC7078 /* ToastPresentationController.swift */,
 				6A2E4A6CA462A898C7965B3AAEC4697C /* ToastViewController.swift */,
+				1A70000F26E751D800BE268F /* Utility+UI.swift */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -2958,7 +2964,7 @@
 				CD8F709D388ED15267DF7E442C729F16 /* API */,
 				FBAF3DC8A8410E8AE6118EE1B5DCEB1D /* Common */,
 				C8CEC9DE20A537306DE9C14E94D83E23 /* Pod */,
-				02A840BFF2719E4A09E7178659EC4BB6 /* SocialLogin */,
+				02A840BFF2719E4A09E7178659EC4BB6 /* Login */,
 				D19B99142E8E26522888D12DC2D0B600 /* Support Files */,
 				8380B29F16C34B996D61147AB7329A72 /* UI */,
 				582E2B7520E323541F90C7624259C854 /* WebView */,
@@ -3562,7 +3568,7 @@
 				D2BD1DE18B935164EB6F58EACF63E903 /* CommonValue.swift */,
 				290AF5D63CFD26AB58EC0F2F4B8182DE /* Initializer.swift */,
 				97D3028B1B9A02E8BBA62F30BD340DE9 /* Utility.swift */,
-				1A70000726E7322B00BE268F /* Utility+HealthKit.swift */,
+				1A70000B26E751A400BE268F /* Utility+HealthKit.swift */,
 				1A70000026E7174500BE268F /* BSError.swift */,
 				D68E175E03F0F5928747AB4F437030A5 /* Extension */,
 				BACFE95FF1D065BB8CC1A986E290A4DD /* SubClass */,
@@ -4994,6 +5000,7 @@
 				8EAEB2124E82B0E3B97290C048700FDA /* BlueshiftSDK-dummy.m in Sources */,
 				4AAC7DAA93992EA83C1CB10F204212C2 /* BSError+SocialLogin.swift in Sources */,
 				707E1FA696640A28031BA646E832B23A /* CommonEnum.swift in Sources */,
+				1A70000E26E751C100BE268F /* Utility+SocialLogin.swift in Sources */,
 				7DA4EAB4B287335CC35A07ABE7A242DF /* CommonKeyValue.swift in Sources */,
 				EDA10310E530E88C903349160B802B1C /* CommonValue.swift in Sources */,
 				C1E711C4D15E116BC42C1A2086B0FC2B /* DefaultTableViewController.swift in Sources */,
@@ -5003,9 +5010,9 @@
 				1A70000126E7174500BE268F /* BSError.swift in Sources */,
 				720A335E337799C6EE59120859C557E9 /* Login.swift in Sources */,
 				360BCAACF0720E4E6F8B3C849259535F /* Login+Apple.swift in Sources */,
+				1A70001026E751D800BE268F /* Utility+UI.swift in Sources */,
 				BC1ABB49EB70FA7B672F442EDF8CE2A0 /* Login+Email.swift in Sources */,
 				D12C6E0915D36169AB6FE45DD4D2277E /* Login+Google.swift in Sources */,
-				1A70000826E7322B00BE268F /* Utility+HealthKit.swift in Sources */,
 				4A81B6132124941FA690353CA1693D58 /* Login+Kakao.swift in Sources */,
 				B245F82A1C22B6EABCC72595BFC2F5F9 /* Login+Naver.swift in Sources */,
 				5A9B9D91855CAF86E0B8C0541D605A42 /* NSAttributedString+Extension.swift in Sources */,
@@ -5020,6 +5027,7 @@
 				9E6009C7E461C3B9D729880251936034 /* UILabelPadding.swift in Sources */,
 				2DEC220FD90EFFB724C8AF5513048DAA /* UIView+Extension.swift in Sources */,
 				22B67AF180F9B200CF364DBAB152E596 /* UIViewController+Extension.swift in Sources */,
+				1A70000C26E751A400BE268F /* Utility+HealthKit.swift in Sources */,
 				F556D05066CF8B780EB18554C616BCAB /* Utility.swift in Sources */,
 				3FF17F49779F36DDE9391C57D976442A /* Utility+WebView.swift in Sources */,
 			);

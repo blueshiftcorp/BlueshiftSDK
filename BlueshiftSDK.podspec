@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name                  = 'BlueshiftSDK'
   s.version               = '0.1.0'
-  s.summary               = 'Official Blueshift SDK for iOS to develop iOS application'
+  s.summary               = 'Official Blueshift SDK for developing iOS application.'
   
   s.description  = <<-DESC
   The Blueshift SDK for iOS enables you to develoip iOS application more easily using funtions such as:
@@ -66,12 +66,10 @@ Pod::Spec.new do |s|
     #    ss.dependency 'BlueshiftSDK/Util'
   end
   
-  s.subspec 'SocialLogin' do |ss|
-    ss.source_files       = 'Source/SocialLogin/**/*'
+  s.subspec 'Login' do |ss|
+    ss.source_files       = 'Source/Login/**/*'
     
     ss.dependency         'BlueshiftSDK/API'
-    
-    # Social Login
     ss.dependency         'GoogleSignIn'          # Google Login
     ss.dependency         'naveridlogin-sdk-ios'  # Naver Login
     ss.dependency         'KakaoSDKAuth'          # 카카오 로그인
