@@ -1,10 +1,3 @@
-#
-# Be sure to run `pod lib lint BlueshiftSDK.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see https://guides.cocoapods.org/syntax/podspec.html
-#
 
 Pod::Spec.new do |s|
   s.name                  = 'BlueshiftSDK'
@@ -24,24 +17,7 @@ Pod::Spec.new do |s|
   s.homepage              = 'http://www.blueshift.co.kr'
   s.platform              = :ios, '13.0'
   s.source                = { :git => 'https://github.com/blueshiftcorp/BlueshiftSDK.git', :tag => s.version.to_s }
-  #  s.source_files     = 'Source/Common/**/*'
   s.ios.deployment_target = '13.0'
-  
-  #  # Networking
-  #  s.dependency      'Alamofire', '~> 5.4'
-  #  s.dependency      'PromisedFuture'
-  
-  # Firebase Messaing / Push Notification
-  #  s.dependency      'Firebase/Messaging'    # Firebase Cloud Messaging
-  
-  #  # Social Login
-  #  s.dependency      'GoogleSignIn'          # Google Login
-  #  s.dependency      'naveridlogin-sdk-ios'  # Naver Login
-  #  s.dependency      'KakaoSDKAuth'          # 카카오 로그인
-  #  s.dependency      'KakaoSDKUser'          # 사용자 관리
-  
-  #  # AES 암호화
-  #  s.dependency      'CryptoSwift', '~> 1.4.1'
   
   s.subspec 'Common' do |ss|
     ss.source_files       = 'Source/Common/**/*'
@@ -51,14 +27,9 @@ Pod::Spec.new do |s|
     ss.source_files       = 'Source/API/**/*'
     
     ss.dependency         'BlueshiftSDK/Common'
-    # Networking
-    ss.dependency         'Alamofire', '~> 5.4'
-    ss.dependency         'PromisedFuture'
+    ss.dependency         'Alamofire', '~> 5.4'   # Networking
+    ss.dependency         'PromisedFuture'        # Async
   end
-  
-  #  s.subspec 'Util' do |ss|
-  #    ss.source_files = 'Source/Util/**/*'
-  #  end
   
   s.subspec 'UI' do |ss|
     ss.source_files       = 'Source/UI/**/*'
