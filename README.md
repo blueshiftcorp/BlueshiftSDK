@@ -22,8 +22,8 @@ pod 'BlueshiftSDK'
 
 ## Author
 
-blueshiftcorp, bscho@blueshift.co.kr
+Blueshift Corporation
 
 ## License
 
-BlueshiftSDK is available under the MIT license. See the LICENSE file for more info.
+BlueshiftSDK is available under the Blueshift SDK license. See the LICENSE file for more info.

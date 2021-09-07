@@ -88,8 +88,8 @@ class Util {
     }
     
     static func setRootViewController() {
-        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
-        appDelegate.setInitialViewController()
+//        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
+//        appDelegate.setInitialViewController()
     }
     
     static func setUserPreference(_ user: sUser) {

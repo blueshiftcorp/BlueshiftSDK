@@ -21,25 +21,61 @@ Pod::Spec.new do |s|
   s.homepage         = 'https://github.com/blueshiftcorp/BlueshiftSDK'
   s.license          = { :type => 'Blueshift SDK License', :file => 'LICENSE' }
   s.author           = 'Blueshift'
+  s.homepage         = 'http://www.blueshift.co.kr'
   s.platform         = :ios, '13.0'
   s.source           = { :git => 'https://github.com/blueshiftcorp/BlueshiftSDK.git', :tag => s.version.to_s }
-  s.source_files     = 'Source/**/*'
+  s.source_files     = 'Source/Common/**/*'
   s.ios.deployment_target = '13.0'
   
-  # Networking
-  s.dependency      'Alamofire', '~> 5.4'
-  s.dependency      'PromisedFuture'
+#  # Networking
+#  s.dependency      'Alamofire', '~> 5.4'
+#  s.dependency      'PromisedFuture'
   
   # Firebase Messaing / Push Notification
   s.dependency      'Firebase/Messaging'    # Firebase Cloud Messaging
   
-  # Social Login
-  s.dependency      'GoogleSignIn'          # Google Login
-  s.dependency      'naveridlogin-sdk-ios'  # Naver Login
-  s.dependency      'KakaoSDKAuth'          # 카카오 로그인
-  s.dependency      'KakaoSDKUser'          # 사용자 관리
+#  # Social Login
+#  s.dependency      'GoogleSignIn'          # Google Login
+#  s.dependency      'naveridlogin-sdk-ios'  # Naver Login
+#  s.dependency      'KakaoSDKAuth'          # 카카오 로그인
+#  s.dependency      'KakaoSDKUser'          # 사용자 관리
   
   # AES 암호화
   s.dependency      'CryptoSwift', '~> 1.4.1'
-
+  
+  subspec 'API' do |ss|
+    ss.source_files = 'Source/API/**/*'
+    
+    # Networking
+    ss.dependency      'Alamofire', '~> 5.4'
+    ss.dependency      'PromisedFuture'
+  end
+  
+  subspec 'Util' do |ss|
+    ss.source_files = 'Source/Util/**/*'
+  end
+  
+  subspec 'UI' do |ss|
+    ss.source_files = 'Source/UI/**/*'
+    
+    ss.dependency 'BlueshiftSDK/Util'
+  end
+  
+  subspec 'SocialLogin' do |ss|
+    ss.source_files = 'Source/SocialLogin/**/*'
+    
+    ss.dependency 'BlueshiftSDK/API'
+    
+    # Social Login
+    ss.dependency      'GoogleSignIn'          # Google Login
+    ss.dependency      'naveridlogin-sdk-ios'  # Naver Login
+    ss.dependency      'KakaoSDKAuth'          # 카카오 로그인
+    ss.dependency      'KakaoSDKUser'          # 사용자 관리
+  end
+  
+  subspec 'Messaging' do |ss|
+    ss.source_files = 'Source/Messaging'
+    
+    ss.dependency 'BlueshiftSDK/API'
+  end
 end

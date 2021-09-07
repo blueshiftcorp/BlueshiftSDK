@@ -81,9 +81,9 @@ class DefaultViewController: UIViewController {
     }
     
     @objc internal func notificationButtonClicked() {
-        let nvc = UINavigationController(rootViewController: PushNotificationViewController())
-        nvc.modalPresentationStyle = .fullScreen
-        present(nvc, animated: true)
+//        let nvc = UINavigationController(rootViewController: PushNotificationViewController())
+//        nvc.modalPresentationStyle = .fullScreen
+//        present(nvc, animated: true)
     }
     
     @objc internal func closeButtonClicked() {
