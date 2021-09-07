@@ -62,7 +62,7 @@ Pod::Spec.new do |s|
   s.subspec 'UI' do |ss|
     ss.source_files = 'Source/UI/**/*'
     
-    ss.dependency 'BlueshiftSDK/Util'
+#    ss.dependency 'BlueshiftSDK/Util'
   end
   
   s.subspec 'SocialLogin' do |ss|
