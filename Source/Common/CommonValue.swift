@@ -19,7 +19,7 @@ import Foundation
 
 var CurrentUser = sUser()
 
-class CV {
+public class CV {
     
     //TEST VARIABLES
     static var tIsLoggedIn = true

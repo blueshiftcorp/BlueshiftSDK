@@ -18,125 +18,39 @@
 //
 
 import UIKit
-import KakaoSDKUser
-import GoogleSignIn
-import Alamofire
-import Security
 
 class Util {
     class Validate {
         
-        static func email(_ _email: String?) -> Bool {
-            
-            guard let email = _email, email.count > 0 else { return false }
-            
+        public static func email(_ email: String) throws -> Bool {
             let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
-            let emailTest = NSPredicate(format:"SELF MATCHES[c] %@", emailRegEx)
-            return emailTest.evaluate(with: email)
-        }
-        
-        static func password(_ _pw: String?) -> Bool {
-            guard let pw = _pw, pw.count > 7, pw.count < 16 else { return false }
-            
-            let passwordRegEx = "[a-zA-Z0-9!@#$%^&*]+"
-            let passwordTest = NSPredicate(format:"SELF MATCHES %@", passwordRegEx)
-            
-            return passwordTest.evaluate(with: pw)
-        }
-        
-        static func phoneNum(_ _num: String?) -> Bool {
-            guard let num = _num, num.count == 11 else { return false }
+            let emailPred = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
+            guard emailPred.evaluate(with: email) else {
+                throw BSError.Validation.invalidEmailFormat
+            }
             return true
         }
         
-        static func name(_ _name: String?) -> Bool {
+        public static func password(_ pw: String) throws -> Bool {
+            let regex = try NSRegularExpression(pattern: "^(?=.*[A-Za-z])(?=.*[0-9])(?=.*[!@#$%^&*()_+=-]).{8,20}", options: NSRegularExpression.Options())
+            guard regex.firstMatch(in: pw, options: NSRegularExpression.MatchingOptions(), range:NSMakeRange(0, pw.count)) != nil else {
+                throw BSError.Validation.invalidPasswordFormat
+            }
+            
+            return true
+        }
+        
+        public static func phoneNum(_ _num: String?) -> Bool {
+            guard let num = _num, num.count == 11 else { return false }
+            let regex = "^010?([0-9]{8})"
+
+            return NSPredicate(format: "SELF MATCHES %@", regex).evaluate(with: _num)
+        }
+        
+        public static func name(_ _name: String?) -> Bool {
             guard let name = _name, name.count <= 10 else { return false }
             return true
         }
-    }
-    
-//    class AES256 {
-//        
-//        private static let SECRET_KEY = CV.API.secretKey
-//        private static let IV = SECRET_KEY[..<SECRET_KEY.index(SECRET_KEY.startIndex, offsetBy: 16)]
-//        
-//        static func encrypt(string: String) -> String {
-//            guard !string.isEmpty else { return "" }
-//            return try! getAESObject().encrypt(string.bytes).toBase64()
-//        }
-//        
-//        static func decrypt(encoded: String) -> String {
-//            let datas = Data(base64Encoded: encoded)
-//            
-//            guard datas != nil else { return "" }
-//            
-//            let bytes = datas!.bytes
-//            let decode = try! getAESObject().decrypt(bytes)
-//            
-//            return String(bytes: decode, encoding: .utf8) ?? ""
-//        }
-//        
-//        private static func getAESObject() -> AES{
-//            let keyDecodes: Array<UInt8> = Array(SECRET_KEY.utf8)
-//            let ivDecodes: Array<UInt8> = Array(IV.utf8)
-//            let aesObject = try! AES(key: keyDecodes, blockMode: CBC(iv: ivDecodes), padding: .pkcs5)
-//            
-//            return aesObject
-//        }
-//        
-//    }
-    
-    static func setRootViewController() {
-//        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
-//        appDelegate.setInitialViewController()
-    }
-    
-    static func setUserPreference(_ user: sUser) {
-//        Pref.uIdx = user.uIdx
-//        Pref.loginToken = user.token
-        setCurrentUser()
-    }
-    
-    static func setCurrentUser(completion: (() -> Void)? = nil){
-        guard let uIdx = Pref.uIdx else { return }
-        guard let loginToken = Pref.loginToken else { return}
-//        guard let request = API.User.get(uIdx: uIdx) else { return }
-//        request.execute { (result) in
-//            switch result {
-//            case .success(let value):
-//                CurrentUser = value.result
-//                CurrentUser.uId = uIdx
-//                CurrentUser.token = loginToken
-//                if completion != nil {
-//                    completion!()
-//                }
-//            case .failure(let error):
-//                print("Error occurred while get user info: \(error)")
-//            }
-//        }
-    }
-    
-//    static var uuid: String {
-//        return UIDevice.current.identifierForVendor?.uuidString ?? ""
-//    }
-//
-    class func logout() {
-        
-        // Google Logout
-        GIDSignIn.sharedInstance.signOut()
-        
-        // Kakao Logout
-        UserApi.shared.logout { (error) in
-            if let error = error {
-                print(error)
-            } else {
-                print("kakao logout success.")
-            }
-        }
-
-        Pref.reset()
-        
-        setRootViewController()
     }
     
     static func toast(message: String, from vc: UIViewController, duration: TimeInterval? = nil) {
@@ -155,12 +69,6 @@ class Util {
         } else {
             return true
         }
-        
-        
-//        if #available(iOS 11.0, *), let keyWindow = UIApplication.shared.keyWindow, keyWindow.safeAreaInsets.bottom > 0 {
-//            return false
-//        }
-//        return true
     }
     
     static var bottomMargin: CGFloat {
@@ -170,13 +78,7 @@ class Util {
             return 20
         }
     }
-    
-    class Connectivity {
-        static let sharedInstance = NetworkReachabilityManager()!
-        static var isConnected: Bool {
-            return self.sharedInstance.isReachable
-        }
-    }
+
     
     class KeyChain {
         

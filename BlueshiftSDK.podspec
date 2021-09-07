@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
   s.homepage         = 'http://www.blueshift.co.kr'
   s.platform         = :ios, '13.0'
   s.source           = { :git => 'https://github.com/blueshiftcorp/BlueshiftSDK.git', :tag => s.version.to_s }
-  s.source_files     = 'Source/Common/**/*'
+#  s.source_files     = 'Source/Common/**/*'
   s.ios.deployment_target = '13.0'
   
 #  # Networking
@@ -42,9 +42,12 @@ Pod::Spec.new do |s|
   
 #  # AES 암호화
 #  s.dependency      'CryptoSwift', '~> 1.4.1'
+
+  s.subspec 'Common' do |ss|
+      ss.source_files = 'Source/Common/**/*'
+  end
   
   s.subspec 'API' do |ss|
-    ss.name         = 'API'
     ss.source_files = 'Source/API/**/*'
     
     # Networking
@@ -52,20 +55,17 @@ Pod::Spec.new do |s|
     ss.dependency      'PromisedFuture'
   end
   
-  s.subspec 'Util' do |ss|
-    ss.name         = 'Util'
-    ss.source_files = 'Source/Util/**/*'
-  end
+#  s.subspec 'Util' do |ss|
+#    ss.source_files = 'Source/Util/**/*'
+#  end
   
   s.subspec 'UI' do |ss|
-    ss.name         = 'UI'
     ss.source_files = 'Source/UI/**/*'
     
     ss.dependency 'BlueshiftSDK/Util'
   end
   
   s.subspec 'SocialLogin' do |ss|
-    ss.name         = 'SocialLogin'
     ss.source_files = 'Source/SocialLogin/**/*'
     
     ss.dependency 'BlueshiftSDK/API'
@@ -78,10 +78,15 @@ Pod::Spec.new do |s|
   end
   
   s.subspec 'Messaging' do |ss|
-    ss.name         = 'Messaging'
     ss.source_files = 'Source/Messaging'
     
     ss.dependency 'BlueshiftSDK/API'
     ss.dependency      'Firebase/Messaging'    # Firebase Cloud Messaging
   end
+  
+  s.subspec 'WebView' do |ss|
+      ss.source_files = 'Source/WebView'
+      
+      ss.dependency     'Alamofire', '~> 5.4'
+  
 end

@@ -17,7 +17,7 @@
 
 import Foundation
 
-enum LoginType: String {
+public enum LoginType: String {
     case email = "0"
     case google = "1"
     case naver = "2"
@@ -25,7 +25,7 @@ enum LoginType: String {
     case apple = "4"
 }
 
-enum LoginReturnCode: String {
+public enum LoginReturnCode: String {
     case success = "0"
     case notRegistered = "1"
 }

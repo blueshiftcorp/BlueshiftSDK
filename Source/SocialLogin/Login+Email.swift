@@ -26,9 +26,8 @@ extension Login {
         guard let email = _email else { return }
         guard let password = _password else { return }
         
-        let valid = Validation()
         do {
-            guard try valid.email(email), try valid.password(password) else { return }
+            guard try Util.Validate.email(email), try Util.Validate.password(password) else { return }
         } catch {
             switch error {
             case BSError.Validation.invalidEmailFormat: break
