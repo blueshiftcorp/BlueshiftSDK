@@ -40,8 +40,8 @@ Pod::Spec.new do |s|
 #  s.dependency      'KakaoSDKAuth'          # 카카오 로그인
 #  s.dependency      'KakaoSDKUser'          # 사용자 관리
   
-  # AES 암호화
-  s.dependency      'CryptoSwift', '~> 1.4.1'
+#  # AES 암호화
+#  s.dependency      'CryptoSwift', '~> 1.4.1'
   
   subspec 'API' do |ss|
     ss.source_files = 'Source/API/**/*'
