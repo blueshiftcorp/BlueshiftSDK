@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "summary": "Official Blueshift SDK for iOS to develop iOS application",
   "description": "The Blueshift SDK for iOS enables you to develoip iOS application more easily using funtions such as:\n* Social Login to easily sign in users.\n* Sharing features like the Share or Message Dialog to grow your app.\n* Simpler Other API access to provide more social context.",
-  "homepage": "https://github.com/blueshiftcorp/BlueshiftSDK",
+  "homepage": "http://www.blueshift.co.kr",
   "license": {
     "type": "Blueshift SDK License",
     "file": "LICENSE"
@@ -16,31 +16,67 @@
     "git": "https://github.com/blueshiftcorp/BlueshiftSDK.git",
     "tag": "0.1.0"
   },
-  "source_files": "Source/**/*",
+  "source_files": "Source/Common/**/*",
   "dependencies": {
-    "Alamofire": [
-      "~> 5.4"
-    ],
-    "PromisedFuture": [
-
-    ],
     "Firebase/Messaging": [
 
-    ],
-    "GoogleSignIn": [
-
-    ],
-    "naveridlogin-sdk-ios": [
-
-    ],
-    "KakaoSDKAuth": [
-
-    ],
-    "KakaoSDKUser": [
-
-    ],
-    "CryptoSwift": [
-      "~> 1.4.1"
     ]
-  }
+  },
+  "subspecs": [
+    {
+      "name": "API",
+      "source_files": "Source/API/**/*",
+      "dependencies": {
+        "Alamofire": [
+          "~> 5.4"
+        ],
+        "PromisedFuture": [
+
+        ]
+      }
+    },
+    {
+      "name": "Util",
+      "source_files": "Source/Util/**/*"
+    },
+    {
+      "name": "UI",
+      "source_files": "Source/UI/**/*",
+      "dependencies": {
+        "BlueshiftSDK/Util": [
+
+        ]
+      }
+    },
+    {
+      "name": "SocialLogin",
+      "source_files": "Source/SocialLogin/**/*",
+      "dependencies": {
+        "BlueshiftSDK/API": [
+
+        ],
+        "GoogleSignIn": [
+
+        ],
+        "naveridlogin-sdk-ios": [
+
+        ],
+        "KakaoSDKAuth": [
+
+        ],
+        "KakaoSDKUser": [
+
+        ]
+      }
+    },
+    {
+      "name": "Messaging",
+      "source_files": "Source/Messaging",
+      "dependencies": {
+        "BlueshiftSDK/API": [
+
+        ]
+      }
+    }
+  ]
 }

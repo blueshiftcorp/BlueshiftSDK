@@ -13,11 +13,19 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Installation
 
-BlueshiftSDK is available through [CocoaPods](https://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+BlueshiftSDK is available through [CocoaPods](https://cocoapods.org). To install all of it, simply add the following line to your Podfile:
 
 ```ruby
 pod 'BlueshiftSDK'
+```
+
+To install it separately, add the following line to your Podfile as your need:
+
+```ruby
+pod 'BlueshiftSDK/API'
+pod 'BlueshiftSDK/Util'
+pod 'BlueshiftSDK/UI'
+pod 'BlueshiftSDK/SocialLogin'
 ```
 
 ## Author

@@ -43,7 +43,7 @@ Pod::Spec.new do |s|
 #  # AES 암호화
 #  s.dependency      'CryptoSwift', '~> 1.4.1'
   
-  subspec 'API' do |ss|
+  s.subspec 'API' do |ss|
     ss.source_files = 'Source/API/**/*'
     
     # Networking
@@ -51,17 +51,17 @@ Pod::Spec.new do |s|
     ss.dependency      'PromisedFuture'
   end
   
-  subspec 'Util' do |ss|
+  s.subspec 'Util' do |ss|
     ss.source_files = 'Source/Util/**/*'
   end
   
-  subspec 'UI' do |ss|
+  s.subspec 'UI' do |ss|
     ss.source_files = 'Source/UI/**/*'
     
     ss.dependency 'BlueshiftSDK/Util'
   end
   
-  subspec 'SocialLogin' do |ss|
+  s.subspec 'SocialLogin' do |ss|
     ss.source_files = 'Source/SocialLogin/**/*'
     
     ss.dependency 'BlueshiftSDK/API'
@@ -73,7 +73,7 @@ Pod::Spec.new do |s|
     ss.dependency      'KakaoSDKUser'          # 사용자 관리
   end
   
-  subspec 'Messaging' do |ss|
+  s.subspec 'Messaging' do |ss|
     ss.source_files = 'Source/Messaging'
     
     ss.dependency 'BlueshiftSDK/API'

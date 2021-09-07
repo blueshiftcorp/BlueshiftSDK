@@ -6,15 +6,31 @@ PODS:
   - AppAuth/Core (1.4.0)
   - AppAuth/ExternalUserAgent (1.4.0)
   - BlueshiftSDK (0.1.0):
+    - BlueshiftSDK/API (= 0.1.0)
+    - BlueshiftSDK/Messaging (= 0.1.0)
+    - BlueshiftSDK/SocialLogin (= 0.1.0)
+    - BlueshiftSDK/UI (= 0.1.0)
+    - BlueshiftSDK/Util (= 0.1.0)
+    - Firebase/Messaging
+  - BlueshiftSDK/API (0.1.0):
     - Alamofire (~> 5.4)
-    - CryptoSwift (~> 1.4.1)
+    - Firebase/Messaging
+    - PromisedFuture
+  - BlueshiftSDK/Messaging (0.1.0):
+    - BlueshiftSDK/API
+    - Firebase/Messaging
+  - BlueshiftSDK/SocialLogin (0.1.0):
+    - BlueshiftSDK/API
     - Firebase/Messaging
     - GoogleSignIn
     - KakaoSDKAuth
     - KakaoSDKUser
     - naveridlogin-sdk-ios
-    - PromisedFuture
-  - CryptoSwift (1.4.1)
+  - BlueshiftSDK/UI (0.1.0):
+    - BlueshiftSDK/Util
+    - Firebase/Messaging
+  - BlueshiftSDK/Util (0.1.0):
+    - Firebase/Messaging
   - Firebase/CoreOnly (8.6.1):
     - FirebaseCore (= 8.6.1)
   - Firebase/Messaging (8.6.1):
@@ -99,7 +115,6 @@ SPEC REPOS:
   trunk:
     - Alamofire
     - AppAuth
-    - CryptoSwift
     - Firebase
     - FirebaseCore
     - FirebaseCoreDiagnostics
@@ -125,8 +140,7 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
   AppAuth: 31bcec809a638d7bd2f86ea8a52bd45f6e81e7c7
-  BlueshiftSDK: ee815581bee17f5befff5fd61c20f809eeba359c
-  CryptoSwift: 0bc800a7e6a24c4fc9ebeab97d44b0d5f73a78bd
+  BlueshiftSDK: 8721f53ea112d405131571e7daecfb42aa2d740e
   Firebase: e84d95f6d3a91f634abc384f0751c434cb3aecfa
   FirebaseCore: a753c231801f04f5ccd10cc92119ad1b12a61165
   FirebaseCoreDiagnostics: 3721920bde3a9a6d5aa093c1d25e9d3e47f694af
