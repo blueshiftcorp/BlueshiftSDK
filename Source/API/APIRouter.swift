@@ -51,7 +51,7 @@ internal enum APIRouter: URLRequestConvertible {
         urlRequest.setValue(ContentType.json.rawValue, forHTTPHeaderField: HTTPHeaderField.contentType.rawValue)
         urlRequest.setValue(ContentType.json.rawValue, forHTTPHeaderField: HTTPHeaderField.acceptType.rawValue)
         urlRequest.setValue(hdr_timestamp, forHTTPHeaderField: HTTPHeaderField.hdr_timestamp.rawValue)
-        urlRequest.setValue(CV.API.accessKey, forHTTPHeaderField: HTTPHeaderField.hdr_acckey.rawValue)
+//        urlRequest.setValue(CV.API.accessKey, forHTTPHeaderField: HTTPHeaderField.hdr_acckey.rawValue)
 //        urlRequest.setValue(hdr_sign, forHTTPHeaderField: HTTPHeaderField.hdr_sign.rawValue)
         
         switch method {

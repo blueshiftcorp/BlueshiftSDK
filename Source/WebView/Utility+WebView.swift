@@ -1,7 +1,7 @@
 //
 // File name : Utility+WebView.swift
-
-// Copyright (c) 2009-2021 Blueshift Corporation. All right reserved.
+//
+//  Copyright (c) 2009-2021 Blueshift Corporation. All right reserved.
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
@@ -21,7 +21,7 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 //
-//  Created Blueshift on 2021/09/07
+//  Created by Blueshift on 2021/09/07
 //
 
 import Foundation

@@ -44,7 +44,7 @@ extension Login: NaverThirdPartyLoginConnectionDelegate {
         guard let isValidAccessToken = loginInstance?.isValidAccessTokenExpireTimeNow(), isValidAccessToken else { return }
         guard let tokenType = loginInstance?.tokenType else { return }
         guard let accessToken = loginInstance?.accessToken else { return }
-        let url = URL(string: CV.SocialLogin.Naver.openApiUrl)!
+        let url = URL(string: CV.Login.Naver.openApiUrl)!
         
         let authorization = "\(tokenType) \(accessToken)"
         

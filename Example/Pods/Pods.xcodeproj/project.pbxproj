@@ -105,6 +105,11 @@
 		194A3CA9ACDEDDB4A97239906B889E8B /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E1C896D6A86C8166687AB8004A4B07 /* API.swift */; };
 		198B15CC46D533CBF85A5456770947ED /* FIRInstallationsErrorUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 33C57C7319243BA7222FF44F8D3176B5 /* FIRInstallationsErrorUtil.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		19FBE230329F2A23729874EFFD56F343 /* FIRApp.m in Sources */ = {isa = PBXBuildFile; fileRef = 749EC7475187BD23E5BD62C582BD4C5A /* FIRApp.m */; };
+		1A17567A26E775C9003997C5 /* LoginEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A17567926E775C9003997C5 /* LoginEnum.swift */; };
+		1A17567C26E7763F003997C5 /* BSError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A17567B26E7763F003997C5 /* BSError.swift */; };
+		1A17567E26E77665003997C5 /* LoginKeyValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A17567D26E77665003997C5 /* LoginKeyValue.swift */; };
+		1A17568026E7774C003997C5 /* CommonValue+Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A17567F26E7774C003997C5 /* CommonValue+Login.swift */; };
+		1A17568226E777B8003997C5 /* CommonValue+API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A17568126E777B8003997C5 /* CommonValue+API.swift */; };
 		1A70000C26E751A400BE268F /* Utility+HealthKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A70000B26E751A400BE268F /* Utility+HealthKit.swift */; };
 		1A70001026E751D800BE268F /* Utility+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A70000F26E751D800BE268F /* Utility+UI.swift */; };
 		1A70001D26E757C000BE268F /* Login+Kakao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A70001426E757C000BE268F /* Login+Kakao.swift */; };
@@ -1267,6 +1272,11 @@
 		18C60CBE687F0AF96F9F8E67148BE1EF /* GULSceneDelegateSwizzler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GULSceneDelegateSwizzler.h; path = GoogleUtilities/AppDelegateSwizzler/Public/GoogleUtilities/GULSceneDelegateSwizzler.h; sourceTree = "<group>"; };
 		191977FF6E7DDCE392529709FFB2699A /* ca.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = ca.lproj; path = GoogleSignIn/Sources/Strings/ca.lproj; sourceTree = "<group>"; };
 		195CD1D8731A1C660DB49D199B8293AA /* FIRConfigurationInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRConfigurationInternal.h; path = FirebaseCore/Sources/FIRConfigurationInternal.h; sourceTree = "<group>"; };
+		1A17567926E775C9003997C5 /* LoginEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginEnum.swift; sourceTree = "<group>"; };
+		1A17567B26E7763F003997C5 /* BSError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BSError.swift; path = Source/Common/BSError.swift; sourceTree = "<group>"; };
+		1A17567D26E77665003997C5 /* LoginKeyValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginKeyValue.swift; sourceTree = "<group>"; };
+		1A17567F26E7774C003997C5 /* CommonValue+Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CommonValue+Login.swift"; sourceTree = "<group>"; };
+		1A17568126E777B8003997C5 /* CommonValue+API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CommonValue+API.swift"; sourceTree = "<group>"; };
 		1A5E2D130A8CAB89A9B1C9CABAB9BD89 /* FIRInstallationsIDController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRInstallationsIDController.m; path = FirebaseInstallations/Source/Library/InstallationsIDController/FIRInstallationsIDController.m; sourceTree = "<group>"; };
 		1A70000B26E751A400BE268F /* Utility+HealthKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Utility+HealthKit.swift"; path = "Source/Common/Utility+HealthKit.swift"; sourceTree = "<group>"; };
 		1A70000F26E751D800BE268F /* Utility+UI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Utility+UI.swift"; path = "Source/UI/Utility+UI.swift"; sourceTree = "<group>"; };
@@ -2301,6 +2311,9 @@
 				1A70001A26E757C000BE268F /* Utility+Login.swift */,
 				1A70001B26E757C000BE268F /* Login+Naver.swift */,
 				1A70001C26E757C000BE268F /* Login+Email.swift */,
+				1A17567926E775C9003997C5 /* LoginEnum.swift */,
+				1A17567D26E77665003997C5 /* LoginKeyValue.swift */,
+				1A17567F26E7774C003997C5 /* CommonValue+Login.swift */,
 			);
 			name = Login;
 			path = Source/Login;
@@ -3141,6 +3154,7 @@
 				0678B7357D7DE64F8A35907E9F3CFF81 /* APIRouter+Hierarchy.swift */,
 				399BDDC262A08D925BCC5DD29DAE825E /* APIRouter+Parameter.swift */,
 				B40C20E49FFEFF6DA95E8634B2C9B752 /* APIRouter+Path.swift */,
+				1A17568126E777B8003997C5 /* CommonValue+API.swift */,
 				79C0BB4FC250141BAE70881FD2E56262 /* Data */,
 			);
 			name = API;
@@ -3571,6 +3585,7 @@
 				290AF5D63CFD26AB58EC0F2F4B8182DE /* Initializer.swift */,
 				97D3028B1B9A02E8BBA62F30BD340DE9 /* Utility.swift */,
 				1A70000B26E751A400BE268F /* Utility+HealthKit.swift */,
+				1A17567B26E7763F003997C5 /* BSError.swift */,
 				D68E175E03F0F5928747AB4F437030A5 /* Extension */,
 				BACFE95FF1D065BB8CC1A986E290A4DD /* SubClass */,
 			);
@@ -5000,16 +5015,20 @@
 				64607DC4E82EF913E4359ECA6E977E3F /* APIRouter.swift in Sources */,
 				83B1168864DC83E4E31C26A1E73369FD /* APIRouter+Hierarchy.swift in Sources */,
 				1A70002226E757C000BE268F /* Login+Google.swift in Sources */,
+				1A17567A26E775C9003997C5 /* LoginEnum.swift in Sources */,
 				418DA84B31293632E6158EAF19C2D02B /* APIRouter+Parameter.swift in Sources */,
 				1A70002026E757C000BE268F /* Preferences.swift in Sources */,
 				6EF78B5D5DD7508921CE73221792568E /* APIRouter+Path.swift in Sources */,
 				8EAEB2124E82B0E3B97290C048700FDA /* BlueshiftSDK-dummy.m in Sources */,
+				1A17568026E7774C003997C5 /* CommonValue+Login.swift in Sources */,
+				1A17567E26E77665003997C5 /* LoginKeyValue.swift in Sources */,
 				707E1FA696640A28031BA646E832B23A /* CommonEnum.swift in Sources */,
 				7DA4EAB4B287335CC35A07ABE7A242DF /* CommonKeyValue.swift in Sources */,
 				1A70002326E757C000BE268F /* Utility+Login.swift in Sources */,
 				EDA10310E530E88C903349160B802B1C /* CommonValue.swift in Sources */,
 				C1E711C4D15E116BC42C1A2086B0FC2B /* DefaultTableViewController.swift in Sources */,
 				FC229A68F0681C1392B2FE5B7B967484 /* DefaultViewController.swift in Sources */,
+				1A17567C26E7763F003997C5 /* BSError.swift in Sources */,
 				D4B54F66765DE6DFC55690CA14102797 /* DefaultWebViewController.swift in Sources */,
 				FEFFAB9B8BD9C9866075DC667AC11FAA /* Initializer.swift in Sources */,
 				1A70001026E751D800BE268F /* Utility+UI.swift in Sources */,
@@ -5023,6 +5042,7 @@
 				FAC204E65A2744A195CD3B3A38968769 /* UIColor+Extension.swift in Sources */,
 				C85768303ECC968063019974CF3D81A8 /* UILabel+Extension.swift in Sources */,
 				9E6009C7E461C3B9D729880251936034 /* UILabelPadding.swift in Sources */,
+				1A17568226E777B8003997C5 /* CommonValue+API.swift in Sources */,
 				2DEC220FD90EFFB724C8AF5513048DAA /* UIView+Extension.swift in Sources */,
 				22B67AF180F9B200CF364DBAB152E596 /* UIViewController+Extension.swift in Sources */,
 				1A70000C26E751A400BE268F /* Utility+HealthKit.swift in Sources */,

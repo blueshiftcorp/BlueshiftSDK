@@ -1,6 +1,6 @@
 //
-//  File name : Utility+UI.swift
-//
+//  File name : LoginEnum.swift
+
 //  Copyright (c) 2009-2021 Blueshift Corporation. All right reserved.
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -21,18 +21,18 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 //
-//  Created Blueshift on 2021/09/07
+//  Created by Blueshift on 2021/09/07
 //
 
-import Foundation
+public enum LoginType: String {
+    case email = "0"
+    case google = "1"
+    case naver = "2"
+    case kakaotalk = "3"
+    case apple = "4"
+}
 
-extension Util {
-    static func toast(message: String, from vc: UIViewController, duration: TimeInterval? = nil) {
-        let toast = ToastViewController(title: message)
-        
-        vc.present(toast, animated: true)
-        Timer.scheduledTimer(withTimeInterval: duration ?? 2, repeats: false) { _ in
-            toast.dismiss(animated: true)
-        }
-    }
+public enum LoginReturnCode: String {
+    case success = "0"
+    case notRegistered = "1"
 }

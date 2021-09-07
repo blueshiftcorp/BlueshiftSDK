@@ -50,6 +50,7 @@ Pod::Spec.new do |s|
   s.subspec 'API' do |ss|
     ss.source_files       = 'Source/API/**/*'
     
+    ss.dependency         'BlueshiftSDK/Common'
     # Networking
     ss.dependency         'Alamofire', '~> 5.4'
     ss.dependency         'PromisedFuture'
@@ -62,7 +63,7 @@ Pod::Spec.new do |s|
   s.subspec 'UI' do |ss|
     ss.source_files       = 'Source/UI/**/*'
     
-    #    ss.dependency 'BlueshiftSDK/Util'
+    ss.dependency         'BlueshiftSDK/Common'
   end
   
   s.subspec 'Login' do |ss|
