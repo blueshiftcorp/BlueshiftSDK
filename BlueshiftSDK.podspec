@@ -88,5 +88,6 @@ Pod::Spec.new do |s|
       ss.source_files = 'Source/WebView'
       
       ss.dependency     'Alamofire', '~> 5.4'
+  end
   
 end

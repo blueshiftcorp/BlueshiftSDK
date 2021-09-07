@@ -16,8 +16,11 @@
     "git": "https://github.com/blueshiftcorp/BlueshiftSDK.git",
     "tag": "0.1.0"
   },
-  "source_files": "Source/Common/**/*",
   "subspecs": [
+    {
+      "name": "Common",
+      "source_files": "Source/Common/**/*"
+    },
     {
       "name": "API",
       "source_files": "Source/API/**/*",
@@ -29,10 +32,6 @@
 
         ]
       }
-    },
-    {
-      "name": "Util",
-      "source_files": "Source/Util/**/*"
     },
     {
       "name": "UI",
@@ -73,6 +72,15 @@
         ],
         "Firebase/Messaging": [
 
+        ]
+      }
+    },
+    {
+      "name": "WebView",
+      "source_files": "Source/WebView",
+      "dependencies": {
+        "Alamofire": [
+          "~> 5.4"
         ]
       }
     }
