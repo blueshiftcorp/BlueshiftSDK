@@ -25,7 +25,7 @@ To install it separately, add the following line to your Podfile as your need:
 pod 'BlueshiftSDK/Common'
 pod 'BlueshiftSDK/API'
 pod 'BlueshiftSDK/UI'
-pod 'BlueshiftSDK/SocialLogin'
+pod 'BlueshiftSDK/Login'
 ```
 
 ## Author
