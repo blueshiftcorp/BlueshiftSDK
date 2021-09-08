@@ -26,7 +26,7 @@
 
 import Foundation
 
-enum BSError: Error {
+public enum BSError: Error {
     // common
     case unkown
     
