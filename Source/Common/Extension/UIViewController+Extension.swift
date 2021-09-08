@@ -29,7 +29,7 @@ import UIKit
 public extension UIViewController {
     
     func showToast(message : String, font: UIFont = UIFont.systemFont(ofSize: 12.0), completion: (() -> Void)? = nil) {
-        let toastLabel = UILabelPadding(frame: .zero)
+        let toastLabel = UIPaddingLabel(frame: .zero)
         toastLabel.backgroundColor = .white
         toastLabel.numberOfLines = 0
         toastLabel.lineBreakMode = .byWordWrapping
