@@ -97,6 +97,7 @@
 		18D6926B0519A01C3F63FDF82731C3F7 /* GIDSignInPreferences.m in Sources */ = {isa = PBXBuildFile; fileRef = 94C545A029AA312F87C93BFD449288C6 /* GIDSignInPreferences.m */; };
 		19F675A86C85AD68AE8447C98D4FA2EC /* FIROptionsInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 40DAD1333548A5129826DC5FFC0BC099 /* FIROptionsInternal.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		1A1BBB0326E8CA2C00657B02 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1BBB0226E8CA2C00657B02 /* test.swift */; };
+		1A1BBB0526E8CE5900657B02 /* DefaultWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1BBB0426E8CE5900657B02 /* DefaultWebViewController.swift */; };
 		1ABF7519B95B9E3BB215EBA5F82394BC /* FIRInstallationsStoredAuthToken.h in Headers */ = {isa = PBXBuildFile; fileRef = 694CFD47155BA727A004846C808C845C /* FIRInstallationsStoredAuthToken.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		1ADBDD9AB9E7E17EB9EE277DDB858D17 /* Utility+HealthKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968871DD4934941271C66789230E585C /* Utility+HealthKit.swift */; };
 		1B419035A0A9807C6903AA92E4FBC03F /* FIRMessagingDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C0BAF5530CA4FFB55AA201AC94D80B7 /* FIRMessagingDefines.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -669,7 +670,6 @@
 		E023609EB2A02E2B23B406ABE44B3357 /* FIRCoreDiagnosticsConnector.h in Headers */ = {isa = PBXBuildFile; fileRef = F1945448223980B75D581AA7269A2B1B /* FIRCoreDiagnosticsConnector.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		E0A045EFE8632A1839FF0F23C4797FB7 /* OIDServiceConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = F69E1E5917185BC5CEAD7DF608915E6D /* OIDServiceConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E0C65E16219718869CD2AFCA2C5465CB /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7DB54897CBA21147AABA81A07A6218 /* Request.swift */; };
-		E0CA6968EA65F226CC6926AA13358DEF /* DefaultWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98282E9A3711B9281C72F621309FFD2 /* DefaultWebViewController.swift */; };
 		E0EA523192D944A2E21771A9FEE04DBD /* FIRMessagingKeychain.h in Headers */ = {isa = PBXBuildFile; fileRef = 943E08DDB894AC414B190FE1BAE09F2E /* FIRMessagingKeychain.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		E1769C267E82B0C24FE0FFBF949F0A6E /* StringEncoding+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42445D71978FE52665297FC9CAC5796 /* StringEncoding+Alamofire.swift */; };
 		E1A282429AE7C29380D38BE086A96B5C /* me.nanopb.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CC92F7C770B53B8C0E8C7C26D4343D5 /* me.nanopb.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -1269,6 +1269,7 @@
 		191977FF6E7DDCE392529709FFB2699A /* ca.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = ca.lproj; path = GoogleSignIn/Sources/Strings/ca.lproj; sourceTree = "<group>"; };
 		195CD1D8731A1C660DB49D199B8293AA /* FIRConfigurationInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRConfigurationInternal.h; path = FirebaseCore/Sources/FIRConfigurationInternal.h; sourceTree = "<group>"; };
 		1A1BBB0226E8CA2C00657B02 /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
+		1A1BBB0426E8CE5900657B02 /* DefaultWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DefaultWebViewController.swift; path = Source/WebView/DefaultWebViewController.swift; sourceTree = "<group>"; };
 		1A5E2D130A8CAB89A9B1C9CABAB9BD89 /* FIRInstallationsIDController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRInstallationsIDController.m; path = FirebaseInstallations/Source/Library/InstallationsIDController/FIRInstallationsIDController.m; sourceTree = "<group>"; };
 		1A7E86C4DC62F8B628B0E0E2FE19080F /* Pods-BlueshiftSDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BlueshiftSDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		1A80BD0DA1C3DBEF3C247655BC8EABAB /* OIDFieldMapping.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDFieldMapping.m; path = Source/AppAuthCore/OIDFieldMapping.m; sourceTree = "<group>"; };
@@ -1952,7 +1953,6 @@
 		F8C3E55E32892C346D307118149C28F4 /* GDTCORFlatFileStorage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GDTCORFlatFileStorage.m; path = GoogleDataTransport/GDTCORLibrary/GDTCORFlatFileStorage.m; sourceTree = "<group>"; };
 		F929ABE1B69DC7EAC2FB83C64D024311 /* GDTCORFlatFileStorage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTCORFlatFileStorage.h; path = GoogleDataTransport/GDTCORLibrary/Private/GDTCORFlatFileStorage.h; sourceTree = "<group>"; };
 		F949958628ABF4A36F6EA65500A59BF9 /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
-		F98282E9A3711B9281C72F621309FFD2 /* DefaultWebViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DefaultWebViewController.swift; path = Source/UI/DefaultWebViewController.swift; sourceTree = "<group>"; };
 		F9E01A6B1E3A35DDE8D572397B180904 /* FirebaseCore.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FirebaseCore.modulemap; sourceTree = "<group>"; };
 		FA296D3E385EA202AD8727F4BB755EF8 /* FIRMessagingTokenInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRMessagingTokenInfo.m; path = FirebaseMessaging/Sources/Token/FIRMessagingTokenInfo.m; sourceTree = "<group>"; };
 		FA959A55FA700F7B8637F31199593D1B /* FIRAppInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRAppInternal.h; path = FirebaseCore/Sources/Private/FIRAppInternal.h; sourceTree = "<group>"; };
@@ -2299,7 +2299,7 @@
 		1B877C44182E69D71F976D1844E708F0 /* WebView */ = {
 			isa = PBXGroup;
 			children = (
-				F98282E9A3711B9281C72F621309FFD2 /* DefaultWebViewController.swift */,
+				1A1BBB0426E8CE5900657B02 /* DefaultWebViewController.swift */,
 				56516576AB18EF31DD9C8C1ABFB8A37C /* Utility+WebView.swift */,
 			);
 			name = WebView;
@@ -4917,6 +4917,7 @@
 				02621C4B82398D0657F474E21493A3A2 /* HTTPMethod.swift in Sources */,
 				C16A047C4E8D856309A486182A490993 /* MultipartFormData.swift in Sources */,
 				30A331CD9286145E92DB11D671664C63 /* MultipartUpload.swift in Sources */,
+				1A1BBB0526E8CE5900657B02 /* DefaultWebViewController.swift in Sources */,
 				B6473B8E8353317F75D6800D4F7054CB /* NetworkReachabilityManager.swift in Sources */,
 				471611F482CDC15BF464E3BA9CB83968 /* Notifications.swift in Sources */,
 				2550F0D474DE846FEC5C76CBE85F927E /* OperationQueue+Alamofire.swift in Sources */,
@@ -5180,7 +5181,6 @@
 				06D8F4EEC453AF95ECC0CAD70D5F242E /* CommonValue+Login.swift in Sources */,
 				11F4C630309CFD407E96D5B8A8E0EDF3 /* DefaultTableViewController.swift in Sources */,
 				9EC111E50E9B18CBCA14081E9472C8F9 /* DefaultViewController.swift in Sources */,
-				E0CA6968EA65F226CC6926AA13358DEF /* DefaultWebViewController.swift in Sources */,
 				406C08C24EECCD815A2D61ADA524B2BE /* Login.swift in Sources */,
 				B2DDC3C3C229A27ACD0FB157815BFB6A /* Login+Apple.swift in Sources */,
 				60A608BA0FA8D45086DFE248883C1133 /* Login+Email.swift in Sources */,
