@@ -7,6 +7,7 @@ PODS:
   - AppAuth/ExternalUserAgent (1.4.0)
   - BlueshiftSDK (0.0.10):
     - BlueshiftSDK/API (= 0.0.10)
+    - BlueshiftSDK/BLE (= 0.0.10)
     - BlueshiftSDK/Common (= 0.0.10)
     - BlueshiftSDK/Login (= 0.0.10)
     - BlueshiftSDK/Messaging (= 0.0.10)
@@ -16,6 +17,7 @@ PODS:
     - Alamofire (~> 5.4)
     - BlueshiftSDK/Common
     - PromisedFuture
+  - BlueshiftSDK/BLE (0.0.10)
   - BlueshiftSDK/Common (0.0.10)
   - BlueshiftSDK/Login (0.0.10):
     - BlueshiftSDK/API
@@ -140,7 +142,7 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
   AppAuth: 31bcec809a638d7bd2f86ea8a52bd45f6e81e7c7
-  BlueshiftSDK: 2fafeaa575e0db2ee029511de5beb1dc92bc9463
+  BlueshiftSDK: df2213e9aa9169ba6609ec2a2b619cebb3c93006
   Firebase: e84d95f6d3a91f634abc384f0751c434cb3aecfa
   FirebaseCore: a753c231801f04f5ccd10cc92119ad1b12a61165
   FirebaseCoreDiagnostics: 3721920bde3a9a6d5aa093c1d25e9d3e47f694af
