@@ -68,7 +68,7 @@
     },
     {
       "name": "Messaging",
-      "source_files": "Source/Messaging",
+      "source_files": "Source/Messaging/**/*",
       "dependencies": {
         "BlueshiftSDK/API": [
 
@@ -80,7 +80,7 @@
     },
     {
       "name": "WebView",
-      "source_files": "Source/WebView",
+      "source_files": "Source/WebView/**/*",
       "dependencies": {
         "Alamofire": [
           "~> 5.4"
@@ -89,6 +89,10 @@
 
         ]
       }
+    },
+    {
+      "name": "BLE",
+      "source_files": "Source/BLE/**/*"
     }
   ]
 }
