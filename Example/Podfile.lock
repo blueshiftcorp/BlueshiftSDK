@@ -5,29 +5,32 @@ PODS:
     - AppAuth/ExternalUserAgent (= 1.4.0)
   - AppAuth/Core (1.4.0)
   - AppAuth/ExternalUserAgent (1.4.0)
-  - BlueshiftSDK (0.1.0):
-    - BlueshiftSDK/API (= 0.1.0)
-    - BlueshiftSDK/Common (= 0.1.0)
-    - BlueshiftSDK/Messaging (= 0.1.0)
-    - BlueshiftSDK/SocialLogin (= 0.1.0)
-    - BlueshiftSDK/UI (= 0.1.0)
-    - BlueshiftSDK/WebView (= 0.1.0)
-  - BlueshiftSDK/API (0.1.0):
+  - BlueshiftSDK (0.0.10):
+    - BlueshiftSDK/API (= 0.0.10)
+    - BlueshiftSDK/Common (= 0.0.10)
+    - BlueshiftSDK/Login (= 0.0.10)
+    - BlueshiftSDK/Messaging (= 0.0.10)
+    - BlueshiftSDK/UI (= 0.0.10)
+    - BlueshiftSDK/WebView (= 0.0.10)
+  - BlueshiftSDK/API (0.0.10):
     - Alamofire (~> 5.4)
+    - BlueshiftSDK/Common
     - PromisedFuture
-  - BlueshiftSDK/Common (0.1.0)
-  - BlueshiftSDK/Messaging (0.1.0):
-    - BlueshiftSDK/API
-    - Firebase/Messaging
-  - BlueshiftSDK/SocialLogin (0.1.0):
+  - BlueshiftSDK/Common (0.0.10)
+  - BlueshiftSDK/Login (0.0.10):
     - BlueshiftSDK/API
     - GoogleSignIn
     - KakaoSDKAuth
     - KakaoSDKUser
     - naveridlogin-sdk-ios
-  - BlueshiftSDK/UI (0.1.0)
-  - BlueshiftSDK/WebView (0.1.0):
+  - BlueshiftSDK/Messaging (0.0.10):
+    - BlueshiftSDK/API
+    - Firebase/Messaging
+  - BlueshiftSDK/UI (0.0.10):
+    - BlueshiftSDK/Common
+  - BlueshiftSDK/WebView (0.0.10):
     - Alamofire (~> 5.4)
+    - BlueshiftSDK/UI
   - Firebase/CoreOnly (8.6.1):
     - FirebaseCore (= 8.6.1)
   - Firebase/Messaging (8.6.1):
@@ -85,17 +88,17 @@ PODS:
     - AppAuth/Core (~> 1.4)
     - GTMSessionFetcher/Core (~> 1.5)
   - GTMSessionFetcher/Core (1.7.0)
-  - KakaoSDKAuth (2.7.0):
-    - KakaoSDKCommon (= 2.7.0)
-  - KakaoSDKCommon (2.7.0):
-    - KakaoSDKCommon/Common (= 2.7.0)
-    - KakaoSDKCommon/Network (= 2.7.0)
-  - KakaoSDKCommon/Common (2.7.0)
-  - KakaoSDKCommon/Network (2.7.0):
+  - KakaoSDKAuth (2.7.1):
+    - KakaoSDKCommon (= 2.7.1)
+  - KakaoSDKCommon (2.7.1):
+    - KakaoSDKCommon/Common (= 2.7.1)
+    - KakaoSDKCommon/Network (= 2.7.1)
+  - KakaoSDKCommon/Common (2.7.1)
+  - KakaoSDKCommon/Network (2.7.1):
     - Alamofire (~> 5.1)
-    - KakaoSDKCommon/Common (= 2.7.0)
-  - KakaoSDKUser (2.7.0):
-    - KakaoSDKAuth (= 2.7.0)
+    - KakaoSDKCommon/Common (= 2.7.1)
+  - KakaoSDKUser (2.7.1):
+    - KakaoSDKAuth (= 2.7.1)
   - nanopb (2.30908.0):
     - nanopb/decode (= 2.30908.0)
     - nanopb/encode (= 2.30908.0)
@@ -137,7 +140,7 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
   AppAuth: 31bcec809a638d7bd2f86ea8a52bd45f6e81e7c7
-  BlueshiftSDK: 2ee55662a8d925142d1efa837e0308789fe374c5
+  BlueshiftSDK: 2fafeaa575e0db2ee029511de5beb1dc92bc9463
   Firebase: e84d95f6d3a91f634abc384f0751c434cb3aecfa
   FirebaseCore: a753c231801f04f5ccd10cc92119ad1b12a61165
   FirebaseCoreDiagnostics: 3721920bde3a9a6d5aa093c1d25e9d3e47f694af
@@ -148,9 +151,9 @@ SPEC CHECKSUMS:
   GoogleUtilities: 8de2a97a17e15b6b98e38e8770e2d129a57c0040
   GTMAppAuth: ad5c2b70b9a8689e1a04033c9369c4915bfcbe89
   GTMSessionFetcher: 43748f93435c2aa068b1cbe39655aaf600652e91
-  KakaoSDKAuth: a722f52a34b8a7f3866cf84f6e9e4aea0a955293
-  KakaoSDKCommon: 5fc860fa1cd1e5f75370257bcfe21262c0d48f12
-  KakaoSDKUser: 2f0b5bca6ce4b8100a5c60cc7944eab57f58dcc6
+  KakaoSDKAuth: 70cfb1e4e60f543fd5f0ece2995c3b0e879c532e
+  KakaoSDKCommon: 48fe293e8970a8db8d10d5ca63600a7a8cc5f74c
+  KakaoSDKUser: 5609a2679b6beda86298d63c45961953c7203101
   nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
   naveridlogin-sdk-ios: b9d7c20677981177ed994ecb1c8c2b49f223277d
   PromisedFuture: 15ab3542f9d9c9d62886e2228c606a3e0fd16ccd

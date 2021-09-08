@@ -20,14 +20,20 @@
 import UIKit
 import LocalAuthentication
 
-class Login: NSObject {
+protocol LoginDelegate {
+    func requestToServer()
+}
+
+open class Login: NSObject {
     
     internal var parentVC: UIViewController
-    internal var _completeHandler : ((sUser)->Void)?
+//    internal var _completeHandler : ((sUser)->Void)?
     
     internal let authContext = LAContext()
     
-    init(from vc: UIViewController) {
+    var delegate: LoginDelegate?
+    
+    public init(from vc: UIViewController) {
         self.parentVC = vc
     }
     
@@ -41,24 +47,24 @@ class Login: NSObject {
         }
     }
     
-    internal func completeLogin(_ user: sUser) {
-        
-        //TODO: Development Only
-//        let _user = sUser(uIdx: "1", token: "tempToken")
-        let _user = sUser()
-        
-//        Util.setUserPreference(_user)
-        
-//        guard let name = user.uNick, name.count > 0 else {
-//            let vc = GetNicknameViewController()
-//            vc.modalPresentationStyle = .fullScreen
-//            vc.user = user
-//            parentVC.present(vc, animated: true)
-//            return
-//        }
-        
-//        Util.setRootViewController()
-    }
+//    internal func completeLogin(_ user: sUser) {
+//
+//        //TODO: Development Only
+////        let _user = sUser(uIdx: "1", token: "tempToken")
+//        let _user = sUser()
+//
+////        Util.setUserPreference(_user)
+//
+////        guard let name = user.uNick, name.count > 0 else {
+////            let vc = GetNicknameViewController()
+////            vc.modalPresentationStyle = .fullScreen
+////            vc.user = user
+////            parentVC.present(vc, animated: true)
+////            return
+////        }
+//
+////        Util.setRootViewController()
+//    }
     
     //TODO: 로그인 정보 저장상태인 경우 실행하도록 프로세스 정의
     private func faceId() {

@@ -1,6 +1,6 @@
 //
-//  File name : CommonValue+Login.swift
-
+//  File name : APIRouter+Method.swift
+//
 //  Copyright (c) 2009-2021 Blueshift Corporation. All right reserved.
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -21,17 +21,17 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 //
-//  Created by Blueshift on 2021/09/07
+//  Created by Blueshift on 2021/09/08
 //
 
 import Foundation
+import Alamofire
 
-extension CV {
-    class Url {
-        static let host = ""
-        
-        class Member {
-            static let add = ""
+extension APIRouter {
+    public var method: HTTPMethod {
+        switch self {
+        //TODO: POST로 보내야하는 API는 case로 추가
+        default: return .get
         }
     }
 }

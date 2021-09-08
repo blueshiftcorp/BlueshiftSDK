@@ -24,7 +24,7 @@ extension Login {
     
     internal func withGoogle() {
         
-        let signInConfig = GIDConfiguration.init(clientID: CV.Login.Google.clientId)
+        let signInConfig = GIDConfiguration.init(clientID: "")
         GIDSignIn.sharedInstance.signIn(with: signInConfig, presenting: self.parentVC) { user, error in
             guard error == nil else {
                 print("구글 로그인 중 오류가 발생했습니다 : \(error!)")
@@ -38,7 +38,7 @@ extension Login {
             //TODO: 로그인인 경우 첫화면으로 이동
             
             //TODO: Development Only
-            self.completeLogin(sUser())
+//            self.completeLogin(sUser())
             return
         }
     }

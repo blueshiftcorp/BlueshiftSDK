@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A17569726E84F2E003997C5 /* APITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A17569626E84F2E003997C5 /* APITests.swift */; };
+		1A17569926E84FEF003997C5 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A17569826E84FEF003997C5 /* API.swift */; };
+		1A17569D26E85EE0003997C5 /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A17569C26E85EE0003997C5 /* APIRouter.swift */; };
+		1A1756A326E87CA1003997C5 /* APIRouter+Hierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1756A226E87CA1003997C5 /* APIRouter+Hierarchy.swift */; };
+		1A1756A526E87CBA003997C5 /* APIRouter+Parameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1756A426E87CBA003997C5 /* APIRouter+Parameters.swift */; };
+		1A1756A726E87CD8003997C5 /* APIRouter+Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1756A626E87CD8003997C5 /* APIRouter+Path.swift */; };
+		1A1756AA26E87D13003997C5 /* CommonValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1756A926E87D13003997C5 /* CommonValue.swift */; };
+		1A1756B226E88442003997C5 /* ServerResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1756B126E88442003997C5 /* ServerResponse.swift */; };
+		1A1756B526E88971003997C5 /* APIRouter+Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1756A026E87C81003997C5 /* APIRouter+Method.swift */; };
 		26618DC5D4726F318BCAAB79 /* Pods_BlueshiftSDK_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA29AC0CCDCB8CDC181A2A8B /* Pods_BlueshiftSDK_Tests.framework */; };
 		37DF5FC06C27B7BB7BF62B1F /* Pods_BlueshiftSDK_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AE7D842D8F8072CB434FBA0 /* Pods_BlueshiftSDK_Example.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
@@ -28,6 +37,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A17569626E84F2E003997C5 /* APITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APITests.swift; sourceTree = "<group>"; };
+		1A17569826E84FEF003997C5 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		1A17569C26E85EE0003997C5 /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
+		1A1756A026E87C81003997C5 /* APIRouter+Method.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "APIRouter+Method.swift"; sourceTree = "<group>"; };
+		1A1756A226E87CA1003997C5 /* APIRouter+Hierarchy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "APIRouter+Hierarchy.swift"; sourceTree = "<group>"; };
+		1A1756A426E87CBA003997C5 /* APIRouter+Parameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "APIRouter+Parameters.swift"; sourceTree = "<group>"; };
+		1A1756A626E87CD8003997C5 /* APIRouter+Path.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "APIRouter+Path.swift"; sourceTree = "<group>"; };
+		1A1756A926E87D13003997C5 /* CommonValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonValue.swift; sourceTree = "<group>"; };
+		1A1756B126E88442003997C5 /* ServerResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerResponse.swift; sourceTree = "<group>"; };
 		55655CF958C207E6FB1E2C4D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* BlueshiftSDK_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlueshiftSDK_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -69,6 +87,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A1756AE26E883EC003997C5 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				1A1756A926E87D13003997C5 /* CommonValue.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		1A1756AF26E883EC003997C5 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				1A17569826E84FEF003997C5 /* API.swift */,
+				1A17569C26E85EE0003997C5 /* APIRouter.swift */,
+				1A1756A026E87C81003997C5 /* APIRouter+Method.swift */,
+				1A1756A226E87CA1003997C5 /* APIRouter+Hierarchy.swift */,
+				1A1756A426E87CBA003997C5 /* APIRouter+Parameters.swift */,
+				1A1756A626E87CD8003997C5 /* APIRouter+Path.swift */,
+				1A1756B026E8841E003997C5 /* Data */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		1A1756B026E8841E003997C5 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				1A1756B126E88442003997C5 /* ServerResponse.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		34882DCDAAA36D445CD88556 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +152,8 @@
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				1A1756AF26E883EC003997C5 /* API */,
+				1A1756AE26E883EC003997C5 /* Common */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -124,6 +174,7 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				1A17569626E84F2E003997C5 /* APITests.swift */,
 				607FACEB1AFB9204008FA782 /* Tests.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
@@ -369,8 +420,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A1756AA26E87D13003997C5 /* CommonValue.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				1A17569926E84FEF003997C5 /* API.swift in Sources */,
+				1A1756A726E87CD8003997C5 /* APIRouter+Path.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				1A1756A326E87CA1003997C5 /* APIRouter+Hierarchy.swift in Sources */,
+				1A1756A526E87CBA003997C5 /* APIRouter+Parameters.swift in Sources */,
+				1A17569D26E85EE0003997C5 /* APIRouter.swift in Sources */,
+				1A1756B526E88971003997C5 /* APIRouter+Method.swift in Sources */,
+				1A1756B226E88442003997C5 /* ServerResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,6 +437,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A17569726E84F2E003997C5 /* APITests.swift in Sources */,
 				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

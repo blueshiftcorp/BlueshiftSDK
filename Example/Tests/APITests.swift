@@ -1,6 +1,6 @@
 //
-//  File name : CommonValue+Login.swift
-
+//  File name : APITests.swift
+//
 //  Copyright (c) 2009-2021 Blueshift Corporation. All right reserved.
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -21,17 +21,35 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 //
-//  Created by Blueshift on 2021/09/07
+//  Created by Blueshift on 2021/09/08
 //
 
-import Foundation
+import XCTest
+@testable import BlueshiftSDK
 
-extension CV {
-    class Url {
-        static let host = ""
-        
-        class Member {
-            static let add = ""
+class APITests: XCTestCase {
+
+    override func setUpWithError() throws {
+        // Put setup code here. This method is called before the invocation of each test method in the class.
+    }
+
+    override func tearDownWithError() throws {
+        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    }
+
+    func testExample() throws {
+        // This is an example of a functional test case.
+        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    }
+
+    func testPerformanceExample() throws {
+        // This is an example of a performance test case.
+        self.measure {
+            // Put the code you want to measure the time of here.
         }
+    }
+
+    func testSimple() {
+        
     }
 }

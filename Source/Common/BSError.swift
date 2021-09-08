@@ -27,7 +27,14 @@
 import Foundation
 
 enum BSError: Error {
+    // common
     case unkown
+    
+    // login
+    
+    // webview
+    
+    // user interface
 }
 
 extension BSError: LocalizedError {

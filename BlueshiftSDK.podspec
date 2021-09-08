@@ -1,20 +1,19 @@
 
 Pod::Spec.new do |s|
   s.name                  = 'BlueshiftSDK'
-  s.version               = '0.1.0'
+  s.version               = '0.0.10'
   s.summary               = 'Official Blueshift SDK for developing iOS application.'
   
-  s.description  = <<-DESC
-  The Blueshift SDK for iOS enables you to develoip iOS application more easily using funtions such as:
-  * Social Login to easily sign in users.
-  * Sharing features like the Share or Message Dialog to grow your app.
-  * Simpler Other API access to provide more social context.
-  DESC
+  s.description           = <<-DESC
+                            The Blueshift SDK for iOS enables you to develoip iOS application more easily using funtions such as:
+                            * Social Login to easily sign in users.
+                            * Sharing features like the Share or Message Dialog to grow your app.
+                            * Simpler Other API access to provide more social context.
+                            DESC
   
   s.homepage              = 'https://github.com/blueshiftcorp/BlueshiftSDK'
   s.license               = { :type => 'Blueshift SDK License', :file => 'LICENSE' }
   s.author                = 'Blueshift'
-  s.homepage              = 'http://www.blueshift.co.kr'
   s.platform              = :ios, '13.0'
   s.source                = { :git => 'https://github.com/blueshiftcorp/BlueshiftSDK.git', :tag => s.version.to_s }
   s.ios.deployment_target = '13.0'
@@ -48,17 +47,21 @@ Pod::Spec.new do |s|
   end
   
   s.subspec 'Messaging' do |ss|
-    ss.source_files       = 'Source/Messaging'
+    ss.source_files       = 'Source/Messaging/**/*'
     
     ss.dependency         'BlueshiftSDK/API'
     ss.dependency         'Firebase/Messaging'    # Firebase Cloud Messaging
   end
   
   s.subspec 'WebView' do |ss|
-    ss.source_files       = 'Source/WebView'
+    ss.source_files       = 'Source/WebView/**/*'
     
     ss.dependency         'Alamofire', '~> 5.4'
     ss.dependency         'BlueshiftSDK/UI'
+  end
+  
+  s.subspec 'BLE' do |ss|
+    ss.source_files       = 'Source/BLE/**/*'
   end
   
 end

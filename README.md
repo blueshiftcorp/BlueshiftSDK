@@ -1,15 +1,13 @@
 # BlueshiftSDK
 
 [![CI Status](https://img.shields.io/travis/blueshiftcorp/BlueshiftSDK.svg?style=flat)](https://travis-ci.org/blueshiftcorp/BlueshiftSDK)
-[![Version](https://badge.fury.io/gh/tterb%2FHyde.svg)](https://badge.fury.io/gh/tterb%2FHyde)
+[![Version](https://img.shields.io/cocoapods/v/BlueshiftSDK.svg?style=flat)](https://cocoapods.org/pods/BlueshiftSDK)
 [![License](https://img.shields.io/cocoapods/l/BlueshiftSDK.svg?style=flat)](https://cocoapods.org/pods/BlueshiftSDK)
 [![Platform](https://img.shields.io/cocoapods/p/BlueshiftSDK.svg?style=flat)](https://cocoapods.org/pods/BlueshiftSDK)
 
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-## Requirements
 
 ## Installation
 

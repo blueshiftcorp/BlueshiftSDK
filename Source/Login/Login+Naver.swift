@@ -39,12 +39,12 @@ extension Login {
 }
 
 extension Login: NaverThirdPartyLoginConnectionDelegate {
-    func oauth20ConnectionDidFinishRequestACTokenWithAuthCode() {
+    public func oauth20ConnectionDidFinishRequestACTokenWithAuthCode() {
         let loginInstance = NaverThirdPartyLoginConnection.getSharedInstance()
         guard let isValidAccessToken = loginInstance?.isValidAccessTokenExpireTimeNow(), isValidAccessToken else { return }
         guard let tokenType = loginInstance?.tokenType else { return }
         guard let accessToken = loginInstance?.accessToken else { return }
-        let url = URL(string: CV.Login.Naver.openApiUrl)!
+        let url = URL(string: "")!
         
         let authorization = "\(tokenType) \(accessToken)"
         
@@ -61,7 +61,7 @@ extension Login: NaverThirdPartyLoginConnectionDelegate {
                 guard let nickname = object["nickname"] as? String else { return }
                 
                 //TODO: Development Only
-                self.completeLogin(sUser())
+//                self.completeLogin(sUser())
                 return
                 
             case .failure(let error):
@@ -70,16 +70,16 @@ extension Login: NaverThirdPartyLoginConnectionDelegate {
         }
     }
     
-    func oauth20ConnectionDidFinishRequestACTokenWithRefreshToken() {
+    public func oauth20ConnectionDidFinishRequestACTokenWithRefreshToken() {
         
     }
     
-    func oauth20ConnectionDidFinishDeleteToken() {
+    public func oauth20ConnectionDidFinishDeleteToken() {
         let loginInstance = NaverThirdPartyLoginConnection.getSharedInstance()
         loginInstance?.requestDeleteToken()
     }
     
-    func oauth20Connection(_ oauthConnection: NaverThirdPartyLoginConnection!, didFailWithError error: Error!) {
+    public func oauth20Connection(_ oauthConnection: NaverThirdPartyLoginConnection!, didFailWithError error: Error!) {
         print("네이버 로그인 관련 오류 : \(error.localizedDescription)")
     }
     

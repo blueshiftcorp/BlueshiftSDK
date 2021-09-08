@@ -1,7 +1,7 @@
 //
-// File name : Initializer.swift
-
-// Copyright (c) 2009-2021 Blueshift Corporation. All right reserved.
+//  File name : APIRouter+Parameters.swift
+//
+//  Copyright (c) 2009-2021 Blueshift Corporation. All right reserved.
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
@@ -21,14 +21,31 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 //
-//  Created Blueshift on 2021/09/07
+//  Created by Blueshift on 2021/09/08
 //
 
-import Foundation
+import Alamofire
 
-public class BlueshiftSDK {
-    public struct configuration {
-        let baseUrl: String? = nil
+extension APIRouter {
+    
+    public var parameters: Parameters? {
         
+        var params = Parameters()
+//        params[kCuIdx] = Pref.uIdx
+//        params[kToken] = Pref.loginToken
+        
+        switch self {
+            
+            
+        //MARK:- Member
+            
+//        case .member(.duplicate(email: let email))):
+//            params[kEmail] = email
+//        }
+//
+        case .member(.duplicate(email: let email)):
+            params["kEmail"] = email
+        }
+        return params
     }
 }

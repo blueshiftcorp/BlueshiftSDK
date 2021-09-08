@@ -30,30 +30,30 @@ import GoogleSignIn
 
 extension Util {
     
-    static func setUserPreference(_ user: sUser) {
-//        Pref.uIdx = user.uIdx
-//        Pref.loginToken = user.token
-        setCurrentUser()
-    }
-    
-    static func setCurrentUser(completion: (() -> Void)? = nil){
-        guard let uIdx = Pref.uIdx else { return }
-        guard let loginToken = Pref.loginToken else { return}
-//        guard let request = API.User.get(uIdx: uIdx) else { return }
-//        request.execute { (result) in
-//            switch result {
-//            case .success(let value):
-//                CurrentUser = value.result
-//                CurrentUser.uId = uIdx
-//                CurrentUser.token = loginToken
-//                if completion != nil {
-//                    completion!()
-//                }
-//            case .failure(let error):
-//                print("Error occurred while get user info: \(error)")
-//            }
-//        }
-    }
+//    static func setUserPreference(_ user: sUser) {
+////        Pref.uIdx = user.uIdx
+////        Pref.loginToken = user.token
+//        setCurrentUser()
+//    }
+//    
+//    static func setCurrentUser(completion: (() -> Void)? = nil){
+//        guard let uIdx = Pref.uIdx else { return }
+//        guard let loginToken = Pref.loginToken else { return}
+////        guard let request = API.User.get(uIdx: uIdx) else { return }
+////        request.execute { (result) in
+////            switch result {
+////            case .success(let value):
+////                CurrentUser = value.result
+////                CurrentUser.uId = uIdx
+////                CurrentUser.token = loginToken
+////                if completion != nil {
+////                    completion!()
+////                }
+////            case .failure(let error):
+////                print("Error occurred while get user info: \(error)")
+////            }
+////        }
+//    }
     
     static func setRootViewController() {
         

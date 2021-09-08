@@ -1,27 +1,36 @@
 //
-// File name : API.swift
-
-// Copyright (c) 2021 Blueshift Corporation. All right reserved.
-
-// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
-// FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
-// COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
-// IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
-// CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-// Created by James, Blueshift Corporation on 2020/06/22
-// Website : www.blueshift.co.kr
-// Email : admin@blueshift.co.kr
+//  File name : API.swift
+//
+//  Copyright (c) 2009-2021 Blueshift Corporation. All right reserved.
+//
+//  Permission is hereby granted, free of charge, to any person obtaining a copy
+//  of this software and associated documentation files (the "Software"), to deal
+//  in the Software without restriction, including without limitation the rights
+//  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+//  copies of the Software, and to permit persons to whom the Software is
+//  furnished to do so, subject to the following conditions:
+//
+//  The above copyright notice and this permission notice shall be included in
+//  all copies or substantial portions of the Software.
+//
+//  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+//  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+//  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+//  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+//  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+//  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+//  THE SOFTWARE.
+//
+//  Created by Blueshift on 2021/09/07
 //
 
 import Alamofire
 import PromisedFuture
 
-public class API {
-    @discardableResult
+open class API {
     
-    private static func performRequest<T:Decodable>(route:APIRouter, decoder: JSONDecoder = JSONDecoder()) -> Future<T, Error>? {
+    @discardableResult
+    public static func performRequest<T:Decodable>(route:APIConfiguration, decoder: JSONDecoder = JSONDecoder()) -> Future<T, Error>? {
         return Future(operation: { completion in
             
             AF.request(route)
@@ -43,9 +52,11 @@ public class API {
         })
     }
 
-    private static func performUploadMultipartFormData<T:Decodable>(route:APIRouter, decoder: JSONDecoder = JSONDecoder()) -> Future<T, Error>? {
+    @discardableResult
+    public static func performUploadMultipartFormData<T:Decodable>(route:APIConfiguration, decoder: JSONDecoder = JSONDecoder()) -> Future<T, Error>? {
+        guard let multipartFormDate = route.multipartFormData else { return nil }
         return Future(operation: { completion in
-            AF.upload(multipartFormData: route.multipartFormData, with: route)
+            AF.upload(multipartFormData: multipartFormDate, with: route)
             .uploadProgress(closure: { (progress) in
                 print("image upload progress: \(progress)")
             })
@@ -66,31 +77,5 @@ public class API {
             }
             
         })
-    }
-    
-    
-    //MARK:-
-    public class Signup {
-        
-        public class Duplicated {
-            public static func email(email: String) -> Future <ServerResponse.SignUp.Duplication, Error>? {
-                return API.performRequest(route: .signup(.duplicate(.email(email: email))))
-            }
-            
-            public static func mobile(mobile: String) -> Future <ServerResponse.SignUp.Duplication, Error>? {
-                return API.performRequest(route: .signup(.duplicate(.mobile(mobile: mobile))))
-            }
-        }
-        
-        public static func insert(nick_name: String, mobile: String, email: String, gender: String, birth: String, password: String, name: String, di: String, co: String, mkt: String) -> Future <ServerResponse.SignUp.Insert, Error>? {
-            return API.performRequest(route: .signup(.insert(nick_name: nick_name, mobile: mobile, email: email, gender: gender, birth: birth, password: password, name: name, di: di, co: co, mkt: mkt)))
-        }
-    }
-    
-    //MARK:-
-    public class Member {
-        public static func info(email: String) -> Future <ServerResponse.Member.Info, Error>? {
-            return API.performRequest(route: .member(.info(email: email)))
-        }
     }
 }

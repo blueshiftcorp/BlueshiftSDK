@@ -1,6 +1,6 @@
 //
-//  File name : CommonValue+Login.swift
-
+//  File name : ServerResponse.swift
+//
 //  Copyright (c) 2009-2021 Blueshift Corporation. All right reserved.
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -21,17 +21,18 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 //
-//  Created by Blueshift on 2021/09/07
+//  Created by Blueshift on 2021/09/08
 //
 
 import Foundation
 
-extension CV {
-    class Url {
-        static let host = ""
-        
-        class Member {
-            static let add = ""
+class ServerResponse {
+    
+    class Member {
+        struct duplicated: Codable {
+            let responseDatetime: String
+            let responseCode: String
+            let responseMessage: String
         }
     }
 }

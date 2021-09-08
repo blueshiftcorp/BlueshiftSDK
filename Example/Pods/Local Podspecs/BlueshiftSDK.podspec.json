@@ -1,9 +1,9 @@
 {
   "name": "BlueshiftSDK",
-  "version": "0.1.0",
-  "summary": "Official Blueshift SDK for iOS to develop iOS application",
+  "version": "0.0.10",
+  "summary": "Official Blueshift SDK for developing iOS application.",
   "description": "The Blueshift SDK for iOS enables you to develoip iOS application more easily using funtions such as:\n* Social Login to easily sign in users.\n* Sharing features like the Share or Message Dialog to grow your app.\n* Simpler Other API access to provide more social context.",
-  "homepage": "http://www.blueshift.co.kr",
+  "homepage": "https://github.com/blueshiftcorp/BlueshiftSDK",
   "license": {
     "type": "Blueshift SDK License",
     "file": "LICENSE"
@@ -14,7 +14,7 @@
   },
   "source": {
     "git": "https://github.com/blueshiftcorp/BlueshiftSDK.git",
-    "tag": "0.1.0"
+    "tag": "0.0.10"
   },
   "subspecs": [
     {
@@ -25,6 +25,9 @@
       "name": "API",
       "source_files": "Source/API/**/*",
       "dependencies": {
+        "BlueshiftSDK/Common": [
+
+        ],
         "Alamofire": [
           "~> 5.4"
         ],
@@ -35,11 +38,16 @@
     },
     {
       "name": "UI",
-      "source_files": "Source/UI/**/*"
+      "source_files": "Source/UI/**/*",
+      "dependencies": {
+        "BlueshiftSDK/Common": [
+
+        ]
+      }
     },
     {
-      "name": "SocialLogin",
-      "source_files": "Source/SocialLogin/**/*",
+      "name": "Login",
+      "source_files": "Source/Login/**/*",
       "dependencies": {
         "BlueshiftSDK/API": [
 
@@ -76,6 +84,9 @@
       "dependencies": {
         "Alamofire": [
           "~> 5.4"
+        ],
+        "BlueshiftSDK/UI": [
+
         ]
       }
     }

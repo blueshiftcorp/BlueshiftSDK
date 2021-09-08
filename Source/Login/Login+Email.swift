@@ -28,21 +28,25 @@ extension Login {
         
         do {
             guard try Util.Validate.email(email), try Util.Validate.password(password) else { return }
+            
+            delegate?.requestToServer()
         } catch {
             switch error {
-            case BSError.Validation.invalidEmailFormat: break
+            case BSError.Validation.invalidEmailFormat:
                 parentVC.showToast(message: BSError.Validation.invalidEmailFormat.localizedDescription)
                 return
-            case BSError.Validation.invalidPasswordFormat: break
+            case BSError.Validation.invalidPasswordFormat:
                 parentVC.showToast(message: BSError.Validation.invalidPasswordFormat.localizedDescription)
                 return
             default: break
             }
         }
         
-        //TODO: Development Only
-        self.completeLogin(sUser())
+        //TODO: Development Only **********************
+//        self.completeLogin(sUser())
         return
+        //**********************************************
+        
         
 //        guard let request = API.User.login(lCode: .email, uId: email, uPw: password) else { return }
 //        request.execute(completion: { result in
@@ -60,22 +64,4 @@ extension Login {
 //            }
 //        })
     }
-    
-//    func a() {
-//
-//        let newAccount = ""
-//        let newPassword = ""
-//        do {
-//            let passwordItem = KeychainItem(service: CV.KeychainConfiguration.serviceName,
-//                                                    account: newAccount,
-//                                                    accessGroup: CV.KeychainConfiguration.accessGroup)
-//
-//            try passwordItem.savePassword(newPassword)
-//        } catch {
-//
-//            fatalError("Error updating keychain - \(error)")
-//        }
-//
-//
-//    }
 }

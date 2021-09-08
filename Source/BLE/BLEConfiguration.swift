@@ -1,6 +1,6 @@
 //
-//  File name : CommonValue+Login.swift
-
+//  File name : BLEConfiguration.swift
+//
 //  Copyright (c) 2009-2021 Blueshift Corporation. All right reserved.
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -21,17 +21,23 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 //
-//  Created by Blueshift on 2021/09/07
+//  Created by Blueshift on 2021/09/08
 //
 
 import Foundation
+import CoreBluetooth
 
-extension CV {
-    class Url {
-        static let host = ""
-        
-        class Member {
-            static let add = ""
-        }
-    }
+public protocol BLEConfiguration {
+    
+    /// Service UUID
+    /// Sample : CBUUID.init(string: "0000abf0-0000-1000-8000-00805f9b34fb")
+    var serviceUUID: CBUUID { get }
+    
+    /// Write Characteristic UUID
+    /// Sample : CBUUID.init(string: "0000abf1-0000-1000-8000-00805f9b34fb")
+    var writeCharacteristicUUID: CBUUID { get }
+    
+    /// Read Characteristic UUID
+    /// CBUUID.init(string: "0000abf2-0000-1000-8000-00805f9b34fb")
+    var readCharacteristicUUID: CBUUID { get }
 }

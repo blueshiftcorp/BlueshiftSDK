@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import BlueshiftSDK
 
 class ViewController: UIViewController {
 
@@ -19,6 +20,19 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    func temp() {
+        let request = API.Duplicated.email(email: "")
+        request?.execute(completion: { result in
+            switch result {
+            case .success(let value):
+                break
+            case .failure(let error):
+                break
+            }
+        })
+        
+        
+    }
 }
 
