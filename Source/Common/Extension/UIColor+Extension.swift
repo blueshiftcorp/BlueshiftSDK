@@ -26,7 +26,7 @@
 
 import UIKit
 
-extension UIColor {
+public extension UIColor {
     
     static var officialApplePlaceholderGray: UIColor {
         return UIColor(red: 0, green: 0, blue: 0.0980392, alpha: 0.22)
