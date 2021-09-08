@@ -24,6 +24,7 @@ pod 'BlueshiftSDK/Common'
 pod 'BlueshiftSDK/API'
 pod 'BlueshiftSDK/UI'
 pod 'BlueshiftSDK/Login'
+pod 'BlueshiftSDK/BLE'
 ```
 
 ## Author
