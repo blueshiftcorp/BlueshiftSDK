@@ -2285,6 +2285,14 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		1A1BBB0126E8C4DC00657B02 /* Messaging */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Messaging;
+			path = Source/Messaging;
+			sourceTree = "<group>";
+		};
 		1B877C44182E69D71F976D1844E708F0 /* WebView */ = {
 			isa = PBXGroup;
 			children = (
@@ -2783,6 +2791,7 @@
 				CBB04425A57454F4FBD2AB2CF05C83BE /* Support Files */,
 				EBB716FC95C1DC9AF65218F21A9B0BEF /* UI */,
 				1B877C44182E69D71F976D1844E708F0 /* WebView */,
+				1A1BBB0126E8C4DC00657B02 /* Messaging */,
 			);
 			name = BlueshiftSDK;
 			path = ../..;
