@@ -29,7 +29,38 @@ import KakaoSDKUser
 import GoogleSignIn
 
 extension Util {
-    
+    public class Validate {
+        
+        public static func email(_ email: String) throws -> Bool {
+            let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
+            let emailPred = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
+            guard emailPred.evaluate(with: email) else {
+                throw BSError.Validation.invalidEmailFormat
+            }
+            return true
+        }
+        
+        public static func password(_ pw: String) throws -> Bool {
+            let regex = try NSRegularExpression(pattern: "^(?=.*[A-Za-z])(?=.*[0-9])(?=.*[!@#$%^&*()_+=-]).{8,20}", options: NSRegularExpression.Options())
+            guard regex.firstMatch(in: pw, options: NSRegularExpression.MatchingOptions(), range:NSMakeRange(0, pw.count)) != nil else {
+                throw BSError.Validation.invalidPasswordFormat
+            }
+            
+            return true
+        }
+        
+        public static func phoneNum(_ _num: String?) -> Bool {
+            guard let num = _num, num.count == 11 else { return false }
+            let regex = "^010?([0-9]{8})"
+
+            return NSPredicate(format: "SELF MATCHES %@", regex).evaluate(with: _num)
+        }
+        
+        public static func name(_ _name: String?) -> Bool {
+            guard let name = _name, name.count <= 10 else { return false }
+            return true
+        }
+    }
 //    static func setUserPreference(_ user: sUser) {
 ////        Pref.uIdx = user.uIdx
 ////        Pref.loginToken = user.token

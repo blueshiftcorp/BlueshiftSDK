@@ -2296,6 +2296,7 @@
 		1B877C44182E69D71F976D1844E708F0 /* WebView */ = {
 			isa = PBXGroup;
 			children = (
+				F98282E9A3711B9281C72F621309FFD2 /* DefaultWebViewController.swift */,
 				56516576AB18EF31DD9C8C1ABFB8A37C /* Utility+WebView.swift */,
 			);
 			name = WebView;
@@ -3440,7 +3441,6 @@
 			children = (
 				4271C4257D5546DB1A52AD43DB29618F /* DefaultTableViewController.swift */,
 				F23A2480725D5C7FB7B3E7546982C4AA /* DefaultViewController.swift */,
-				F98282E9A3711B9281C72F621309FFD2 /* DefaultWebViewController.swift */,
 				0A7EE95651DCD7441471CA9F19F7480B /* PresentationController.swift */,
 				11B7275DD01DC1450CABD7EA726C5E8F /* ToastPresentationController.swift */,
 				B5BE20C21A1A49D1FDB897A68ED58A74 /* ToastViewController.swift */,
