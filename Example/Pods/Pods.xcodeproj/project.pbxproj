@@ -96,6 +96,7 @@
 		18A48D45BECEBD67F30484FB0A334845 /* FIRCoreDiagnosticsData.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F58FD2A87EC27AE89075C7A6AA4F2E8 /* FIRCoreDiagnosticsData.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		18D6926B0519A01C3F63FDF82731C3F7 /* GIDSignInPreferences.m in Sources */ = {isa = PBXBuildFile; fileRef = 94C545A029AA312F87C93BFD449288C6 /* GIDSignInPreferences.m */; };
 		19F675A86C85AD68AE8447C98D4FA2EC /* FIROptionsInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 40DAD1333548A5129826DC5FFC0BC099 /* FIROptionsInternal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1A1BBB0326E8CA2C00657B02 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1BBB0226E8CA2C00657B02 /* test.swift */; };
 		1ABF7519B95B9E3BB215EBA5F82394BC /* FIRInstallationsStoredAuthToken.h in Headers */ = {isa = PBXBuildFile; fileRef = 694CFD47155BA727A004846C808C845C /* FIRInstallationsStoredAuthToken.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		1ADBDD9AB9E7E17EB9EE277DDB858D17 /* Utility+HealthKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968871DD4934941271C66789230E585C /* Utility+HealthKit.swift */; };
 		1B419035A0A9807C6903AA92E4FBC03F /* FIRMessagingDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C0BAF5530CA4FFB55AA201AC94D80B7 /* FIRMessagingDefines.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -1267,6 +1268,7 @@
 		18C60CBE687F0AF96F9F8E67148BE1EF /* GULSceneDelegateSwizzler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GULSceneDelegateSwizzler.h; path = GoogleUtilities/AppDelegateSwizzler/Public/GoogleUtilities/GULSceneDelegateSwizzler.h; sourceTree = "<group>"; };
 		191977FF6E7DDCE392529709FFB2699A /* ca.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = ca.lproj; path = GoogleSignIn/Sources/Strings/ca.lproj; sourceTree = "<group>"; };
 		195CD1D8731A1C660DB49D199B8293AA /* FIRConfigurationInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRConfigurationInternal.h; path = FirebaseCore/Sources/FIRConfigurationInternal.h; sourceTree = "<group>"; };
+		1A1BBB0226E8CA2C00657B02 /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
 		1A5E2D130A8CAB89A9B1C9CABAB9BD89 /* FIRInstallationsIDController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRInstallationsIDController.m; path = FirebaseInstallations/Source/Library/InstallationsIDController/FIRInstallationsIDController.m; sourceTree = "<group>"; };
 		1A7E86C4DC62F8B628B0E0E2FE19080F /* Pods-BlueshiftSDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BlueshiftSDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		1A80BD0DA1C3DBEF3C247655BC8EABAB /* OIDFieldMapping.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDFieldMapping.m; path = Source/AppAuthCore/OIDFieldMapping.m; sourceTree = "<group>"; };
@@ -2288,6 +2290,7 @@
 		1A1BBB0126E8C4DC00657B02 /* Messaging */ = {
 			isa = PBXGroup;
 			children = (
+				1A1BBB0226E8CA2C00657B02 /* test.swift */,
 			);
 			name = Messaging;
 			path = Source/Messaging;
@@ -4922,6 +4925,7 @@
 				02DB462B121245593CE653B9B377F970 /* Protected.swift in Sources */,
 				DD58A00EACBEE274C381B491519C6B8C /* RedirectHandler.swift in Sources */,
 				E0C65E16219718869CD2AFCA2C5465CB /* Request.swift in Sources */,
+				1A1BBB0326E8CA2C00657B02 /* test.swift in Sources */,
 				F63BE0585331CAA3482EF736803F8243 /* RequestInterceptor.swift in Sources */,
 				1D17B83410DC98911D539F2BD5254C05 /* RequestTaskMap.swift in Sources */,
 				C7F66519CE6148F21D7DB11423F1D34D /* Response.swift in Sources */,
