@@ -26,8 +26,8 @@
 
 import UIKit
 
-class Util {
-    class Validate {
+public class Util {
+    public class Validate {
         
         public static func email(_ email: String) throws -> Bool {
             let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
@@ -60,7 +60,7 @@ class Util {
         }
     }
     
-    static var isHomeButton: Bool {
+    public static var isHomeButton: Bool {
         
         if let keyWindow = UIApplication.shared.windows.filter({$0.isKeyWindow}).first, keyWindow.safeAreaInsets.bottom > 0 {
             return false
@@ -69,7 +69,7 @@ class Util {
         }
     }
     
-    static var bottomMargin: CGFloat {
+    public static var bottomMargin: CGFloat {
         if isHomeButton {
             return 0
         } else {
@@ -78,11 +78,11 @@ class Util {
     }
 
     
-    class KeyChain {
+    public class KeyChain {
         
         static let service = Bundle.main.bundleIdentifier!
         
-        static func save(account: String, value: String) {
+        public static func save(account: String, value: String) {
             
             let keyChainQuery: NSDictionary = [
                 kSecClass : kSecClassGenericPassword,
@@ -98,7 +98,7 @@ class Util {
             NSLog("status = \(status)")
         }
         
-        static func load(account: String) -> String? {
+        public static func load(account: String) -> String? {
             
             let keyChainQuery :NSDictionary = [
                 kSecClass : kSecClassGenericPassword,
@@ -121,7 +121,7 @@ class Util {
             }
         }
         
-        static func delete(_ service:String, account:String) {
+        public static func delete(_ service:String, account:String) {
             
             let keyChainQuery:NSDictionary = [
                 kSecClass: kSecClassGenericPassword,
@@ -136,7 +136,7 @@ class Util {
             
         }
         
-        static func getAuthorizationHeader() -> NSDictionary? {
+        public static func getAuthorizationHeader() -> NSDictionary? {
                     
             if let accessToken = self.load(account: "accessToken"){
                 return ["Authorization" : "Bearer \(accessToken)"]
