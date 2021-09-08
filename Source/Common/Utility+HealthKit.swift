@@ -27,9 +27,9 @@
 import Foundation
 import HealthKit
 
-extension Util {
+public extension Util {
     
-    public class HealthKit: NSObject {
+    class HealthKit: NSObject {
         
         static let healthStore = HKHealthStore()
         
