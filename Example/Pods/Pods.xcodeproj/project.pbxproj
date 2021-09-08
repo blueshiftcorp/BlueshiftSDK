@@ -97,7 +97,7 @@
 		18D6926B0519A01C3F63FDF82731C3F7 /* GIDSignInPreferences.m in Sources */ = {isa = PBXBuildFile; fileRef = 94C545A029AA312F87C93BFD449288C6 /* GIDSignInPreferences.m */; };
 		19F675A86C85AD68AE8447C98D4FA2EC /* FIROptionsInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 40DAD1333548A5129826DC5FFC0BC099 /* FIROptionsInternal.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		1A1BBB0326E8CA2C00657B02 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1BBB0226E8CA2C00657B02 /* test.swift */; };
-		1A1BBB0526E8CE5900657B02 /* DefaultWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1BBB0426E8CE5900657B02 /* DefaultWebViewController.swift */; };
+		1A1BBB0926E8D0C300657B02 /* DefaultWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1BBB0726E8D03E00657B02 /* DefaultWebViewController.swift */; };
 		1ABF7519B95B9E3BB215EBA5F82394BC /* FIRInstallationsStoredAuthToken.h in Headers */ = {isa = PBXBuildFile; fileRef = 694CFD47155BA727A004846C808C845C /* FIRInstallationsStoredAuthToken.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		1ADBDD9AB9E7E17EB9EE277DDB858D17 /* Utility+HealthKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968871DD4934941271C66789230E585C /* Utility+HealthKit.swift */; };
 		1B419035A0A9807C6903AA92E4FBC03F /* FIRMessagingDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C0BAF5530CA4FFB55AA201AC94D80B7 /* FIRMessagingDefines.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -1269,7 +1269,7 @@
 		191977FF6E7DDCE392529709FFB2699A /* ca.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = ca.lproj; path = GoogleSignIn/Sources/Strings/ca.lproj; sourceTree = "<group>"; };
 		195CD1D8731A1C660DB49D199B8293AA /* FIRConfigurationInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRConfigurationInternal.h; path = FirebaseCore/Sources/FIRConfigurationInternal.h; sourceTree = "<group>"; };
 		1A1BBB0226E8CA2C00657B02 /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
-		1A1BBB0426E8CE5900657B02 /* DefaultWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DefaultWebViewController.swift; path = Source/WebView/DefaultWebViewController.swift; sourceTree = "<group>"; };
+		1A1BBB0726E8D03E00657B02 /* DefaultWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DefaultWebViewController.swift; path = Source/UI/DefaultWebViewController.swift; sourceTree = "<group>"; };
 		1A5E2D130A8CAB89A9B1C9CABAB9BD89 /* FIRInstallationsIDController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRInstallationsIDController.m; path = FirebaseInstallations/Source/Library/InstallationsIDController/FIRInstallationsIDController.m; sourceTree = "<group>"; };
 		1A7E86C4DC62F8B628B0E0E2FE19080F /* Pods-BlueshiftSDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BlueshiftSDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		1A80BD0DA1C3DBEF3C247655BC8EABAB /* OIDFieldMapping.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDFieldMapping.m; path = Source/AppAuthCore/OIDFieldMapping.m; sourceTree = "<group>"; };
@@ -2299,7 +2299,6 @@
 		1B877C44182E69D71F976D1844E708F0 /* WebView */ = {
 			isa = PBXGroup;
 			children = (
-				1A1BBB0426E8CE5900657B02 /* DefaultWebViewController.swift */,
 				56516576AB18EF31DD9C8C1ABFB8A37C /* Utility+WebView.swift */,
 			);
 			name = WebView;
@@ -3448,6 +3447,7 @@
 				11B7275DD01DC1450CABD7EA726C5E8F /* ToastPresentationController.swift */,
 				B5BE20C21A1A49D1FDB897A68ED58A74 /* ToastViewController.swift */,
 				38688987350A0DFACB96B5E0C23D0330 /* Utility+UI.swift */,
+				1A1BBB0726E8D03E00657B02 /* DefaultWebViewController.swift */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -4917,7 +4917,6 @@
 				02621C4B82398D0657F474E21493A3A2 /* HTTPMethod.swift in Sources */,
 				C16A047C4E8D856309A486182A490993 /* MultipartFormData.swift in Sources */,
 				30A331CD9286145E92DB11D671664C63 /* MultipartUpload.swift in Sources */,
-				1A1BBB0526E8CE5900657B02 /* DefaultWebViewController.swift in Sources */,
 				B6473B8E8353317F75D6800D4F7054CB /* NetworkReachabilityManager.swift in Sources */,
 				471611F482CDC15BF464E3BA9CB83968 /* Notifications.swift in Sources */,
 				2550F0D474DE846FEC5C76CBE85F927E /* OperationQueue+Alamofire.swift in Sources */,
@@ -5171,6 +5170,7 @@
 				B64CB95FB8E9F2FE223451D492FE3002 /* API.swift in Sources */,
 				CF0625777FCC33F4188B0566A21D77D0 /* APIConfiguration.swift in Sources */,
 				B2580DCE67F32A1A69498BDBC90B9887 /* BLE.swift in Sources */,
+				1A1BBB0926E8D0C300657B02 /* DefaultWebViewController.swift in Sources */,
 				027A016C0EA4A1BC1EB7EBE8C05FC12E /* BLEConfiguration.swift in Sources */,
 				AD6316E6D5FF261177981C214651042A /* BlueshiftSDK-dummy.m in Sources */,
 				64CB7E7EF4DCAD9634A1A57C8051729B /* BSError.swift in Sources */,

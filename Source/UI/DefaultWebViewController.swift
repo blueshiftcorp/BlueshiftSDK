@@ -32,9 +32,9 @@ open class DefaultWebViewController: DefaultViewController {
     var url: String!
       
     open override func initializeUI() {
-        guard Util.Connectivity.isConnected else {
-            showRefreshButton()
-            return }
+//        guard Util.Connectivity.isConnected else {
+//            showRefreshButton()
+//            return }
         
         setWebView()
     }
