@@ -430,7 +430,6 @@
 		884B1923B4D9F91F819843D5A42452EA /* FIRMessagingAuthService.m in Sources */ = {isa = PBXBuildFile; fileRef = F7140BF01716F8406605AAEF852492EF /* FIRMessagingAuthService.m */; };
 		884E7E26F207A615805E4B3230535320 /* GULNSData+zlib.m in Sources */ = {isa = PBXBuildFile; fileRef = 2004E22084E19A2D7ABA2F337F21CF98 /* GULNSData+zlib.m */; };
 		886A6952FC93EF173132CBD44A974160 /* BlueshiftSDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A6B7A6A13BF96DE8E81977DED94B2F13 /* BlueshiftSDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		88FE3FB0D73A90D6A2C7CD996E043149 /* CommonKeyValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B2D6909376EB39F6704F017F516B78 /* CommonKeyValue.swift */; };
 		892DB62E48BDDAD46AFB263D24077F99 /* FIRAnalyticsInteropListener.h in Headers */ = {isa = PBXBuildFile; fileRef = 463ED4FDA8B5329793123D0DEF901701 /* FIRAnalyticsInteropListener.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		89318F6D08B3E580BB8CDD4BC7963B65 /* FBLPromise+Always.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 67EC20596D525C11BFFEF62C803BF7F5 /* FBLPromise+Always.h */; };
 		89DC973DFE2E09340F1C553C91FD13CD /* GDTCORConsoleLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B5C0329B5A7C2FDDA82675D1E994CD2 /* GDTCORConsoleLogger.m */; };
@@ -1230,7 +1229,6 @@
 		104544E1E8940CCC554107074A3FE62E /* FIRMessagingRmqManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRMessagingRmqManager.m; path = FirebaseMessaging/Sources/FIRMessagingRmqManager.m; sourceTree = "<group>"; };
 		104D68AEE548F4ED8E7F822CF6038292 /* FIRLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRLogger.h; path = FirebaseCore/Sources/Private/FIRLogger.h; sourceTree = "<group>"; };
 		1083DE612610ACE613E204934CC625AC /* FIRMessagingUtilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRMessagingUtilities.m; path = FirebaseMessaging/Sources/FIRMessagingUtilities.m; sourceTree = "<group>"; };
-		10B2D6909376EB39F6704F017F516B78 /* CommonKeyValue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CommonKeyValue.swift; path = Source/Common/CommonKeyValue.swift; sourceTree = "<group>"; };
 		10E62A9B8DDB456BAB3CE1E491BED48C /* GDTCOREvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GDTCOREvent.m; path = GoogleDataTransport/GDTCORLibrary/GDTCOREvent.m; sourceTree = "<group>"; };
 		1105982373FB6207CEC84DDD78E089D3 /* FIRConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRConfiguration.m; path = FirebaseCore/Sources/FIRConfiguration.m; sourceTree = "<group>"; };
 		11B7275DD01DC1450CABD7EA726C5E8F /* ToastPresentationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ToastPresentationController.swift; path = Source/UI/ToastPresentationController.swift; sourceTree = "<group>"; };
@@ -2743,7 +2741,6 @@
 			children = (
 				59B0B00A01A2D62E52263A4EE37C864C /* BSError.swift */,
 				D7286C023235548298B3439959647F4F /* CommonEnum.swift */,
-				10B2D6909376EB39F6704F017F516B78 /* CommonKeyValue.swift */,
 				D35C8090297895381B24BE119B65ED69 /* CommonValue.swift */,
 				AC59809F6290B7DFCF05E8C030E620FB /* Utility.swift */,
 				968871DD4934941271C66789230E585C /* Utility+HealthKit.swift */,
@@ -5176,7 +5173,6 @@
 				64CB7E7EF4DCAD9634A1A57C8051729B /* BSError.swift in Sources */,
 				7E5693A325278EBDD03B007E442872B2 /* BSError+Login.swift in Sources */,
 				C16F6E19D010A311F1810CF6D4F633CE /* CommonEnum.swift in Sources */,
-				88FE3FB0D73A90D6A2C7CD996E043149 /* CommonKeyValue.swift in Sources */,
 				3F6F9175D1B2428CF145B2E6D53C91DC /* CommonValue.swift in Sources */,
 				06D8F4EEC453AF95ECC0CAD70D5F242E /* CommonValue+Login.swift in Sources */,
 				11F4C630309CFD407E96D5B8A8E0EDF3 /* DefaultTableViewController.swift in Sources */,
