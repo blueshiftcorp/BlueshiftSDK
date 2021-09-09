@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name                  = 'BlueshiftSDK'
-  s.version               = '0.0.17'
+  s.version               = '0.0.18'
   s.summary               = 'Official Blueshift SDK for developing iOS application.'
   
   s.description           = <<-DESC
@@ -20,6 +20,9 @@ Pod::Spec.new do |s|
   s.swift_version         = '5.0'
   
   s.default_subspecs = 'Common', 'API', 'UI', 'Login', 'Messaging', 'WebView'
+  
+  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   
   s.subspec 'Common' do |ss|
     ss.source_files       = 'Source/Common/**/*'
