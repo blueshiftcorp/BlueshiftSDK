@@ -100,7 +100,7 @@
 		1A1BBB0926E8D0C300657B02 /* DefaultWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1BBB0726E8D03E00657B02 /* DefaultWebViewController.swift */; };
 		1A26F22F26F02882000759AE /* DefaultTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A26F22E26F02882000759AE /* DefaultTabBarController.swift */; };
 		1A26F23126F029CE000759AE /* UITabBar+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A26F23026F029CE000759AE /* UITabBar+Extension.swift */; };
-		1AACFDE3274C8647000278AF /* Protocols+Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AACFDE2274C8647000278AF /* Protocols+Login.swift */; };
+		1AACFDE5274C8A2E000278AF /* Protocols+Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AACFDE4274C8A2E000278AF /* Protocols+Login.swift */; };
 		1ABF7519B95B9E3BB215EBA5F82394BC /* FIRInstallationsStoredAuthToken.h in Headers */ = {isa = PBXBuildFile; fileRef = 694CFD47155BA727A004846C808C845C /* FIRInstallationsStoredAuthToken.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		1ADBDD9AB9E7E17EB9EE277DDB858D17 /* Utility+HealthKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968871DD4934941271C66789230E585C /* Utility+HealthKit.swift */; };
 		1B419035A0A9807C6903AA92E4FBC03F /* FIRMessagingDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C0BAF5530CA4FFB55AA201AC94D80B7 /* FIRMessagingDefines.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -1276,7 +1276,7 @@
 		1A5E2D130A8CAB89A9B1C9CABAB9BD89 /* FIRInstallationsIDController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRInstallationsIDController.m; path = FirebaseInstallations/Source/Library/InstallationsIDController/FIRInstallationsIDController.m; sourceTree = "<group>"; };
 		1A7E86C4DC62F8B628B0E0E2FE19080F /* Pods-BlueshiftSDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BlueshiftSDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		1A80BD0DA1C3DBEF3C247655BC8EABAB /* OIDFieldMapping.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDFieldMapping.m; path = Source/AppAuthCore/OIDFieldMapping.m; sourceTree = "<group>"; };
-		1AACFDE2274C8647000278AF /* Protocols+Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Protocols+Login.swift"; sourceTree = "<group>"; };
+		1AACFDE4274C8A2E000278AF /* Protocols+Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Protocols+Login.swift"; path = "Source/Login/Protocols+Login.swift"; sourceTree = "<group>"; };
 		1B01B710E14A75897F1604109DD3836F /* FIRHeartbeatInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRHeartbeatInfo.m; path = FirebaseCore/Sources/FIRHeartbeatInfo.m; sourceTree = "<group>"; };
 		1B56F72C054A46006C484E1BCA8F5830 /* OIDAuthStateChangeDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDAuthStateChangeDelegate.h; path = Source/AppAuthCore/OIDAuthStateChangeDelegate.h; sourceTree = "<group>"; };
 		1B5C0329B5A7C2FDDA82675D1E994CD2 /* GDTCORConsoleLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GDTCORConsoleLogger.m; path = GoogleDataTransport/GDTCORLibrary/GDTCORConsoleLogger.m; sourceTree = "<group>"; };
@@ -2462,7 +2462,7 @@
 				54F74C9307714391138FA4A72D6C997E /* LoginKeyValue.swift */,
 				27C397D0788F6E5FFB4ED7321305041E /* Preferences.swift */,
 				86F249EF79A37C0F6822164BD18F8E4E /* Utility+Login.swift */,
-				1AACFDE2274C8647000278AF /* Protocols+Login.swift */,
+				1AACFDE4274C8A2E000278AF /* Protocols+Login.swift */,
 			);
 			name = Login;
 			sourceTree = "<group>";
@@ -5182,7 +5182,6 @@
 				64CB7E7EF4DCAD9634A1A57C8051729B /* BSError.swift in Sources */,
 				7E5693A325278EBDD03B007E442872B2 /* BSError+Login.swift in Sources */,
 				C16F6E19D010A311F1810CF6D4F633CE /* CommonEnum.swift in Sources */,
-				1AACFDE3274C8647000278AF /* Protocols+Login.swift in Sources */,
 				3F6F9175D1B2428CF145B2E6D53C91DC /* CommonValue.swift in Sources */,
 				06D8F4EEC453AF95ECC0CAD70D5F242E /* CommonValue+Login.swift in Sources */,
 				11F4C630309CFD407E96D5B8A8E0EDF3 /* DefaultTableViewController.swift in Sources */,
@@ -5199,6 +5198,7 @@
 				634A9FD51F1FE3BB56B89EF15E40BA7A /* NSAttributedString+Extension.swift in Sources */,
 				93AEF18974259696E47A01EC391D2111 /* Preferences.swift in Sources */,
 				28993F0C2C7613F5BFDEBA1FC97A7AE2 /* PresentationController.swift in Sources */,
+				1AACFDE5274C8A2E000278AF /* Protocols+Login.swift in Sources */,
 				FBF957C86CCEBAB6A19BA422EC0AEC3D /* ToastPresentationController.swift in Sources */,
 				6D26DA35EB0871458D8CAE38D137D7C8 /* ToastViewController.swift in Sources */,
 				FA54B8E31069A2D5A5F9804F533C4FA7 /* UIColor+Extension.swift in Sources */,
