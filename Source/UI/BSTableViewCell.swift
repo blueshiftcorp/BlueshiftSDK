@@ -1,5 +1,5 @@
 //
-//  File name : Utility+UI.swift
+//  File name : BSTableViewConfiguration.swift
 //
 //  Copyright (c) 2009-2021 Blueshift Corporation. All right reserved.
 //
@@ -21,18 +21,11 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 //
-//  Created Blueshift on 2021/09/07
+//  Created by Blueshift on 2021/11/23
 //
 
-import Foundation
+import UIKit
 
-extension Util {
-    static func toast(message: String, from vc: UIViewController, duration: TimeInterval? = nil) {
-        let toast = ToastViewController(title: message)
-        
-        vc.present(toast, animated: true)
-        Timer.scheduledTimer(withTimeInterval: duration ?? 2, repeats: false) { _ in
-            toast.dismiss(animated: true)
-        }
-    }
+protocol BSTableViewCell {
+    var identifier: String { get }
 }

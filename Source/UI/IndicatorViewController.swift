@@ -1,5 +1,5 @@
 //
-//  File name : SampleTableViewController.swift
+//  File name : IndicatorViewController.swift
 //
 //  Copyright (c) 2009-2021 Blueshift Corporation. All right reserved.
 //
@@ -25,9 +25,43 @@
 //
 
 import UIKit
-import BlueshiftSDK
 
-class SampleTableViewController: BSTableViewController {
-
+class IndicatorViewController: UIViewController {
     
+    let indicatorView = SpinnerView()
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setupUI()
+        updateIndicator(isHidden: false)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        updateIndicator(isHidden: true)
+    }
+    
+    private func setupUI() {
+        
+        view.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.2)
+        
+        view.addSubview(indicatorView)
+        indicatorView.translatesAutoresizingMaskIntoConstraints = false
+        
+        NSLayoutConstraint.activate([
+            indicatorView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            indicatorView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+            indicatorView.heightAnchor.constraint(equalToConstant: 50),
+            indicatorView.widthAnchor.constraint(equalToConstant: 50)
+        ])
+    }
+    
+    func updateIndicator(isHidden: Bool){
+        indicatorView.isHidden = isHidden
+        if isHidden == false {
+            indicatorView.animate()
+        }else{
+            
+        }
+    }
 }

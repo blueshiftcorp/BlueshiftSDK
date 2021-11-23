@@ -10,7 +10,7 @@
   },
   "authors": "Blueshift",
   "platforms": {
-    "ios": "13.0"
+    "ios": "13.5"
   },
   "source": {
     "git": "https://github.com/blueshiftcorp/BlueshiftSDK.git",
