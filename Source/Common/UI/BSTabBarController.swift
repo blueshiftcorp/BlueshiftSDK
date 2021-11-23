@@ -104,7 +104,5 @@ open class BSTabBarController: UITabBarController, UITabBarControllerDelegate {
         }
     }
     
-    open func tabBarItems() -> [BSTabBarItem]? {
-        return nil
-    }
+    open func tabBarItems() -> [BSTabBarItem]? { return nil }
 }

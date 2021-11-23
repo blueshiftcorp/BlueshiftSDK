@@ -5,10 +5,14 @@ Pod::Spec.new do |s|
   s.summary               = 'Official Blueshift SDK for developing iOS application.'
   
   s.description           = <<-DESC
-                            The Blueshift SDK for iOS enables you to develoip iOS application more easily using funtions such as:
-                            * Social Login to easily sign in users.
-                            * Sharing features like the Share or Message Dialog to grow your app.
-                            * Simpler Other API access to provide more social context.
+                            BlueshiftSDK는 Swift, Interface Builder(xib) 기반의 어플리케이션 개발에 적합하도록 개발되었으며, 블루시프트 내부 개발자를 위한 iOS 어플리케이션 개발용 소프트웨어개발툴킷입니다.
+                            일반 개발자를 위해 일부 프레임워크를 공개하고 있으나, 예고없이 기능의 일부 혹은 전부를 비공개로 전환하거나 수정 혹은 삭제될 수 있음을 양해해주십시오.
+                            BlueshiftSDK는 하단메뉴를 포함하는 네비게이션, 테이블뷰 등으로 구성된 어플리케이션 개발에 특히 최적화되어 있습니다. 기본적으로 제공되는 기능은 아래와 같습니다.
+                            * BSTabBarController
+                            * BSViewController
+                            * BSTableViewController
+                            * API Module
+                            * Common Utilities
                             DESC
   
   s.homepage              = 'https://github.com/blueshiftcorp/BlueshiftSDK'

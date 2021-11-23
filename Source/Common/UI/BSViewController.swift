@@ -26,33 +26,33 @@
 
 import UIKit
 
-open class BSViewController: UIViewController {
+public protocol BSViewControllerConfiguration {
+    func options() -> [BSVCOption]
+}
 
-    enum BSVCOption {
-        case backButton
-        case closeButton
-        case keyboard
-    }
+public enum BSVCOption {
+    case backButton
+    case closeButton
+    case keyboard
+}
+
+open class BSViewController: UIViewController {
     
     internal var scrollView:UIScrollView?
     private var isBackButton = false
     private var isCloseButton = false
     private var isKeyboardUse = false
     
-    /// BSViewController 초기화 옵션
-    ///
-    /// 네비게이션 버튼, 스크롤뷰 유무에 대한 옵션 설정
-    /// backButton : 좌측상단 네비게이션 뒤로가기 버튼 표시, popViewController
-    /// closeButton : 우측상단 네비게이션 X 버튼 표시, ModalViewController 닫기버튼으로 사용
-    /// keyboard: UITextField 사용 시 키보드 표시로 인하여 하단 UI가 가려질 경우 사용
-    ///
-    /// - parameters :
-    ///     - options: [BSVCOption]
-    ///     - scrollView: UIScrollView
-    ///
-    init(_ options: [BSVCOption], scrollView: UIScrollView? = nil) {
-        super.init(nibName: nil, bundle: nil)
-        
+    //MARK: - Lifecycle
+    public override func viewDidLoad() {
+        super.viewDidLoad()
+        setOptions()
+        initializeUI()
+    }
+    
+    //MARK: - Methods
+    internal func setOptions() {
+        guard let options = options() else { return }
         for option in options {
             switch option {
             case .backButton:
@@ -63,22 +63,8 @@ open class BSViewController: UIViewController {
                 self.isKeyboardUse = true
             }
         }
-        
-        self.scrollView = scrollView
     }
     
-    public required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
-    //MARK: - Lifecycle
-    public override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        initializeUI()
-    }
-    
-    //MARK: - Methods
     public func initializeUI() {
         self.view.backgroundColor = .white
         
@@ -108,6 +94,8 @@ open class BSViewController: UIViewController {
             view.addGestureRecognizer(tap)
         }
     }
+    
+    open func options() -> [BSVCOption]? { return nil }
     
     //MARK: - Actions
     @objc public func dismissKeyboard() {
