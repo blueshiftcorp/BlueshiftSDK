@@ -1,5 +1,5 @@
 //
-//  File name : API.swift
+//  File name : BlueshiftSDKConfiguration.swift
 //
 //  Copyright (c) 2009-2021 Blueshift Corporation. All right reserved.
 //
@@ -21,17 +21,8 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 //
-//  Created by Blueshift on 2021/09/08
+//  Created by Blueshift on 2021/11/23
 //
 
-import Foundation
-import BlueshiftSDK
-import PromisedFuture
-
-extension API {
-//    class Duplicated {
-//        static func email(email: String) -> Future <ServerResponse.Member.duplicated, Error>? {
-//            return API.performRequest(router: APIRouter.member(.duplicate(email: email)))
-//        }
-//    }
+protocol BlueshiftSDKConfiguration {
 }

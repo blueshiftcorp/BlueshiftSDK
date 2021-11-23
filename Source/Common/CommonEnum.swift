@@ -26,15 +26,22 @@
 
 import Foundation
 
-//public enum LoginType: String {
-//    case email = "0"
-//    case google = "1"
-//    case naver = "2"
-//    case kakaotalk = "3"
-//    case apple = "4"
-//}
-//
-//public enum LoginReturnCode: String {
-//    case success = "0"
-//    case notRegistered = "1"
+//enum LoginType: String {
+//    case email      = "0"
+//    case kakao      = "1"
+//    case facebook   = "2"
+//    case apple      = "3"
+//    case google     = "4"
+//    case naver      = "5"
+//    
+//    var description: String {
+//        switch self {
+//        case .email:    return "아이디/비밀번호"
+//        case .kakao:    return "카카로톡 로그인"
+//        case .facebook: return "페이스북 로그인"
+//        case .apple:    return "애플 로그인"
+//        case .google:   return "구글 로그인"
+//        case .naver:    return "네이버 로그인"
+//        }
+//    }
 //}

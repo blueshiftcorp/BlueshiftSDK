@@ -1,6 +1,6 @@
 {
   "name": "BlueshiftSDK",
-  "version": "0.0.10",
+  "version": "0.0.21",
   "summary": "Official Blueshift SDK for developing iOS application.",
   "description": "The Blueshift SDK for iOS enables you to develoip iOS application more easily using funtions such as:\n* Social Login to easily sign in users.\n* Sharing features like the Share or Message Dialog to grow your app.\n* Simpler Other API access to provide more social context.",
   "homepage": "https://github.com/blueshiftcorp/BlueshiftSDK",
@@ -14,7 +14,21 @@
   },
   "source": {
     "git": "https://github.com/blueshiftcorp/BlueshiftSDK.git",
-    "tag": "0.0.10"
+    "tag": "0.0.21"
+  },
+  "swift_versions": "5.0",
+  "default_subspecs": [
+    "Common",
+    "API",
+    "Login",
+    "Messaging",
+    "WebView"
+  ],
+  "pod_target_xcconfig": {
+    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
+  },
+  "user_target_xcconfig": {
+    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
   },
   "subspecs": [
     {
@@ -32,15 +46,6 @@
           "~> 5.4"
         ],
         "PromisedFuture": [
-
-        ]
-      }
-    },
-    {
-      "name": "UI",
-      "source_files": "Source/UI/**/*",
-      "dependencies": {
-        "BlueshiftSDK/Common": [
 
         ]
       }
@@ -85,7 +90,7 @@
         "Alamofire": [
           "~> 5.4"
         ],
-        "BlueshiftSDK/UI": [
+        "BlueshiftSDK/Common": [
 
         ]
       }
@@ -94,5 +99,6 @@
       "name": "BLE",
       "source_files": "Source/BLE/**/*"
     }
-  ]
+  ],
+  "swift_version": "5.0"
 }

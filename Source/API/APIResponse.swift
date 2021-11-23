@@ -1,5 +1,5 @@
 //
-//  PresentationController.swift
+//  File name : APIResponse.swift
 //
 //  Copyright (c) 2009-2021 Blueshift Corporation. All right reserved.
 //
@@ -21,35 +21,10 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 //
-//  Created by Blueshift on 2021/09/07
+//  Created by Blueshift on 2021/11/23
 //
 
-import UIKit
-
-class PresentationController: UIPresentationController {
-    private var calculatedFrameOfPresentedViewInContainerView = CGRect.zero
-    private var shouldSetFrameWhenAccessingPresentedView = false
-
-    override var presentedView: UIView? {
-        if shouldSetFrameWhenAccessingPresentedView {
-            super.presentedView?.frame = calculatedFrameOfPresentedViewInContainerView
-        }
-
-        return super.presentedView
-    }
-
-    override func presentationTransitionDidEnd(_ completed: Bool) {
-        super.presentationTransitionDidEnd(completed)
-        shouldSetFrameWhenAccessingPresentedView = completed
-    }
-
-    override func dismissalTransitionWillBegin() {
-        super.dismissalTransitionWillBegin()
-        shouldSetFrameWhenAccessingPresentedView = false
-    }
-
-    override func containerViewDidLayoutSubviews() {
-        super.containerViewDidLayoutSubviews()
-        calculatedFrameOfPresentedViewInContainerView = frameOfPresentedViewInContainerView
-    }
+public protocol ResponseBase: Decodable {
+    var responseCode: String { get }
+    var loginFlag: String { get }
 }

@@ -16,6 +16,7 @@
 		1A1756AA26E87D13003997C5 /* CommonValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1756A926E87D13003997C5 /* CommonValue.swift */; };
 		1A1756B226E88442003997C5 /* ServerResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1756B126E88442003997C5 /* ServerResponse.swift */; };
 		1A1756B526E88971003997C5 /* APIRouter+Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1756A026E87C81003997C5 /* APIRouter+Method.swift */; };
+		1AACFDFD274CA2FE000278AF /* SampleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AACFDFC274CA2FE000278AF /* SampleTableViewController.swift */; };
 		26618DC5D4726F318BCAAB79 /* Pods_BlueshiftSDK_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA29AC0CCDCB8CDC181A2A8B /* Pods_BlueshiftSDK_Tests.framework */; };
 		37DF5FC06C27B7BB7BF62B1F /* Pods_BlueshiftSDK_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AE7D842D8F8072CB434FBA0 /* Pods_BlueshiftSDK_Example.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
@@ -46,6 +47,7 @@
 		1A1756A626E87CD8003997C5 /* APIRouter+Path.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "APIRouter+Path.swift"; sourceTree = "<group>"; };
 		1A1756A926E87D13003997C5 /* CommonValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonValue.swift; sourceTree = "<group>"; };
 		1A1756B126E88442003997C5 /* ServerResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerResponse.swift; sourceTree = "<group>"; };
+		1AACFDFC274CA2FE000278AF /* SampleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleTableViewController.swift; sourceTree = "<group>"; };
 		55655CF958C207E6FB1E2C4D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* BlueshiftSDK_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlueshiftSDK_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				1AACFDFC274CA2FE000278AF /* SampleTableViewController.swift */,
 				1A1756AF26E883EC003997C5 /* API */,
 				1A1756AE26E883EC003997C5 /* Common */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
@@ -425,6 +428,7 @@
 				1A1756A726E87CD8003997C5 /* APIRouter+Path.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				1A1756A326E87CA1003997C5 /* APIRouter+Hierarchy.swift in Sources */,
+				1AACFDFD274CA2FE000278AF /* SampleTableViewController.swift in Sources */,
 				1A1756A526E87CBA003997C5 /* APIRouter+Parameters.swift in Sources */,
 				1A17569D26E85EE0003997C5 /* APIRouter.swift in Sources */,
 				1A1756B526E88971003997C5 /* APIRouter+Method.swift in Sources */,
@@ -517,7 +521,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -565,7 +569,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";

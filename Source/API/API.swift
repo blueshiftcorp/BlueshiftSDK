@@ -30,10 +30,10 @@ import PromisedFuture
 open class API {
     
     @discardableResult
-    public static func performRequest<T:Decodable>(route:APIConfiguration, decoder: JSONDecoder = JSONDecoder()) -> Future<T, Error>? {
+    public static func performRequest<T:ResponseBase>(router:APIConfiguration, decoder: JSONDecoder = JSONDecoder()) -> Future<T, Error>? {
         return Future(operation: { completion in
             
-            AF.request(route)
+            AF.request(router)
                 .responseDecodable(decoder: decoder, completionHandler: { (response: DataResponse<T, AFError>) in
                     switch response.result {
                     case .success(let value):
@@ -53,10 +53,10 @@ open class API {
     }
 
     @discardableResult
-    public static func performUploadMultipartFormData<T:Decodable>(route:APIConfiguration, decoder: JSONDecoder = JSONDecoder()) -> Future<T, Error>? {
-        guard let multipartFormDate = route.multipartFormData else { return nil }
+    public static func performUploadMultipartFormData<T:ResponseBase>(router:APIConfiguration, decoder: JSONDecoder = JSONDecoder()) -> Future<T, Error>? {
+        guard let multipartFormDate = router.multipartFormData else { return nil }
         return Future(operation: { completion in
-            AF.upload(multipartFormData: multipartFormDate, with: route)
+            AF.upload(multipartFormData: multipartFormDate, with: router)
             .uploadProgress(closure: { (progress) in
                 print("image upload progress: \(progress)")
             })

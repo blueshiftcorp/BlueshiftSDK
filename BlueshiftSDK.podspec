@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name                  = 'BlueshiftSDK'
-  s.version               = '0.0.20'
+  s.version               = '0.0.21'
   s.summary               = 'Official Blueshift SDK for developing iOS application.'
   
   s.description           = <<-DESC
@@ -14,12 +14,12 @@ Pod::Spec.new do |s|
   s.homepage              = 'https://github.com/blueshiftcorp/BlueshiftSDK'
   s.license               = { :type => 'Blueshift SDK License', :file => 'LICENSE' }
   s.author                = 'Blueshift'
-  s.platform              = :ios, '13.0'
+  s.platform              = :ios, '13.5'
   s.source                = { :git => 'https://github.com/blueshiftcorp/BlueshiftSDK.git', :tag => s.version.to_s }
-  s.ios.deployment_target = '13.0'
+  s.ios.deployment_target = '13.5'
   s.swift_version         = '5.0'
   
-  s.default_subspecs = 'Common', 'API', 'UI', 'Login', 'Messaging', 'WebView'
+  s.default_subspecs = 'Common', 'API', 'Login', 'Messaging', 'WebView'
   
   s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
@@ -36,11 +36,11 @@ Pod::Spec.new do |s|
     ss.dependency         'PromisedFuture'        # Async Process Management
   end
   
-  s.subspec 'UI' do |ss|
-    ss.source_files       = 'Source/UI/**/*'
-    
-    ss.dependency         'BlueshiftSDK/Common'
-  end
+#  s.subspec 'UI' do |ss|
+#    ss.source_files       = 'Source/UI/**/*'
+#
+#    ss.dependency         'BlueshiftSDK/Common'
+#  end
   
   s.subspec 'Login' do |ss|
     ss.source_files       = 'Source/Login/**/*'
@@ -63,7 +63,8 @@ Pod::Spec.new do |s|
     ss.source_files       = 'Source/WebView/**/*'
     
     ss.dependency         'Alamofire', '~> 5.4'
-    ss.dependency         'BlueshiftSDK/UI'
+    ss.dependency         'BlueshiftSDK/Common'
+#    ss.dependency         'BlueshiftSDK/UI'
   end
   
   s.subspec 'BLE' do |ss|

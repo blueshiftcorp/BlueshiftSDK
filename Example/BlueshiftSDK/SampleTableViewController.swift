@@ -1,5 +1,5 @@
 //
-//  File name : DefaultTabBarController.swift
+//  File name : SampleTableViewController.swift
 //
 //  Copyright (c) 2009-2021 Blueshift Corporation. All right reserved.
 //
@@ -21,38 +21,13 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 //
-//  Created by Blueshift on 2021/09/14
+//  Created by Blueshift on 2021/11/23
 //
 
 import UIKit
+import BlueshiftSDK
 
-open class DefaultTabBarController: UITabBarController, UITabBarControllerDelegate {
-    
-    //MARK:- Lifecycle
-    open override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        self.delegate = self
-        
-        initializeUI()
-    }
-    
-    open func initializeUI() {
-        UITabBar.setTransparentTabbar()
-        
-    }
-    
-    open func setupViewControllers(_ vcs: [UIViewController]) {
-        self .viewControllers = vcs
-    }
-    
-    public func createNavigationTabViewController(for rootViewController: UIViewController,
-                                                  title: String,
-                                                  image: UIImage) -> UIViewController {
-        let navController = UINavigationController(rootViewController: rootViewController)
-        navController.tabBarItem.title = title
-        navController.tabBarItem.image = image
-        rootViewController.navigationItem.title = title
-        return navController
-    }
-}
+//class SampleTableViewController: BSTableViewController {
+//    
+//    
+//}
