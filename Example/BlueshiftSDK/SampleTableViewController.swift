@@ -46,6 +46,7 @@ class SampleTableViewController: BSTableViewController {
             case .cell2: return "title2"
             }
         }
+
     }
     
     override func setTableView() {

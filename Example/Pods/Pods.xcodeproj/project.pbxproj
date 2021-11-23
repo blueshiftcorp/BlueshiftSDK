@@ -107,6 +107,7 @@
 		1AACFE25274CBCE6000278AF /* BSTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AACFE20274CBCE6000278AF /* BSTableViewCell.swift */; };
 		1AACFE26274CBCE6000278AF /* IndicatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AACFE21274CBCE6000278AF /* IndicatorViewController.swift */; };
 		1AACFE29274CBD30000278AF /* JasonSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AACFE28274CBD30000278AF /* JasonSerializer.swift */; };
+		1AACFE2B274CE6D7000278AF /* BSTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AACFE2A274CE6D7000278AF /* BSTabBarController.swift */; };
 		1B44662F92F56D07344E6C7725E2C2A4 /* FBLPromise+Any.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 9CB50994BC3B5E0B3421659C680ACDD3 /* FBLPromise+Any.h */; };
 		1B9E5CCB180C9C5C122ED5E58E8D019F /* GDTCOREventDataObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 71391FAE4262A44C46B69E4481FE346E /* GDTCOREventDataObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1CF925637E7BBBDA6443D48DDCBF32C7 /* FBLPromise+Timeout.h in Headers */ = {isa = PBXBuildFile; fileRef = DB790BD16BE9BEF5005CCEB16ECAF2EB /* FBLPromise+Timeout.h */; };
@@ -1277,6 +1278,7 @@
 		1AACFE20274CBCE6000278AF /* BSTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BSTableViewCell.swift; sourceTree = "<group>"; };
 		1AACFE21274CBCE6000278AF /* IndicatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndicatorViewController.swift; sourceTree = "<group>"; };
 		1AACFE28274CBD30000278AF /* JasonSerializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JasonSerializer.swift; sourceTree = "<group>"; };
+		1AACFE2A274CE6D7000278AF /* BSTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BSTabBarController.swift; sourceTree = "<group>"; };
 		1B01B710E14A75897F1604109DD3836F /* FIRHeartbeatInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRHeartbeatInfo.m; path = FirebaseCore/Sources/FIRHeartbeatInfo.m; sourceTree = "<group>"; };
 		1B56F72C054A46006C484E1BCA8F5830 /* OIDAuthStateChangeDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDAuthStateChangeDelegate.h; path = Source/AppAuthCore/OIDAuthStateChangeDelegate.h; sourceTree = "<group>"; };
 		1B5C0329B5A7C2FDDA82675D1E994CD2 /* GDTCORConsoleLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GDTCORConsoleLogger.m; path = GoogleDataTransport/GDTCORLibrary/GDTCORConsoleLogger.m; sourceTree = "<group>"; };
@@ -2288,6 +2290,7 @@
 		1AACFE1C274CBCE6000278AF /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				1AACFE2A274CE6D7000278AF /* BSTabBarController.swift */,
 				1AACFE1D274CBCE6000278AF /* BSViewController.swift */,
 				1AACFE1E274CBCE6000278AF /* SpinnerView.swift */,
 				1AACFE1F274CBCE6000278AF /* BSTableViewController.swift */,
@@ -5181,6 +5184,7 @@
 				3FB18A1D2F77067D2DAF592A035F2C45 /* UIView+Extension.swift in Sources */,
 				D08B8A8F83685738C9BE6455A49C950B /* UIViewController+Extension.swift in Sources */,
 				75790D33AEA02825729E19339EF1F08B /* Utility.swift in Sources */,
+				1AACFE2B274CE6D7000278AF /* BSTabBarController.swift in Sources */,
 				D011E3CC83287CC760FDCE3179E7C152 /* Utility+HealthKit.swift in Sources */,
 				1AACFE26274CBCE6000278AF /* IndicatorViewController.swift in Sources */,
 				084767BCA74FB65D23A198CD106F8ACF /* Utility+Login.swift in Sources */,

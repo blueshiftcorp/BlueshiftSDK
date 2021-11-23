@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A09EE11274D08CC009C3BB5 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A09EE10274D08CC009C3BB5 /* MainTabBarController.swift */; };
 		1A17569726E84F2E003997C5 /* APITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A17569626E84F2E003997C5 /* APITests.swift */; };
 		1A17569926E84FEF003997C5 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A17569826E84FEF003997C5 /* API.swift */; };
 		1A17569D26E85EE0003997C5 /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A17569C26E85EE0003997C5 /* APIRouter.swift */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A09EE10274D08CC009C3BB5 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		1A17569626E84F2E003997C5 /* APITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APITests.swift; sourceTree = "<group>"; };
 		1A17569826E84FEF003997C5 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		1A17569C26E85EE0003997C5 /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				1AACFDFC274CA2FE000278AF /* SampleTableViewController.swift */,
+				1A09EE10274D08CC009C3BB5 /* MainTabBarController.swift */,
 				1A1756AF26E883EC003997C5 /* API */,
 				1A1756AE26E883EC003997C5 /* Common */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
@@ -424,6 +427,7 @@
 			files = (
 				1A1756AA26E87D13003997C5 /* CommonValue.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				1A09EE11274D08CC009C3BB5 /* MainTabBarController.swift in Sources */,
 				1A17569926E84FEF003997C5 /* API.swift in Sources */,
 				1A1756A726E87CD8003997C5 /* APIRouter+Path.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
