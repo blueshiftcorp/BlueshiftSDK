@@ -1,6 +1,6 @@
 //
-//  File name : LoginEnum.swift
-
+//  File name : DefaultTabBarController.swift
+//
 //  Copyright (c) 2009-2021 Blueshift Corporation. All right reserved.
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -21,30 +21,38 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 //
-//  Created by Blueshift on 2021/09/07
+//  Created by Blueshift on 2021/09/14
 //
 
-enum LoginType: String {
-    case email      = "0"
-    case kakao      = "1"
-    case facebook   = "2"
-    case apple      = "3"
-    case google     = "4"
-    case naver      = "5"
-    
-    var description: String {
-        switch self {
-        case .email:    return "iCareMe 아이디"
-        case .kakao:    return "카카로톡 로그인"
-        case .facebook: return "페이스북 로그인"
-        case .apple:    return "애플 로그인"
-        case .google:   return "구글 로그인"
-        case .naver:    return "네이버 로그인"
-        }
-    }
-}
+import UIKit
 
-public enum LoginReturnCode: String {
-    case success = "0"
-    case notRegistered = "1"
+open class DefaultTabBarController: UITabBarController, UITabBarControllerDelegate {
+    
+    //MARK:- Lifecycle
+    open override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        self.delegate = self
+        
+        initializeUI()
+    }
+    
+    open func initializeUI() {
+        UITabBar.setTransparentTabbar()
+        
+    }
+    
+    open func setupViewControllers(_ vcs: [UIViewController]) {
+        self .viewControllers = vcs
+    }
+    
+    public func createNavigationTabViewController(for rootViewController: UIViewController,
+                                                  title: String,
+                                                  image: UIImage) -> UIViewController {
+        let navController = UINavigationController(rootViewController: rootViewController)
+        navController.tabBarItem.title = title
+        navController.tabBarItem.image = image
+        rootViewController.navigationItem.title = title
+        return navController
+    }
 }

@@ -31,9 +31,9 @@ extension Login {
                 return
             }
             
-            let email = user?.profile?.email
-            let fullName = user?.profile?.givenName
-            let token = user?.authentication.idToken
+//            let email = user?.profile?.email
+//            let fullName = user?.profile?.givenName
+//            let token = user?.authentication.idToken
             //TODO: 회원가입인 경우 추가 정보 입력(회원가입) 화면으로 이동
             //TODO: 로그인인 경우 첫화면으로 이동
             

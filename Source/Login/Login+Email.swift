@@ -29,7 +29,7 @@ extension Login {
         do {
             guard try Util.Validate.email(email), try Util.Validate.password(password) else { return }
             
-            delegate?.requestToServer()
+//            delegate?.requestToServer()
         } catch {
             switch error {
             case BSError.Validation.invalidEmailFormat:
@@ -41,27 +41,5 @@ extension Login {
             default: break
             }
         }
-        
-        //TODO: Development Only **********************
-//        self.completeLogin(sUser())
-        return
-        //**********************************************
-        
-        
-//        guard let request = API.User.login(lCode: .email, uId: email, uPw: password) else { return }
-//        request.execute(completion: { result in
-//            switch result {
-//            case .success(let value):
-//                switch value.rCode {
-//                case 0:
-//                    self.completeLogin(value.result!)
-//                default: break
-//                }
-//                
-//                break
-//            case .failure(let error):
-//                NSLog("Error occurred while requesting email login: \(error)")
-//            }
-//        })
     }
 }

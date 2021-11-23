@@ -40,10 +40,6 @@ extension Login {
                     return
                 }
                 
-                //TODO: Development Only
-//                self.completeLogin(sUser())
-                return
-                
                 guard let user = _user else { return }
                 guard let oauthToken = _oauthToken else { return }
                 self.doLogin(user: user, token: oauthToken)
@@ -53,7 +49,7 @@ extension Login {
     }
     
     private func doLogin(user: User, token: OAuthToken) {
-        guard let userId = user.id else { return }
+//        guard let userId = user.id else { return }
 //        guard let request = API.User.login(lCode: .kakaotalk, uId: String(userId), uPw: token.accessToken) else { return }
 //
 //        request.execute { (result) in
@@ -77,9 +73,9 @@ extension Login {
     
     private func doRegister(user: User, token: OAuthToken) {
         
-        guard let email = user.kakaoAccount?.email else { return }
-        guard let nickName = user.kakaoAccount?.profile?.nickname else { return }
-        guard let profileImageUrl = user.kakaoAccount?.profile?.profileImageUrl?.absoluteString else { return }
+//        guard let email = user.kakaoAccount?.email else { return }
+//        guard let nickName = user.kakaoAccount?.profile?.nickname else { return }
+//        guard let profileImageUrl = user.kakaoAccount?.profile?.profileImageUrl?.absoluteString else { return }
         
 //        let pUser = sUser()
 //        guard let request = API.User.add(lCode: .kakaotalk, UserInfo: pUser) else { return }

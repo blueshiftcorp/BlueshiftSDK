@@ -98,6 +98,9 @@
 		19F675A86C85AD68AE8447C98D4FA2EC /* FIROptionsInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 40DAD1333548A5129826DC5FFC0BC099 /* FIROptionsInternal.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		1A1BBB0326E8CA2C00657B02 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1BBB0226E8CA2C00657B02 /* test.swift */; };
 		1A1BBB0926E8D0C300657B02 /* DefaultWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1BBB0726E8D03E00657B02 /* DefaultWebViewController.swift */; };
+		1A26F22F26F02882000759AE /* DefaultTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A26F22E26F02882000759AE /* DefaultTabBarController.swift */; };
+		1A26F23126F029CE000759AE /* UITabBar+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A26F23026F029CE000759AE /* UITabBar+Extension.swift */; };
+		1AACFDE3274C8647000278AF /* Protocols+Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AACFDE2274C8647000278AF /* Protocols+Login.swift */; };
 		1ABF7519B95B9E3BB215EBA5F82394BC /* FIRInstallationsStoredAuthToken.h in Headers */ = {isa = PBXBuildFile; fileRef = 694CFD47155BA727A004846C808C845C /* FIRInstallationsStoredAuthToken.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		1ADBDD9AB9E7E17EB9EE277DDB858D17 /* Utility+HealthKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968871DD4934941271C66789230E585C /* Utility+HealthKit.swift */; };
 		1B419035A0A9807C6903AA92E4FBC03F /* FIRMessagingDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C0BAF5530CA4FFB55AA201AC94D80B7 /* FIRMessagingDefines.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -1268,9 +1271,12 @@
 		195CD1D8731A1C660DB49D199B8293AA /* FIRConfigurationInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRConfigurationInternal.h; path = FirebaseCore/Sources/FIRConfigurationInternal.h; sourceTree = "<group>"; };
 		1A1BBB0226E8CA2C00657B02 /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
 		1A1BBB0726E8D03E00657B02 /* DefaultWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DefaultWebViewController.swift; path = Source/UI/DefaultWebViewController.swift; sourceTree = "<group>"; };
+		1A26F22E26F02882000759AE /* DefaultTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultTabBarController.swift; sourceTree = "<group>"; };
+		1A26F23026F029CE000759AE /* UITabBar+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITabBar+Extension.swift"; sourceTree = "<group>"; };
 		1A5E2D130A8CAB89A9B1C9CABAB9BD89 /* FIRInstallationsIDController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRInstallationsIDController.m; path = FirebaseInstallations/Source/Library/InstallationsIDController/FIRInstallationsIDController.m; sourceTree = "<group>"; };
 		1A7E86C4DC62F8B628B0E0E2FE19080F /* Pods-BlueshiftSDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BlueshiftSDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		1A80BD0DA1C3DBEF3C247655BC8EABAB /* OIDFieldMapping.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDFieldMapping.m; path = Source/AppAuthCore/OIDFieldMapping.m; sourceTree = "<group>"; };
+		1AACFDE2274C8647000278AF /* Protocols+Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Protocols+Login.swift"; sourceTree = "<group>"; };
 		1B01B710E14A75897F1604109DD3836F /* FIRHeartbeatInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRHeartbeatInfo.m; path = FirebaseCore/Sources/FIRHeartbeatInfo.m; sourceTree = "<group>"; };
 		1B56F72C054A46006C484E1BCA8F5830 /* OIDAuthStateChangeDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDAuthStateChangeDelegate.h; path = Source/AppAuthCore/OIDAuthStateChangeDelegate.h; sourceTree = "<group>"; };
 		1B5C0329B5A7C2FDDA82675D1E994CD2 /* GDTCORConsoleLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GDTCORConsoleLogger.m; path = GoogleDataTransport/GDTCORLibrary/GDTCORConsoleLogger.m; sourceTree = "<group>"; };
@@ -2456,6 +2462,7 @@
 				54F74C9307714391138FA4A72D6C997E /* LoginKeyValue.swift */,
 				27C397D0788F6E5FFB4ED7321305041E /* Preferences.swift */,
 				86F249EF79A37C0F6822164BD18F8E4E /* Utility+Login.swift */,
+				1AACFDE2274C8647000278AF /* Protocols+Login.swift */,
 			);
 			name = Login;
 			sourceTree = "<group>";
@@ -3445,6 +3452,7 @@
 				B5BE20C21A1A49D1FDB897A68ED58A74 /* ToastViewController.swift */,
 				38688987350A0DFACB96B5E0C23D0330 /* Utility+UI.swift */,
 				1A1BBB0726E8D03E00657B02 /* DefaultWebViewController.swift */,
+				1A26F22E26F02882000759AE /* DefaultTabBarController.swift */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -3507,6 +3515,7 @@
 				7E28CA16AF85546D496F0EC2D0AE14E7 /* UILabel+Extension.swift */,
 				9F1B916CD511C4BE67B61C914815DFB2 /* UIView+Extension.swift */,
 				36B75C238C01A279EBBD5FBD9C7EEDBD /* UIViewController+Extension.swift */,
+				1A26F23026F029CE000759AE /* UITabBar+Extension.swift */,
 			);
 			name = Extension;
 			path = Source/Common/Extension;
@@ -5173,10 +5182,12 @@
 				64CB7E7EF4DCAD9634A1A57C8051729B /* BSError.swift in Sources */,
 				7E5693A325278EBDD03B007E442872B2 /* BSError+Login.swift in Sources */,
 				C16F6E19D010A311F1810CF6D4F633CE /* CommonEnum.swift in Sources */,
+				1AACFDE3274C8647000278AF /* Protocols+Login.swift in Sources */,
 				3F6F9175D1B2428CF145B2E6D53C91DC /* CommonValue.swift in Sources */,
 				06D8F4EEC453AF95ECC0CAD70D5F242E /* CommonValue+Login.swift in Sources */,
 				11F4C630309CFD407E96D5B8A8E0EDF3 /* DefaultTableViewController.swift in Sources */,
 				9EC111E50E9B18CBCA14081E9472C8F9 /* DefaultViewController.swift in Sources */,
+				1A26F23126F029CE000759AE /* UITabBar+Extension.swift in Sources */,
 				406C08C24EECCD815A2D61ADA524B2BE /* Login.swift in Sources */,
 				B2DDC3C3C229A27ACD0FB157815BFB6A /* Login+Apple.swift in Sources */,
 				60A608BA0FA8D45086DFE248883C1133 /* Login+Email.swift in Sources */,
@@ -5193,6 +5204,7 @@
 				FA54B8E31069A2D5A5F9804F533C4FA7 /* UIColor+Extension.swift in Sources */,
 				5E382D04FD9852961105F2CAA3807B65 /* UILabel+Extension.swift in Sources */,
 				07F7DA12B4CD99D5318BDC703BF67ABF /* UIPaddingLabel.swift in Sources */,
+				1A26F22F26F02882000759AE /* DefaultTabBarController.swift in Sources */,
 				9C7EDE60E7C1647A25DEBCB24096C2F9 /* UIView+Extension.swift in Sources */,
 				3A89AB36DDB93C9E571580A72B737E1A /* UIViewController+Extension.swift in Sources */,
 				FA875537DC893C277598B512CE348718 /* Utility.swift in Sources */,

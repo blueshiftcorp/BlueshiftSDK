@@ -33,7 +33,7 @@ Pod::Spec.new do |s|
     
     ss.dependency         'BlueshiftSDK/Common'
     ss.dependency         'Alamofire', '~> 5.4'   # Networking
-    ss.dependency         'PromisedFuture'        # Async
+    ss.dependency         'PromisedFuture'        # Async Process Management
   end
   
   s.subspec 'UI' do |ss|

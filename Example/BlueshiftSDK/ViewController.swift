@@ -24,12 +24,12 @@ class ViewController: UIViewController {
     func temp() {
         let request = API.Duplicated.email(email: "")
         request?.execute(completion: { result in
-            switch result {
-            case .success(let value):
-                break
-            case .failure(let error):
-                break
-            }
+//            switch result {
+//            case .success(let value):
+//                break
+//            case .failure(let error):
+//                break
+//            }
         })
         
         

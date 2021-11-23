@@ -36,43 +36,20 @@ extension Login {
     }
     
     private func doLogin(auth: ASAuthorizationAppleIDCredential) {
-        guard let token = auth.identityToken?.hexEncodedString() else { return }
-//        guard let request = API.User.login(lCode: .apple, uId: auth.user, uPw: token) else { return }
-//
-//        request.execute { (result) in
-//            switch result {
-//            case .success(let value):
-//
-//                //TODO: Development Only
-//                self.completeLogin(sUser())
-//                return
-//
-//            //TODO: 로그인 성공
-//            //TODO: 회원가입 필요
-//                self.doRegister(auth: auth)
-//            case .failure(let error):
-//                NSLog("Error occurred while logging in with KakaoTalk : \(error)")
-//            }
-//        }
+        /// 사용자 관리를 위해 토큰이 필요한 경우 사용
+//        guard let token = auth.identityToken?.hexEncodedString() else { return }
     }
     
     private func doRegister(auth: ASAuthorizationAppleIDCredential) {
         
-        guard let email = auth.email else { return }
-        guard let name = auth.fullName?.nickname else { return }
-        guard let token = auth.identityToken?.hexEncodedString() else { return }
+        /**
+         사용자 이메일 : auth.email
+         사용자 이름 : auth.name
+         */
+//        guard let email = auth.email else { return }
+//        guard let name = auth.fullName?.nickname else { return }
+//        guard let token = auth.identityToken?.hexEncodedString() else { return }
         
-//        let pUser = sUser(uId: auth.user, uNick: name, uEmail: email, uPw: token)
-//        guard let request = API.User.add(lCode: .apple, UserInfo: pUser) else { return }
-//        request.execute { (result) in
-//            switch result {
-//            case .success(let value): break
-//            //TODO: 회원가입 성공
-//                self.doLogin(auth: auth)
-//            //TODO: 회원가입 실패
-//            case .failure(let error): break
-//            }
-//        }
     }
 }
 

@@ -24,16 +24,21 @@ import Alamofire
 extension Login {
     
     internal func withNaver() {
-//        NaverThirdPartyLoginConnection.getSharedInstance().isNaverAppOauthEnable = true
-//        NaverThirdPartyLoginConnection.getSharedInstance().isInAppOauthEnable = true
-//        NaverThirdPartyLoginConnection.getSharedInstance().setOnlyPortraitSupportInIphone(true)
         
         guard let login = NaverThirdPartyLoginConnection.getSharedInstance() else {
             print("네이버 로그인 중 컨넥션을 생성하지 못했습니다.")
             return
         }
+        
+        if login.isValidAccessTokenExpireTimeNow() {
+            login.requestDeleteToken()
+        }
         login.delegate = self
         login.requestThirdPartyLogin()
+    }
+    
+    private func doLogin(userID: String, token: String) {
+        //TODO: 네이버 사용자 토큰 전달후 로그인 완료 진행
     }
     
 }
@@ -52,21 +57,17 @@ extension Login: NaverThirdPartyLoginConnectionDelegate {
         
         req.responseJSON { response in
             
-            switch response.result {
-            case .success(let value):
-                guard let json = value as? [String: Any] else { return }
-                guard let object = json["response"] as? [String: Any] else { return }
-                guard let name = object["name"] as? String else { return }
-                guard let email = object["email"] as? String else { return }
-                guard let nickname = object["nickname"] as? String else { return }
+//            switch response.result {
+//            case .success(let value):
+//                guard let json = value as? [String: Any] else { return }
+//                guard let object = json["response"] as? [String: Any] else { return }
+//                guard let name = object["name"] as? String else { return }
+//                guard let email = object["email"] as? String else { return }
+//                guard let nickname = object["nickname"] as? String else { return }
                 
-                //TODO: Development Only
-//                self.completeLogin(sUser())
-                return
-                
-            case .failure(let error):
-                print("네이버 사용자 정보 요청 중 오류가 발생했습니다: \(error.localizedDescription)")
-            }
+//            case .failure(let error):
+//                print("네이버 사용자 정보 요청 중 오류가 발생했습니다: \(error.localizedDescription)")
+//            }
         }
     }
     

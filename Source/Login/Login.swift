@@ -20,63 +20,56 @@
 import UIKit
 import LocalAuthentication
 
-protocol LoginDelegate {
-    func requestToServer()
-}
-
-open class Login: NSObject {
+class Login: NSObject {
     
     internal var parentVC: UIViewController
-//    internal var _completeHandler : ((sUser)->Void)?
-    
     internal let authContext = LAContext()
     
-    var delegate: LoginDelegate?
-    
-    public init(from vc: UIViewController) {
+    init(from vc: UIViewController) {
         self.parentVC = vc
     }
     
     public func with(_ loginType: LoginType, _ email: String? = nil, _ password: String? = nil) {
+        
         switch loginType {
         case .email: withEmail(email, password)
         case .google: withGoogle()
         case .naver: withNaver()
-        case .kakaotalk: withKakaoTalk()
+        case .kakao: withKakaoTalk()
         case .apple: withApple()
+        case .facebook: break
         }
     }
     
-//    internal func completeLogin(_ user: sUser) {
+    internal func completeLogin(authCode: LoginType, userID: String, userPw: String, userInfo: UserInfo) {
+        
+        /// 사용자 정보를 이용하여 현재 사용자 정보저장
+        /// 완료 후 프로세스 정의
+        
+//        switch value.responseCode {
+//        case "200":
+//            if value.loginFlag == "1" {
+//                Util.setUserPreference(userInfo.id, userInfo.token!)
+//                Util.setRootViewController()
+//            } else {
+//                Util.setRootViewController()
+//            }
+//        case "617":
+//            if authCode == .email {
+//                let vc = AlertViewController(message: "아이디 혹은 비밀번호가 정확하지 않습니다.")
+//                self.parentVC.present(vc, animated: false)
 //
-//        //TODO: Development Only
-////        let _user = sUser(uIdx: "1", token: "tempToken")
-//        let _user = sUser()
-//
-////        Util.setUserPreference(_user)
-//
-////        guard let name = user.uNick, name.count > 0 else {
-////            let vc = GetNicknameViewController()
-////            vc.modalPresentationStyle = .fullScreen
-////            vc.user = user
-////            parentVC.present(vc, animated: true)
-////            return
-////        }
-//
-////        Util.setRootViewController()
-//    }
-    
-    //TODO: 로그인 정보 저장상태인 경우 실행하도록 프로세스 정의
-    private func faceId() {
-        authContext.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: "") { success, error in
-            guard success else {
-                return
-            }
-            guard error != nil else {
-                self.parentVC.showToast(message: BSError.Login.bioAuth.localizedDescription)
-                print ("*** 생체인증 중 오류가 발생했습니다. 다른 방법으로 로그인해주세요.")
-                return
-            }
-        }
+//            } else {
+//                let vc = AgreementViewController()
+//                vc.authCode = authCode
+//                vc.userId = userID
+//                vc.userPw = userPw
+//                vc.router = .webView(.agreeIndex)
+//                vc.title = "서비스 동의"
+//                vc.hidesBottomBarWhenPushed = true
+//                self.parentVC.navigationController?.pushViewController(vc, animated: true)
+//            }
+//        default: break
+//        }
     }
 }
