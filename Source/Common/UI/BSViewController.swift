@@ -26,7 +26,7 @@
 
 import UIKit
 
-class BSViewController: UIViewController {
+open class BSViewController: UIViewController {
 
     enum BSVCOption {
         case backButton
@@ -67,19 +67,19 @@ class BSViewController: UIViewController {
         self.scrollView = scrollView
     }
     
-    required init?(coder: NSCoder) {
+    public required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
     //MARK: - Lifecycle
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
         
         initializeUI()
     }
     
     //MARK: - Methods
-    internal func initializeUI() {
+    public func initializeUI() {
         self.view.backgroundColor = .white
         
         self.navigationController?.navigationBar.isTranslucent = true
@@ -110,15 +110,15 @@ class BSViewController: UIViewController {
     }
     
     //MARK: - Actions
-    @objc internal func dismissKeyboard() {
+    @objc public func dismissKeyboard() {
         view.endEditing(true)
     }
     
-    @objc internal func backButtonClicked() {
+    @objc public func backButtonClicked() {
         navigationController?.popViewController(animated: true)
     }
     
-    @objc internal func closeButtonClicked() {
+    @objc public func closeButtonClicked() {
         dismiss(animated: true)
     }
     

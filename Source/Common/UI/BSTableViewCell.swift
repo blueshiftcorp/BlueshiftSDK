@@ -26,6 +26,6 @@
 
 import UIKit
 
-protocol BSTableViewCell {
+public protocol BSTableViewCell: CaseIterable {
     var identifier: String { get }
 }

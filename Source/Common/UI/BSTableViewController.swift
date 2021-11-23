@@ -26,33 +26,47 @@
 
 import UIKit
 
-class BSTableViewController: BSViewController, UITabBarDelegate, UITableViewDataSource {
+//public protocol BSTableViewCofiguration: UITableViewDelegate, UITableViewDataSource {
+//    var cellItems: [Any] { get }
+//}
+
+open class BSTableViewController: BSViewController, UITableViewDataSource {
     
-    var tableView: UITableView!
-    var refreshControl: UIRefreshControl!
+    public var tableView: UITableView!
+    public var refreshControl: UIRefreshControl!
     
+    /// 데이터 없음 표시
+    ///
     /// 데이터가 없을 경우 (테이블 뷰에 보일 데이터 없는 경우)
     /// "아직 등록된 내용이 없습니다" 표시
     /// item count > 0 : hidden(default)
-    var emptyLabel: UILabel!
+    public var emptyLabel: UILabel!
     
     /// refresh 여부 확인
+    ///
     /// refresh인 경우 데이터 초기화
-    var isRefreshing = false
+    public var isRefreshing = false
     
     /// 추가로 호출된 데이터가 마지막 데이터 인지 여부
+    ///
     /// isEnd = true인 경우 데이터 추가 호출 안됨
-    var isLastRow = false
+    public var isLastRow = false
     
     /// 데이터 요청 시 아이템 시작 번호
+    ///
     /// 다음 데이터 호출 시 마지막 다음 번호부터 호출
     /// ex) startNo = 0, requestCnt = 15 이면 다음 호출은 startNo += requestCnt
-    var startRowId = 0
+    public var startRowId = 0
     
     /// 요청 시 전달될 데이터의 개수
-    var requestRowCnt = 15
+    public var requestRowCnt = 15
     
-    override func initializeUI() {
+    /// 테이블뷰 셀 모델 행렬
+    ///
+    /// 테이블뷰 각 셀에 대한 데이터 모델행렬
+    public var cellItems = [Any]()
+    
+    open override func initializeUI() {
         super.initializeUI()
         
         scrollView = tableView
@@ -61,7 +75,7 @@ class BSTableViewController: BSViewController, UITabBarDelegate, UITableViewData
         setEmptyLabel()
     }
     
-    internal func setTableView() {
+    open func setTableView() {
         
         tableView = UITableView()
         tableView.backgroundColor = .white
@@ -107,7 +121,7 @@ class BSTableViewController: BSViewController, UITabBarDelegate, UITableViewData
     /// - parameters :
     ///     - msg(String) : 표시될 메세지 (default: "아직 등록된 내용이 없습니다."
     ///
-    private func setEmptyLabel(_ msg: String? = nil) {
+    open func setEmptyLabel(_ msg: String? = nil) {
         emptyLabel = UILabel()
         emptyLabel.isHidden = true
         emptyLabel.text = msg ?? "아직 등록된 내용이 없습니다."
@@ -124,11 +138,16 @@ class BSTableViewController: BSViewController, UITabBarDelegate, UITableViewData
         ])
     }
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return cellItems.count
     }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cellItem = cellItems[indexPath.row]
+        return cellFortableView(indexPath: indexPath, cellItem: cellItem)
+    }
+
+    open func cellFortableView(indexPath: IndexPath, cellItem: Any) -> UITableViewCell {
         return UITableViewCell()
     }
 }

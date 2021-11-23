@@ -26,17 +26,17 @@
 
 import UIKit
 
-class IndicatorViewController: UIViewController {
+public class IndicatorViewController: UIViewController {
     
     let indicatorView = SpinnerView()
     
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
         updateIndicator(isHidden: false)
     }
     
-    override func viewWillDisappear(_ animated: Bool) {
+    public override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         updateIndicator(isHidden: true)
     }
