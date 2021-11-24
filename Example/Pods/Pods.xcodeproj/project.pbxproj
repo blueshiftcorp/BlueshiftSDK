@@ -108,6 +108,7 @@
 		1AACFE26274CBCE6000278AF /* IndicatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AACFE21274CBCE6000278AF /* IndicatorViewController.swift */; };
 		1AACFE29274CBD30000278AF /* JasonSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AACFE28274CBD30000278AF /* JasonSerializer.swift */; };
 		1AACFE2B274CE6D7000278AF /* BSTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AACFE2A274CE6D7000278AF /* BSTabBarController.swift */; };
+		1AFE62C2274DE94200EC7353 /* APIReturnCodeConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFE62C1274DE94200EC7353 /* APIReturnCodeConfiguration.swift */; };
 		1B44662F92F56D07344E6C7725E2C2A4 /* FBLPromise+Any.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 9CB50994BC3B5E0B3421659C680ACDD3 /* FBLPromise+Any.h */; };
 		1B9E5CCB180C9C5C122ED5E58E8D019F /* GDTCOREventDataObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 71391FAE4262A44C46B69E4481FE346E /* GDTCOREventDataObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1CF925637E7BBBDA6443D48DDCBF32C7 /* FBLPromise+Timeout.h in Headers */ = {isa = PBXBuildFile; fileRef = DB790BD16BE9BEF5005CCEB16ECAF2EB /* FBLPromise+Timeout.h */; };
@@ -1279,6 +1280,7 @@
 		1AACFE21274CBCE6000278AF /* IndicatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndicatorViewController.swift; sourceTree = "<group>"; };
 		1AACFE28274CBD30000278AF /* JasonSerializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JasonSerializer.swift; sourceTree = "<group>"; };
 		1AACFE2A274CE6D7000278AF /* BSTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BSTabBarController.swift; sourceTree = "<group>"; };
+		1AFE62C1274DE94200EC7353 /* APIReturnCodeConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIReturnCodeConfiguration.swift; sourceTree = "<group>"; };
 		1B01B710E14A75897F1604109DD3836F /* FIRHeartbeatInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRHeartbeatInfo.m; path = FirebaseCore/Sources/FIRHeartbeatInfo.m; sourceTree = "<group>"; };
 		1B56F72C054A46006C484E1BCA8F5830 /* OIDAuthStateChangeDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDAuthStateChangeDelegate.h; path = Source/AppAuthCore/OIDAuthStateChangeDelegate.h; sourceTree = "<group>"; };
 		1B5C0329B5A7C2FDDA82675D1E994CD2 /* GDTCORConsoleLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GDTCORConsoleLogger.m; path = GoogleDataTransport/GDTCORLibrary/GDTCORConsoleLogger.m; sourceTree = "<group>"; };
@@ -2829,6 +2831,7 @@
 				BE7CA65AC04BA2885DE37F41915BF32E /* API.swift */,
 				7ACFA431232B6424FA863E8D0DE4C009 /* APIConfiguration.swift */,
 				938D1AA0DF5BF2B6723E86AB77E12F7D /* APIResponse.swift */,
+				1AFE62C1274DE94200EC7353 /* APIReturnCodeConfiguration.swift */,
 			);
 			name = API;
 			sourceTree = "<group>";
@@ -5176,6 +5179,7 @@
 				33FE52535174B26E1040FEAFCCA331D7 /* Preferences.swift in Sources */,
 				EDB60A34FD11F1E07402DB81F332F908 /* Protocols+Login.swift in Sources */,
 				1AACFE29274CBD30000278AF /* JasonSerializer.swift in Sources */,
+				1AFE62C2274DE94200EC7353 /* APIReturnCodeConfiguration.swift in Sources */,
 				D528D61C0E657DB3C8ECF8748DF1D6E5 /* test.swift in Sources */,
 				FEF6DDFF1BACD23BFE2D4AED4B94BDEE /* UIColor+Extension.swift in Sources */,
 				11426D5C18F3653BCA94268FD6B9D070 /* UILabel+Extension.swift in Sources */,

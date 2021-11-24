@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1A09EE11274D08CC009C3BB5 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A09EE10274D08CC009C3BB5 /* MainTabBarController.swift */; };
-		1A09EE13274D1945009C3BB5 /* SampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A09EE12274D1945009C3BB5 /* SampleViewController.swift */; };
 		1A17569726E84F2E003997C5 /* APITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A17569626E84F2E003997C5 /* APITests.swift */; };
 		1A17569926E84FEF003997C5 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A17569826E84FEF003997C5 /* API.swift */; };
 		1A17569D26E85EE0003997C5 /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A17569C26E85EE0003997C5 /* APIRouter.swift */; };
@@ -18,12 +17,12 @@
 		1A1756AA26E87D13003997C5 /* CommonValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1756A926E87D13003997C5 /* CommonValue.swift */; };
 		1A1756B226E88442003997C5 /* ServerResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1756B126E88442003997C5 /* ServerResponse.swift */; };
 		1A1756B526E88971003997C5 /* APIRouter+Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1756A026E87C81003997C5 /* APIRouter+Method.swift */; };
-		1AACFDFD274CA2FE000278AF /* SampleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AACFDFC274CA2FE000278AF /* SampleTableViewController.swift */; };
+		1AFE62C4274E00F000EC7353 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFE62C3274E00F000EC7353 /* HomeViewController.swift */; };
+		1AFE62C6274E045B00EC7353 /* SecondNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFE62C5274E045B00EC7353 /* SecondNavigationViewController.swift */; };
+		1AFE62C8274E046F00EC7353 /* ThirdTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFE62C7274E046F00EC7353 /* ThirdTableViewController.swift */; };
 		26618DC5D4726F318BCAAB79 /* Pods_BlueshiftSDK_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA29AC0CCDCB8CDC181A2A8B /* Pods_BlueshiftSDK_Tests.framework */; };
 		37DF5FC06C27B7BB7BF62B1F /* Pods_BlueshiftSDK_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AE7D842D8F8072CB434FBA0 /* Pods_BlueshiftSDK_Example.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
-		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
-		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
@@ -41,7 +40,6 @@
 
 /* Begin PBXFileReference section */
 		1A09EE10274D08CC009C3BB5 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
-		1A09EE12274D1945009C3BB5 /* SampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleViewController.swift; sourceTree = "<group>"; };
 		1A17569626E84F2E003997C5 /* APITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APITests.swift; sourceTree = "<group>"; };
 		1A17569826E84FEF003997C5 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		1A17569C26E85EE0003997C5 /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
@@ -51,13 +49,13 @@
 		1A1756A626E87CD8003997C5 /* APIRouter+Path.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "APIRouter+Path.swift"; sourceTree = "<group>"; };
 		1A1756A926E87D13003997C5 /* CommonValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonValue.swift; sourceTree = "<group>"; };
 		1A1756B126E88442003997C5 /* ServerResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerResponse.swift; sourceTree = "<group>"; };
-		1AACFDFC274CA2FE000278AF /* SampleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleTableViewController.swift; sourceTree = "<group>"; };
+		1AFE62C3274E00F000EC7353 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		1AFE62C5274E045B00EC7353 /* SecondNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondNavigationViewController.swift; sourceTree = "<group>"; };
+		1AFE62C7274E046F00EC7353 /* ThirdTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdTableViewController.swift; sourceTree = "<group>"; };
 		55655CF958C207E6FB1E2C4D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* BlueshiftSDK_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlueshiftSDK_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* BlueshiftSDK_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlueshiftSDK_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -157,13 +155,12 @@
 			isa = PBXGroup;
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
-				1AACFDFC274CA2FE000278AF /* SampleTableViewController.swift */,
 				1A09EE10274D08CC009C3BB5 /* MainTabBarController.swift */,
-				1A09EE12274D1945009C3BB5 /* SampleViewController.swift */,
+				1AFE62C3274E00F000EC7353 /* HomeViewController.swift */,
+				1AFE62C5274E045B00EC7353 /* SecondNavigationViewController.swift */,
+				1AFE62C7274E046F00EC7353 /* ThirdTableViewController.swift */,
 				1A1756AF26E883EC003997C5 /* API */,
 				1A1756AE26E883EC003997C5 /* Common */,
-				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
@@ -307,7 +304,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
@@ -429,17 +425,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A1756AA26E87D13003997C5 /* CommonValue.swift in Sources */,
-				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				1A09EE11274D08CC009C3BB5 /* MainTabBarController.swift in Sources */,
 				1A17569926E84FEF003997C5 /* API.swift in Sources */,
 				1A1756A726E87CD8003997C5 /* APIRouter+Path.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				1A1756A326E87CA1003997C5 /* APIRouter+Hierarchy.swift in Sources */,
-				1A09EE13274D1945009C3BB5 /* SampleViewController.swift in Sources */,
-				1AACFDFD274CA2FE000278AF /* SampleTableViewController.swift in Sources */,
+				1AFE62C8274E046F00EC7353 /* ThirdTableViewController.swift in Sources */,
 				1A1756A526E87CBA003997C5 /* APIRouter+Parameters.swift in Sources */,
 				1A17569D26E85EE0003997C5 /* APIRouter.swift in Sources */,
+				1AFE62C6274E045B00EC7353 /* SecondNavigationViewController.swift in Sources */,
 				1A1756B526E88971003997C5 /* APIRouter+Method.swift in Sources */,
+				1AFE62C4274E00F000EC7353 /* HomeViewController.swift in Sources */,
 				1A1756B226E88442003997C5 /* ServerResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -464,14 +460,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		607FACD91AFB9204008FA782 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				607FACDA1AFB9204008FA782 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		607FACDE1AFB9204008FA782 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (

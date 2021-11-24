@@ -26,11 +26,7 @@
 
 import UIKit
 
-//public protocol BSTableViewCofiguration: UITableViewDelegate, UITableViewDataSource {
-//    var cellItems: [Any] { get }
-//}
-
-open class BSTableViewController: BSViewController, UITableViewDataSource {
+open class BSTableViewController: BSViewController {
     
     public var tableView: UITableView!
     public var refreshControl: UIRefreshControl!
@@ -55,7 +51,11 @@ open class BSTableViewController: BSViewController, UITableViewDataSource {
     /// 데이터 요청 시 아이템 시작 번호
     ///
     /// 다음 데이터 호출 시 마지막 다음 번호부터 호출
-    /// ex) startNo = 0, requestCnt = 15 이면 다음 호출은 startNo += requestCnt
+    /// 예를들어, startNo = 0, requestCnt = 15 이면
+    /// 다음 호출은
+    /// ```
+    /// startNo += requestCnt
+    /// ```
     public var startRowId = 0
     
     /// 요청 시 전달될 데이터의 개수
@@ -118,9 +118,8 @@ open class BSTableViewController: BSViewController, UITableViewDataSource {
     ///
     /// TableView Data 없을 경우 표시하는 Label
     ///
-    /// - parameters :
-    ///     - msg(String) : 표시될 메세지 (default: "아직 등록된 내용이 없습니다."
-    ///
+    /// - Parameters:
+    ///    - msg : 표시될 메세지 (default: "아직 등록된 내용이 없습니다.")
     open func setEmptyLabel(_ msg: String? = nil) {
         emptyLabel = UILabel()
         emptyLabel.isHidden = true
@@ -136,18 +135,5 @@ open class BSTableViewController: BSViewController, UITableViewDataSource {
             emptyLabel.centerXAnchor.constraint(equalTo: tableView.centerXAnchor),
             emptyLabel.centerYAnchor.constraint(equalTo: tableView.centerYAnchor, constant: -100)
         ])
-    }
-    
-    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return cellItems.count
-    }
-
-    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cellItem = cellItems[indexPath.row]
-        return cellFortableView(indexPath: indexPath, cellItem: cellItem)
-    }
-
-    open func cellFortableView(indexPath: IndexPath, cellItem: Any) -> UITableViewCell {
-        return UITableViewCell()
     }
 }

@@ -26,6 +26,11 @@
 
 import UIKit
 
+/// BSViewController 초기화 옵션
+///
+/// ViewController 초기화에서 backButton, closeButton, keyboard 사용여부를 선택하여야합니다.
+/// 해당 옵션을 선택하기 위해서는 BSViewController를 상속받은 Class에서 BSViewControllerConfiguration Protocol의 options를 리턴해야합니다.
+///
 public protocol BSViewControllerConfiguration {
     func options() -> [BSVCOption]
 }
@@ -36,6 +41,31 @@ public enum BSVCOption {
     case keyboard
 }
 
+/// UIViewController 기본값 제공 BSViewController
+///
+/// 앱 전체에 일반적으로 사용되는 기능 및 설정값을 제공하는 Base ViewController입니다.
+/// 옵션을 설정하기 위해서는 BSViewControllerConfiguration protocol을 implementation 해야합니다.
+///
+/// - Variables:
+///     - emptyLabel
+///     - isRefresing
+///     - isLastRow
+///     - startRowId
+///     - requestRowCnt
+///     - cellItems
+///
+/// - Usage:
+/// ```
+/// class TestViewController: BSViewController,
+///                           BaseViewControllerConfiguration {
+///
+/// ...
+///
+///     override options() -> [BSVCOption] {
+///         return [.backButton, .closeButton]
+///     }
+/// }
+/// ```
 open class BSViewController: UIViewController {
     
     internal var scrollView:UIScrollView?
@@ -44,7 +74,7 @@ open class BSViewController: UIViewController {
     private var isKeyboardUse = false
     
     //MARK: - Lifecycle
-    public override func viewDidLoad() {
+    open override func viewDidLoad() {
         super.viewDidLoad()
         setOptions()
         initializeUI()

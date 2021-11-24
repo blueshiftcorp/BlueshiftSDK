@@ -26,6 +26,15 @@
 
 import UIKit
 
+/// BSTabBarItem
+///
+/// 탭바를 구성할 탭바 아이템 구성을 위한 구조체입니다.
+/// - Varibales:
+///     - viewController : 탭 선택 시 표시할 ViewController
+///     - tabBarIcon: 탭에서 사용할 아이콘 이미지
+///     - tabBarTitle: 탭 표시할 타이틀
+///     - isNavigationController: 탭 선택 시 표시할 ViewController가 NavigationController일 경우 ture(default), ViewController일 경우 false 정의해야함.
+///
 public struct BSTabBarItem {
     public var viewController: UIViewController
     public var tabBarIcon: UIImage
@@ -43,6 +52,12 @@ public struct BSTabBarItem {
     }
 }
 
+/// BSTabBarItemConfguration
+///
+/// BSTabBarController를 상속하여 사용할 경우, protocol을 통해 TabBar Item을 구성해야합니다.
+/// 상속받은 클래스에서 BSTabBarItemConfiguration의 tabBarItems를 implementation하면 해당 아이템들로 탭바가 구성됩니다.
+/// 탭바 아이템 구성시 탭바 타이틀, 아이콘, 네비게이션 여부 등을 설정해서 BSTabBarItem Array로 전달합니다.
+/// 
 public protocol BSTabBarItemConfiguration {
     func tabBarItems() -> [BSTabBarItem]
 }
@@ -64,16 +79,19 @@ open class BSTabBarController: UITabBarController, UITabBarControllerDelegate {
     open func initializeUI() {
         self.view.backgroundColor = .white
         
-        setViewControllers()
         setTabBarAppearance()
+        setViewControllers()
     }
     
     private func setViewControllers() {
         
         guard let items = self.tabBarItems() else { return }
+        var tabVCs = [UIViewController]()
         for item in items {
-            self.viewControllers?.append(createTabViewController(item))
+            tabVCs.append(createTabViewController(item))
         }
+        
+        self.viewControllers = tabVCs
     }
     
     open func setTabBarAppearance() {
@@ -89,6 +107,7 @@ open class BSTabBarController: UITabBarController, UITabBarControllerDelegate {
     ///
     /// 탭바 메뉴의 루트뷰를 네비게이션으로 구성할 경우 createNavController로 navigationViewController를 생성합니다.
     ///
+    /// - Parameter item: BSTabBarItem
     private func createTabViewController(_ item: BSTabBarItem) -> UIViewController{
         
         let vc = item.viewController

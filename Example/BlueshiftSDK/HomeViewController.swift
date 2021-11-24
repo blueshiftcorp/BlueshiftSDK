@@ -1,5 +1,5 @@
 //
-//  File name : SampleViewController.swift
+//  File name : HomeViewController.swift
 //
 //  Copyright (c) 2009-2021 Blueshift Corporation. All right reserved.
 //
@@ -21,14 +21,29 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 //
-//  Created by Blueshift on 2021/11/23
+//  Created by Blueshift on 2021/11/24
 //
 
 import UIKit
 import BlueshiftSDK
 
-class SampleViewController: BSViewController, BSViewControllerConfiguration {
-    override func options() -> [BSVCOption] {
-        return [.backButton, .closeButton]
+class HomeViewController: BSViewController {
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        setLabel()
+    }
+    
+    private func setLabel() {
+        let lbl = UILabel()
+        lbl.text = "HomeViewController"
+        view.addSubview(lbl)
+        
+        lbl.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            lbl.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            lbl.centerYAnchor.constraint(equalTo: view.centerYAnchor)
+        ])
     }
 }

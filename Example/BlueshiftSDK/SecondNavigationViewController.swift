@@ -1,5 +1,5 @@
 //
-//  File name : MainTabBarController.swift
+//  File name : SecondNavigationViewController.swift
 //
 //  Copyright (c) 2009-2021 Blueshift Corporation. All right reserved.
 //
@@ -21,27 +21,12 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 //
-//  Created by Blueshift on 2021/11/23
+//  Created by Blueshift on 2021/11/24
 //
 
 import UIKit
 import BlueshiftSDK
 
-class MainTabBarController: BSTabBarController, BSTabBarItemConfiguration {
-    override func tabBarItems() -> [BSTabBarItem] {
-        let home = BSTabBarItem(viewController: HomeViewController(),
-                                tabBarIcon: UIImage(systemName: "house")!,
-                                tabBarTitle: "Home")
-        
-        let second = BSTabBarItem(viewController: SecondNavigationViewController(),
-                                  tabBarIcon: UIImage(systemName: "doc.plaintext")!,
-                                  tabBarTitle: "Single",
-                                  isNavigationController: false)
-        
-        let third = BSTabBarItem(viewController: ThirdTableViewController(),
-                                 tabBarIcon: UIImage(systemName: "list.bullet.rectangle.portrait")!,
-                                 tabBarTitle: "Table")
-        return [home, second, third]
-    }
+class SecondNavigationViewController: BSViewController {
+    
 }
-
