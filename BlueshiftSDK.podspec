@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name                  = 'BlueshiftSDK'
-  s.version               = '0.0.22'
+  s.version               = '0.0.23'
   s.summary               = 'Official Blueshift SDK for developing iOS application.'
   
   s.description           = <<-DESC
