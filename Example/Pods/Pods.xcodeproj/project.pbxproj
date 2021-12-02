@@ -101,6 +101,9 @@
 		191E8F09A51065402A5FAED143842573 /* LoginKeyValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = E350D6B489A36796F94CC29664F3B5A8 /* LoginKeyValue.swift */; };
 		192221CFFAAD4E1E36D2B6411906DF65 /* nanopb-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 053883B0466E4AE32C8605F6CF2BF0CB /* nanopb-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1928149753305877127D8DC979D0BEC7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A37C7ECA3A3F36D6B55E32E6BADEABF0 /* Foundation.framework */; };
+		1A16BFA827506F63001B3814 /* Encodable+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A16BFA727506F63001B3814 /* Encodable+Extension.swift */; };
+		1A16BFAA27506F7F001B3814 /* UIStackView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A16BFA927506F7F001B3814 /* UIStackView+Extension.swift */; };
+		1A16BFB327507160001B3814 /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A16BFB227507160001B3814 /* AlertViewController.swift */; };
 		1AACFE22274CBCE6000278AF /* BSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AACFE1D274CBCE6000278AF /* BSViewController.swift */; };
 		1AACFE23274CBCE6000278AF /* SpinnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AACFE1E274CBCE6000278AF /* SpinnerView.swift */; };
 		1AACFE24274CBCE6000278AF /* BSTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AACFE1F274CBCE6000278AF /* BSTableViewController.swift */; };
@@ -108,7 +111,7 @@
 		1AACFE26274CBCE6000278AF /* IndicatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AACFE21274CBCE6000278AF /* IndicatorViewController.swift */; };
 		1AACFE29274CBD30000278AF /* JasonSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AACFE28274CBD30000278AF /* JasonSerializer.swift */; };
 		1AACFE2B274CE6D7000278AF /* BSTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AACFE2A274CE6D7000278AF /* BSTabBarController.swift */; };
-		1AFE62C2274DE94200EC7353 /* APIReturnCodeConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFE62C1274DE94200EC7353 /* APIReturnCodeConfiguration.swift */; };
+		1AFE62C2274DE94200EC7353 /* APIResponseCodeConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFE62C1274DE94200EC7353 /* APIResponseCodeConfiguration.swift */; };
 		1B44662F92F56D07344E6C7725E2C2A4 /* FBLPromise+Any.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 9CB50994BC3B5E0B3421659C680ACDD3 /* FBLPromise+Any.h */; };
 		1B9E5CCB180C9C5C122ED5E58E8D019F /* GDTCOREventDataObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 71391FAE4262A44C46B69E4481FE346E /* GDTCOREventDataObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1CF925637E7BBBDA6443D48DDCBF32C7 /* FBLPromise+Timeout.h in Headers */ = {isa = PBXBuildFile; fileRef = DB790BD16BE9BEF5005CCEB16ECAF2EB /* FBLPromise+Timeout.h */; };
@@ -120,7 +123,7 @@
 		1D66D60A6F32CFF16C509D1396D0EFDE /* OIDURLQueryComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = EDD29C1B2F7F5EC028D05A70F5BC1A29 /* OIDURLQueryComponent.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1D849A753C49EB2E94A9220D686E121F /* GTMKeychain_iOS.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A913E4B9004E83AD224773D265498E5 /* GTMKeychain_iOS.m */; };
 		1D9BABC448D28DF66A946F2D35C8F8C9 /* GULKeychainStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 855BBDA0F05FA9A44DA1592CAB95E0D4 /* GULKeychainStorage.m */; };
-		1E5BC68346314DCA38ADE35ECB4075F8 /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938D1AA0DF5BF2B6723E86AB77E12F7D /* APIResponse.swift */; };
+		1E5BC68346314DCA38ADE35ECB4075F8 /* APIResponseBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938D1AA0DF5BF2B6723E86AB77E12F7D /* APIResponseBase.swift */; };
 		1F8CBA7AE200296F15F683DF568C8CED /* FBLPromise+Retry.h in Headers */ = {isa = PBXBuildFile; fileRef = E8A4C0A6174CEEDB0723DE7D4A60C067 /* FBLPromise+Retry.h */; };
 		20571201CB509474DCE5DF1FFCCDD9CC /* FBLPromise+Always.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 67EC20596D525C11BFFEF62C803BF7F5 /* FBLPromise+Always.h */; };
 		2156F1E12D1F62F8322CFE5C29277E6E /* OIDResponseTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 3FFEAC9B6446E7F731AD9596B58125AD /* OIDResponseTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -162,7 +165,7 @@
 		316C84ACE6A54F496D4BD711789D5368 /* GULReachabilityChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EDEB0DF6F702833433A612D82BC6604 /* GULReachabilityChecker.m */; };
 		320D03F92E37CA225E1AB819D00B09B6 /* OIDAuthStateErrorDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = D111E97541D23339B4BAF88F5C2F8AF7 /* OIDAuthStateErrorDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		32367B5B97923C228767880BB2F0FA82 /* FBLPromise+Recover.h in Headers */ = {isa = PBXBuildFile; fileRef = AB5DE4D22DC6E628FCD584F1512034F2 /* FBLPromise+Recover.h */; };
-		3268416495D83205D8CEBAA7A60809B9 /* Login+Email.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C474BE1D2A0EEFD38244118335E6D1F /* Login+Email.swift */; };
+		3268416495D83205D8CEBAA7A60809B9 /* Login+IdPw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C474BE1D2A0EEFD38244118335E6D1F /* Login+IdPw.swift */; };
 		32B7713E212E5848E482385DE59F265E /* ca.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 191977FF6E7DDCE392529709FFB2699A /* ca.lproj */; };
 		32DEA325C81E6E3D357ED710BC4590A4 /* google@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 050BE21E7A1349B0FF3389F1DC65DC42 /* google@2x.png */; };
 		32E475AE0190AF84BC6631DB687B3382 /* zh_TW.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 020F6B537882E9ADC92EB18464AD0E88 /* zh_TW.lproj */; };
@@ -1270,6 +1273,9 @@
 		18C60CBE687F0AF96F9F8E67148BE1EF /* GULSceneDelegateSwizzler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GULSceneDelegateSwizzler.h; path = GoogleUtilities/AppDelegateSwizzler/Public/GoogleUtilities/GULSceneDelegateSwizzler.h; sourceTree = "<group>"; };
 		191977FF6E7DDCE392529709FFB2699A /* ca.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = ca.lproj; path = GoogleSignIn/Sources/Strings/ca.lproj; sourceTree = "<group>"; };
 		195CD1D8731A1C660DB49D199B8293AA /* FIRConfigurationInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRConfigurationInternal.h; path = FirebaseCore/Sources/FIRConfigurationInternal.h; sourceTree = "<group>"; };
+		1A16BFA727506F63001B3814 /* Encodable+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encodable+Extension.swift"; sourceTree = "<group>"; };
+		1A16BFA927506F7F001B3814 /* UIStackView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Extension.swift"; sourceTree = "<group>"; };
+		1A16BFB227507160001B3814 /* AlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
 		1A5E2D130A8CAB89A9B1C9CABAB9BD89 /* FIRInstallationsIDController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRInstallationsIDController.m; path = FirebaseInstallations/Source/Library/InstallationsIDController/FIRInstallationsIDController.m; sourceTree = "<group>"; };
 		1A7E86C4DC62F8B628B0E0E2FE19080F /* Pods-BlueshiftSDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BlueshiftSDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		1A80BD0DA1C3DBEF3C247655BC8EABAB /* OIDFieldMapping.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDFieldMapping.m; path = Source/AppAuthCore/OIDFieldMapping.m; sourceTree = "<group>"; };
@@ -1280,7 +1286,7 @@
 		1AACFE21274CBCE6000278AF /* IndicatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndicatorViewController.swift; sourceTree = "<group>"; };
 		1AACFE28274CBD30000278AF /* JasonSerializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JasonSerializer.swift; sourceTree = "<group>"; };
 		1AACFE2A274CE6D7000278AF /* BSTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BSTabBarController.swift; sourceTree = "<group>"; };
-		1AFE62C1274DE94200EC7353 /* APIReturnCodeConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIReturnCodeConfiguration.swift; sourceTree = "<group>"; };
+		1AFE62C1274DE94200EC7353 /* APIResponseCodeConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponseCodeConfiguration.swift; sourceTree = "<group>"; };
 		1B01B710E14A75897F1604109DD3836F /* FIRHeartbeatInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRHeartbeatInfo.m; path = FirebaseCore/Sources/FIRHeartbeatInfo.m; sourceTree = "<group>"; };
 		1B56F72C054A46006C484E1BCA8F5830 /* OIDAuthStateChangeDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDAuthStateChangeDelegate.h; path = Source/AppAuthCore/OIDAuthStateChangeDelegate.h; sourceTree = "<group>"; };
 		1B5C0329B5A7C2FDDA82675D1E994CD2 /* GDTCORConsoleLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GDTCORConsoleLogger.m; path = GoogleDataTransport/GDTCORLibrary/GDTCORConsoleLogger.m; sourceTree = "<group>"; };
@@ -1480,7 +1486,7 @@
 		5BB1CB505233A29A3760F8DD555967C0 /* GDTCORTargets.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTCORTargets.h; path = GoogleDataTransport/GDTCORLibrary/Public/GoogleDataTransport/GDTCORTargets.h; sourceTree = "<group>"; };
 		5BE2B6458EB0E32D7645F41F4746F021 /* GULHeartbeatDateStorageUserDefaults.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GULHeartbeatDateStorageUserDefaults.h; path = GoogleUtilities/Environment/Public/GoogleUtilities/GULHeartbeatDateStorageUserDefaults.h; sourceTree = "<group>"; };
 		5C2AFF7BA88C3B5B046225D5B8B5E438 /* OIDResponseTypes.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDResponseTypes.m; path = Source/AppAuthCore/OIDResponseTypes.m; sourceTree = "<group>"; };
-		5C474BE1D2A0EEFD38244118335E6D1F /* Login+Email.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Login+Email.swift"; path = "Source/Login/Login+Email.swift"; sourceTree = "<group>"; };
+		5C474BE1D2A0EEFD38244118335E6D1F /* Login+IdPw.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Login+IdPw.swift"; path = "Source/Login/Login+IdPw.swift"; sourceTree = "<group>"; };
 		5C9987727EBF4868B3AB668BFD36E5EE /* GULApplication.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GULApplication.h; path = GoogleUtilities/AppDelegateSwizzler/Public/GoogleUtilities/GULApplication.h; sourceTree = "<group>"; };
 		5CF73AFB37294811F50B0A4A2133029E /* FBLPromise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBLPromise.m; path = Sources/FBLPromises/FBLPromise.m; sourceTree = "<group>"; };
 		5D3C17E352B7D637B047F40CC015E833 /* OIDAuthorizationRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDAuthorizationRequest.h; path = Source/AppAuthCore/OIDAuthorizationRequest.h; sourceTree = "<group>"; };
@@ -1655,7 +1661,7 @@
 		92C6996E7011A7C1F757247445660C87 /* FIROptions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIROptions.h; path = FirebaseCore/Sources/Public/FirebaseCore/FIROptions.h; sourceTree = "<group>"; };
 		932DEC18BFE5C7FFFA7AFAB8E73C6833 /* FIRApp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRApp.h; path = FirebaseCore/Sources/Public/FirebaseCore/FIRApp.h; sourceTree = "<group>"; };
 		935A74CF09318E3F99F7B11D12FC4B8B /* FIRInstallationsSingleOperationPromiseCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRInstallationsSingleOperationPromiseCache.h; path = FirebaseInstallations/Source/Library/InstallationsIDController/FIRInstallationsSingleOperationPromiseCache.h; sourceTree = "<group>"; };
-		938D1AA0DF5BF2B6723E86AB77E12F7D /* APIResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = APIResponse.swift; path = Source/API/APIResponse.swift; sourceTree = "<group>"; };
+		938D1AA0DF5BF2B6723E86AB77E12F7D /* APIResponseBase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = APIResponseBase.swift; path = Source/API/APIResponseBase.swift; sourceTree = "<group>"; };
 		93C0C83D4893308DC1F2C9782D4A4790 /* OIDAuthorizationService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDAuthorizationService.m; path = Source/AppAuthCore/OIDAuthorizationService.m; sourceTree = "<group>"; };
 		940B565CD7EC34067A1A3A25EF59D64C /* UserApi.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UserApi.swift; path = sources/KakaoSDKUser/UserApi.swift; sourceTree = "<group>"; };
 		943C6FA77DC5BD51C1D1963625A99ECE /* GoogleUtilities.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleUtilities.release.xcconfig; sourceTree = "<group>"; };
@@ -2298,6 +2304,7 @@
 				1AACFE1F274CBCE6000278AF /* BSTableViewController.swift */,
 				1AACFE20274CBCE6000278AF /* BSTableViewCell.swift */,
 				1AACFE21274CBCE6000278AF /* IndicatorViewController.swift */,
+				1A16BFB227507160001B3814 /* AlertViewController.swift */,
 			);
 			name = UI;
 			path = Source/Common/UI;
@@ -2323,6 +2330,8 @@
 				6E12DA7E4148BBF65E7849C971944A23 /* UITabBar+Extension.swift */,
 				67ECF41DD5898C2A72F17846732E3C25 /* UIView+Extension.swift */,
 				920E9A24F04ECF7734D7F5E883CA6857 /* UIViewController+Extension.swift */,
+				1A16BFA727506F63001B3814 /* Encodable+Extension.swift */,
+				1A16BFA927506F7F001B3814 /* UIStackView+Extension.swift */,
 			);
 			name = Extension;
 			path = Source/Common/Extension;
@@ -2830,8 +2839,8 @@
 			children = (
 				BE7CA65AC04BA2885DE37F41915BF32E /* API.swift */,
 				7ACFA431232B6424FA863E8D0DE4C009 /* APIConfiguration.swift */,
-				938D1AA0DF5BF2B6723E86AB77E12F7D /* APIResponse.swift */,
-				1AFE62C1274DE94200EC7353 /* APIReturnCodeConfiguration.swift */,
+				938D1AA0DF5BF2B6723E86AB77E12F7D /* APIResponseBase.swift */,
+				1AFE62C1274DE94200EC7353 /* APIResponseCodeConfiguration.swift */,
 			);
 			name = API;
 			sourceTree = "<group>";
@@ -3077,11 +3086,11 @@
 				73280CB61A7BD9E7A89D99C393C6D985 /* BSError+Login.swift */,
 				C6082E0684643879299275BA49C9778E /* CommonValue+Login.swift */,
 				3EA4F2561E471ED079BCD310DC410AE8 /* Login.swift */,
-				97FEE3F36D6DBA189EF50562EA27B60B /* Login+Apple.swift */,
-				5C474BE1D2A0EEFD38244118335E6D1F /* Login+Email.swift */,
-				78E919FBF6D9C7E0731F332464052A64 /* Login+Google.swift */,
+				5C474BE1D2A0EEFD38244118335E6D1F /* Login+IdPw.swift */,
 				D351A6DA50061BE6FB65E1B048267322 /* Login+Kakao.swift */,
+				78E919FBF6D9C7E0731F332464052A64 /* Login+Google.swift */,
 				63C64C3B77833DD8D6945FD6DC62BDE6 /* Login+Naver.swift */,
+				97FEE3F36D6DBA189EF50562EA27B60B /* Login+Apple.swift */,
 				548F5AFC1C730F83F4CBE2DBD70CBE80 /* LoginEnum.swift */,
 				E350D6B489A36796F94CC29664F3B5A8 /* LoginKeyValue.swift */,
 				49DF6462D3612BCCD58B9A99FEDE355B /* Preferences.swift */,
@@ -5157,7 +5166,7 @@
 			files = (
 				B0782F8E457FED5DAC97B30162E234E3 /* API.swift in Sources */,
 				80B1472121C6D8EB4BB5C7F49DFEC04F /* APIConfiguration.swift in Sources */,
-				1E5BC68346314DCA38ADE35ECB4075F8 /* APIResponse.swift in Sources */,
+				1E5BC68346314DCA38ADE35ECB4075F8 /* APIResponseBase.swift in Sources */,
 				70F6A5A8B81D0F39CA92050AC718CE7B /* BlueshiftSDK-dummy.m in Sources */,
 				3A5B0A3FD11BD51980471470F5E56D2D /* BSError.swift in Sources */,
 				1AACFE22274CBCE6000278AF /* BSViewController.swift in Sources */,
@@ -5167,7 +5176,8 @@
 				E5D34EC179A9825EF0FBADB3A1862BF2 /* CommonValue+Login.swift in Sources */,
 				B1F65EAF75BC67BE8A4B80BBD55F722F /* Login.swift in Sources */,
 				23F8B8E80B086A786EFB6C9EC9B190AC /* Login+Apple.swift in Sources */,
-				3268416495D83205D8CEBAA7A60809B9 /* Login+Email.swift in Sources */,
+				3268416495D83205D8CEBAA7A60809B9 /* Login+IdPw.swift in Sources */,
+				1A16BFB327507160001B3814 /* AlertViewController.swift in Sources */,
 				BCAF17EE2F81F3C3A1C197ACC5F8EA8A /* Login+Google.swift in Sources */,
 				4BCFFD879D74335523DC777A8B3277F1 /* Login+Kakao.swift in Sources */,
 				DF070B7D465E306835C99921CE7325D8 /* Login+Naver.swift in Sources */,
@@ -5175,11 +5185,12 @@
 				191E8F09A51065402A5FAED143842573 /* LoginKeyValue.swift in Sources */,
 				1AACFE24274CBCE6000278AF /* BSTableViewController.swift in Sources */,
 				1AACFE25274CBCE6000278AF /* BSTableViewCell.swift in Sources */,
+				1A16BFAA27506F7F001B3814 /* UIStackView+Extension.swift in Sources */,
 				74D942481E43BB6980501E41E5248999 /* NSAttributedString+Extension.swift in Sources */,
 				33FE52535174B26E1040FEAFCCA331D7 /* Preferences.swift in Sources */,
 				EDB60A34FD11F1E07402DB81F332F908 /* Protocols+Login.swift in Sources */,
 				1AACFE29274CBD30000278AF /* JasonSerializer.swift in Sources */,
-				1AFE62C2274DE94200EC7353 /* APIReturnCodeConfiguration.swift in Sources */,
+				1AFE62C2274DE94200EC7353 /* APIResponseCodeConfiguration.swift in Sources */,
 				D528D61C0E657DB3C8ECF8748DF1D6E5 /* test.swift in Sources */,
 				FEF6DDFF1BACD23BFE2D4AED4B94BDEE /* UIColor+Extension.swift in Sources */,
 				11426D5C18F3653BCA94268FD6B9D070 /* UILabel+Extension.swift in Sources */,
@@ -5188,6 +5199,7 @@
 				3FB18A1D2F77067D2DAF592A035F2C45 /* UIView+Extension.swift in Sources */,
 				D08B8A8F83685738C9BE6455A49C950B /* UIViewController+Extension.swift in Sources */,
 				75790D33AEA02825729E19339EF1F08B /* Utility.swift in Sources */,
+				1A16BFA827506F63001B3814 /* Encodable+Extension.swift in Sources */,
 				1AACFE2B274CE6D7000278AF /* BSTabBarController.swift in Sources */,
 				D011E3CC83287CC760FDCE3179E7C152 /* Utility+HealthKit.swift in Sources */,
 				1AACFE26274CBCE6000278AF /* IndicatorViewController.swift in Sources */,

@@ -1,5 +1,5 @@
 //
-//  File name : SecondNavigationViewController.swift
+//  File name : Encodable+Extension.swift
 //
 //  Copyright (c) 2009-2021 Blueshift Corporation. All right reserved.
 //
@@ -21,18 +21,17 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 //
-//  Created by Blueshift on 2021/11/24
+//  Created by Blueshift on 2021/11/26
 //
 
-import UIKit
-import BlueshiftSDK
+import Foundation
 
-class SecondNavigationViewController: BSViewController {
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        
-        self.showToast(message: "토스트 테스트 중입니다.\n토스트 메세지 입력")
+extension Encodable {
+  func asDictionary() throws -> [String: Any] {
+    let data = try JSONEncoder().encode(self)
+    guard let dictionary = try JSONSerialization.jsonObject(with: data, options: .allowFragments) as? [String: Any] else {
+      throw NSError()
     }
-    
+    return dictionary
+  }
 }

@@ -19,57 +19,50 @@
 
 import UIKit
 import LocalAuthentication
+import PromisedFuture
 
-class Login: NSObject {
+public protocol LoginDelegate {
+    func withIdPassword() -> Future<LoginResult, Error>
+}
+
+public struct LoginResult {
+    public let userInfo: Any
+    public var socialToken: String?
+}
+
+public class Login: NSObject {
     
-    internal var parentVC: UIViewController
-    internal let authContext = LAContext()
+    public var delegate: LoginDelegate?
+    var completionForNaver: ((Result<NaverUserInfo, Error>) -> Void)?
+    var completionForApple: ((Result<AppleUserInfo, Error>) -> Void)?
+    var parentVC: UIViewController
     
-    init(from vc: UIViewController) {
+    public enum LoginType: Int {
+        case idpw       = 0
+        case kakao      = 1
+        case facebook   = 2
+        case apple      = 3
+        case google     = 4
+        case naver      = 5
+    }
+    
+    public init(from vc: UIViewController) {
         self.parentVC = vc
     }
     
-    public func with(_ loginType: LoginType, _ email: String? = nil, _ password: String? = nil) {
-        
-        switch loginType {
-        case .email: withEmail(email, password)
-        case .google: withGoogle()
-        case .naver: withNaver()
-        case .kakao: withKakaoTalk()
-        case .apple: withApple()
-        case .facebook: break
-        }
-    }
-    
-    internal func completeLogin(authCode: LoginType, userID: String, userPw: String, userInfo: UserInfo) {
-        
-        /// 사용자 정보를 이용하여 현재 사용자 정보저장
-        /// 완료 후 프로세스 정의
-        
-//        switch value.responseCode {
-//        case "200":
-//            if value.loginFlag == "1" {
-//                Util.setUserPreference(userInfo.id, userInfo.token!)
-//                Util.setRootViewController()
-//            } else {
-//                Util.setRootViewController()
-//            }
-//        case "617":
-//            if authCode == .email {
-//                let vc = AlertViewController(message: "아이디 혹은 비밀번호가 정확하지 않습니다.")
-//                self.parentVC.present(vc, animated: false)
+//    public func with(_ loginType: LoginType,
+//                            id: String? = nil,
+//                            password: String? = nil) -> Future<LoginResult, Error>? {
 //
-//            } else {
-//                let vc = AgreementViewController()
-//                vc.authCode = authCode
-//                vc.userId = userID
-//                vc.userPw = userPw
-//                vc.router = .webView(.agreeIndex)
-//                vc.title = "서비스 동의"
-//                vc.hidesBottomBarWhenPushed = true
-//                self.parentVC.navigationController?.pushViewController(vc, animated: true)
-//            }
-//        default: break
+//        switch loginType {
+//        case .idpw:
+//            guard let delegate = delegate else { return nil }
+//            return delegate.withIdPassword()
+//        case .kakao:    return self.withKakao()
+//        case .facebook: return self.withGoogle()
+//        case .google:   return self.withGoogle()
+//        case .naver:    return self.withNaver()
+//        case .apple:    return self.withApple()
 //        }
-    }
+//    }
 }

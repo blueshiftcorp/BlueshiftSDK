@@ -19,27 +19,23 @@
 
 import Foundation
 import GoogleSignIn
+import PromisedFuture
 
 extension Login {
     
-    internal func withGoogle() {
-        
-        let signInConfig = GIDConfiguration.init(clientID: "")
-        GIDSignIn.sharedInstance.signIn(with: signInConfig, presenting: self.parentVC) { user, error in
-            guard error == nil else {
-                print("구글 로그인 중 오류가 발생했습니다 : \(error!)")
+    public func withGoogle(_ clientId: String) -> Future<GIDGoogleUser, Error> {
+        return Future { completion in
+            let signInConfig = GIDConfiguration.init(clientID: clientId)
+            GIDSignIn.sharedInstance.signIn(with: signInConfig, presenting: self.parentVC) { user, error in
+                guard error == nil else {
+                    completion(.failure(error!))
+                    return
+                }
+                
+                guard let user = user else { return }
+                completion(.success(user))
                 return
             }
-            
-//            let email = user?.profile?.email
-//            let fullName = user?.profile?.givenName
-//            let token = user?.authentication.idToken
-            //TODO: 회원가입인 경우 추가 정보 입력(회원가입) 화면으로 이동
-            //TODO: 로그인인 경우 첫화면으로 이동
-            
-            //TODO: Development Only
-//            self.completeLogin(sUser())
-            return
         }
     }
 }

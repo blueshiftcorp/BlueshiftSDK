@@ -43,5 +43,13 @@ class MainTabBarController: BSTabBarController, BSTabBarItemConfiguration {
                                  tabBarTitle: "Table")
         return [home, second, third]
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        self.showToast(message: "MAIN BOTTOM ALERT",
+                       animationType: .fromBottom,
+                       delay: 5)
+    }
 }
 

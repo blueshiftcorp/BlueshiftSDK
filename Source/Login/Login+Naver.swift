@@ -20,25 +20,32 @@
 import Foundation
 import NaverThirdPartyLogin
 import Alamofire
+import PromisedFuture
 
 extension Login {
     
-    internal func withNaver() {
-        
-        guard let login = NaverThirdPartyLoginConnection.getSharedInstance() else {
-            print("네이버 로그인 중 컨넥션을 생성하지 못했습니다.")
-            return
-        }
-        
-        if login.isValidAccessTokenExpireTimeNow() {
-            login.requestDeleteToken()
-        }
-        login.delegate = self
-        login.requestThirdPartyLogin()
+    public struct NaverUserInfo: Decodable {
+        public let name: String?
+        public let email: String?
+        public let nickname: String?
+        public let token: String
     }
     
-    private func doLogin(userID: String, token: String) {
-        //TODO: 네이버 사용자 토큰 전달후 로그인 완료 진행
+    public func withNaver() -> Future<NaverUserInfo, Error> {
+        return Future { completion in
+            guard let login = NaverThirdPartyLoginConnection.getSharedInstance() else {
+                print("네이버 로그인 중 컨넥션을 생성하지 못했습니다.")
+                return
+            }
+            
+            if login.isValidAccessTokenExpireTimeNow() {
+                login.requestDeleteToken()
+            }
+//            login.delegate = self
+            login.requestThirdPartyLogin()
+            
+            self.completionForNaver = completion
+        }
     }
     
 }
@@ -57,17 +64,20 @@ extension Login: NaverThirdPartyLoginConnectionDelegate {
         
         req.responseJSON { response in
             
-//            switch response.result {
-//            case .success(let value):
-//                guard let json = value as? [String: Any] else { return }
-//                guard let object = json["response"] as? [String: Any] else { return }
-//                guard let name = object["name"] as? String else { return }
-//                guard let email = object["email"] as? String else { return }
-//                guard let nickname = object["nickname"] as? String else { return }
+            switch response.result {
+            case .success(let value):
+                guard let json = value as? [String: Any] else { return }
+                guard let object = json["response"] as? [String: Any] else { return }
+                guard let name = object["name"] as? String else { return }
+                guard let email = object["email"] as? String else { return }
+                guard let nickname = object["nickname"] as? String else { return }
+                let userInfo = NaverUserInfo(name: name, email: email, nickname: nickname, token: accessToken)
+                guard let completion = self.completionForNaver else { return }
+                completion(.success(userInfo))
                 
-//            case .failure(let error):
-//                print("네이버 사용자 정보 요청 중 오류가 발생했습니다: \(error.localizedDescription)")
-//            }
+            case .failure(let error):
+                print("네이버 사용자 정보 요청 중 오류가 발생했습니다: \(error.localizedDescription)")
+            }
         }
     }
     

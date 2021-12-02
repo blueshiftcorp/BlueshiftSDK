@@ -117,6 +117,8 @@ open class BSTabBarController: UITabBarController, UITabBarControllerDelegate {
         if item.isNavigationController {
             let nvc = UINavigationController(rootViewController: vc)
             nvc.navigationItem.title = item.tabBarTitle
+            nvc.tabBarItem.title = item.tabBarTitle
+            nvc.tabBarItem.image = item.tabBarIcon
             return nvc
         } else {
             return vc

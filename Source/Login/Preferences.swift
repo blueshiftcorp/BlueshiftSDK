@@ -22,14 +22,14 @@ open class Pref {
     static let prefix: String = Bundle.main.bundleIdentifier!
     static let userDefaults: UserDefaults = UserDefaults.standard
     
-    static let kHasLoginKey = prefix + "kHasLoginKey"
-    static let kReturened = prefix + "kReturened"
-    static let kUidx = prefix + "kUidx"
-    static let kLoginToken = prefix + "kLoginToken"
-    static let kCompanyIdx = prefix + "kCompanyIdx"
+    static let kHasLoginKey     = prefix + "kHasLoginKey"
+    static let kReturened       = prefix + "kReturened"
+    static let kUidx            = prefix + "kUidx"
+    static let kLoginToken      = prefix + "kLoginToken"
+    static let kCompanyIdx      = prefix + "kCompanyIdx"
     
-    static let kAccessKey = prefix + "kAccessKey"
-    static let kSecretKey = prefix + "kSecretKey"
+    static let kAccessKey       = prefix + "kAccessKey"
+    static let kSecretKey       = prefix + "kSecretKey"
     
     public static var hasLoginKey: Bool {
         get {

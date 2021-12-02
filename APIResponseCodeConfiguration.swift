@@ -55,7 +55,7 @@
 ///
 ///
 /// ```
-protocol APIReturnCodeConfiguration {
+protocol APIResponseCodeConfiguration {
     
     /// 사용자 알림 메세지 타이틀
     ///

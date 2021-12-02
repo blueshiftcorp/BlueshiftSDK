@@ -24,25 +24,25 @@
 //  Created by Blueshift on 2021/09/07
 //
 
-enum LoginType: String {
-    case email      = "0"
-    case kakao      = "1"
-    case facebook   = "2"
-    case apple      = "3"
-    case google     = "4"
-    case naver      = "5"
-    
-    var description: String {
-        switch self {
-        case .email:    return "iCareMe 아이디"
-        case .kakao:    return "카카로톡 로그인"
-        case .facebook: return "페이스북 로그인"
-        case .apple:    return "애플 로그인"
-        case .google:   return "구글 로그인"
-        case .naver:    return "네이버 로그인"
-        }
-    }
-}
+//public enum LoginType: String {
+//    case email      = "0"
+//    case kakao      = "1"
+//    case facebook   = "2"
+//    case apple      = "3"
+//    case google     = "4"
+//    case naver      = "5"
+//    
+//    var description: String {
+//        switch self {
+//        case .email:    return "iCareMe 아이디"
+//        case .kakao:    return "카카로톡 로그인"
+//        case .facebook: return "페이스북 로그인"
+//        case .apple:    return "애플 로그인"
+//        case .google:   return "구글 로그인"
+//        case .naver:    return "네이버 로그인"
+//        }
+//    }
+//}
 
 public enum LoginReturnCode: String {
     case success = "0"

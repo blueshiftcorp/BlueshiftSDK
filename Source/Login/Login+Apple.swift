@@ -19,37 +19,29 @@
 
 import Foundation
 import AuthenticationServices
+import PromisedFuture
 
 extension Login {
     
-    internal func withApple() {
-        
-        let appleIDProvider = ASAuthorizationAppleIDProvider()
-        let request = appleIDProvider.createRequest()
-        request.requestedScopes = [.fullName, .email]
-        
-        let authorizationController = ASAuthorizationController(authorizationRequests: [request])
-        authorizationController.delegate = self
-        authorizationController.presentationContextProvider = self
-        authorizationController.performRequests()
-        
+    public struct AppleUserInfo {
+        public let email: String
+        public let name: String
+        public let token: String
     }
     
-    private func doLogin(auth: ASAuthorizationAppleIDCredential) {
-        /// 사용자 관리를 위해 토큰이 필요한 경우 사용
-//        guard let token = auth.identityToken?.hexEncodedString() else { return }
-    }
-    
-    private func doRegister(auth: ASAuthorizationAppleIDCredential) {
-        
-        /**
-         사용자 이메일 : auth.email
-         사용자 이름 : auth.name
-         */
-//        guard let email = auth.email else { return }
-//        guard let name = auth.fullName?.nickname else { return }
-//        guard let token = auth.identityToken?.hexEncodedString() else { return }
-        
+    public func withApple() -> Future<AppleUserInfo, Error> {
+        return Future { completion in
+            self.completionForApple = completion
+            
+            let appleIDProvider = ASAuthorizationAppleIDProvider()
+            let request = appleIDProvider.createRequest()
+            request.requestedScopes = [.fullName, .email]
+            
+            let authorizationController = ASAuthorizationController(authorizationRequests: [request])
+            authorizationController.delegate = self
+            authorizationController.presentationContextProvider = self
+            authorizationController.performRequests()
+        }
     }
 }
 
@@ -58,7 +50,14 @@ extension Login: ASAuthorizationControllerDelegate, ASAuthorizationControllerPre
     public func authorizationController(controller: ASAuthorizationController, didCompleteWithAuthorization authorization: ASAuthorization) {
         
         guard let appleIDCredential = authorization.credential as? ASAuthorizationAppleIDCredential else { return }
-        self.doLogin(auth: appleIDCredential)
+        
+        guard let email = appleIDCredential.email else { return }
+        guard let name = appleIDCredential.fullName?.nickname else { return }
+        guard let token = appleIDCredential.identityToken?.hexEncodedString() else { return }
+        
+        guard let completion = self.completionForApple else { return }
+        let userInfo = AppleUserInfo(email: email, name: name, token: token)
+        completion(.success(userInfo))
     }
     
     public func authorizationController(controller: ASAuthorizationController, didCompleteWithError error: Error) {

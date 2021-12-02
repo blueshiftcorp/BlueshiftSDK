@@ -30,7 +30,7 @@ import PromisedFuture
 open class API {
     
     @discardableResult
-    public static func performRequest<T:ResponseBase>(router:APIConfiguration, decoder: JSONDecoder = JSONDecoder()) -> Future<T, Error>? {
+    public static func performRequest<T:APIResponseBase>(router:APIConfiguration, decoder: JSONDecoder = JSONDecoder()) -> Future<T, Error>? {
         return Future(operation: { completion in
             
             AF.request(router)
@@ -53,7 +53,7 @@ open class API {
     }
 
     @discardableResult
-    public static func performUploadMultipartFormData<T:ResponseBase>(router:APIConfiguration, decoder: JSONDecoder = JSONDecoder()) -> Future<T, Error>? {
+    public static func performUploadMultipartFormData<T:APIResponseBase>(router:APIConfiguration, decoder: JSONDecoder = JSONDecoder()) -> Future<T, Error>? {
         guard let multipartFormDate = router.multipartFormData else { return nil }
         return Future(operation: { completion in
             AF.upload(multipartFormData: multipartFormDate, with: router)

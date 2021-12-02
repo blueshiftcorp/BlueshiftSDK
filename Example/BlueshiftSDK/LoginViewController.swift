@@ -1,5 +1,5 @@
 //
-//  File name : APIResponse.swift
+//  File name : LoginViewController.swift
 //
 //  Copyright (c) 2009-2021 Blueshift Corporation. All right reserved.
 //
@@ -21,10 +21,25 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 //
-//  Created by Blueshift on 2021/11/23
+//  Created by Blueshift on 2021/12/01
 //
 
-public protocol ResponseBase: Decodable {
-    var responseCode: String { get }
-    var loginFlag: String { get }
+import UIKit
+import BlueshiftSDK
+
+class LoginViewController: BSViewController {
+    
+    private func doLogin() {
+        Login(from: self)
+            .withNaver()
+            .execute { result in
+                switch result {
+                case .success(let value):
+                    let a = value.email
+                    NSLog("값은: \(a ?? "")")
+                case .failure(let error):
+                    NSLog("에러발생: \(error)")
+                }
+            }
+    }
 }

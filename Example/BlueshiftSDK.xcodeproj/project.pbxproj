@@ -17,6 +17,7 @@
 		1A1756AA26E87D13003997C5 /* CommonValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1756A926E87D13003997C5 /* CommonValue.swift */; };
 		1A1756B226E88442003997C5 /* ServerResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1756B126E88442003997C5 /* ServerResponse.swift */; };
 		1A1756B526E88971003997C5 /* APIRouter+Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1756A026E87C81003997C5 /* APIRouter+Method.swift */; };
+		1A2D065627576D0A0005C221 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2D065527576D0A0005C221 /* LoginViewController.swift */; };
 		1AFE62C4274E00F000EC7353 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFE62C3274E00F000EC7353 /* HomeViewController.swift */; };
 		1AFE62C6274E045B00EC7353 /* SecondNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFE62C5274E045B00EC7353 /* SecondNavigationViewController.swift */; };
 		1AFE62C8274E046F00EC7353 /* ThirdTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFE62C7274E046F00EC7353 /* ThirdTableViewController.swift */; };
@@ -49,6 +50,7 @@
 		1A1756A626E87CD8003997C5 /* APIRouter+Path.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "APIRouter+Path.swift"; sourceTree = "<group>"; };
 		1A1756A926E87D13003997C5 /* CommonValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonValue.swift; sourceTree = "<group>"; };
 		1A1756B126E88442003997C5 /* ServerResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerResponse.swift; sourceTree = "<group>"; };
+		1A2D065527576D0A0005C221 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		1AFE62C3274E00F000EC7353 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		1AFE62C5274E045B00EC7353 /* SecondNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondNavigationViewController.swift; sourceTree = "<group>"; };
 		1AFE62C7274E046F00EC7353 /* ThirdTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdTableViewController.swift; sourceTree = "<group>"; };
@@ -159,6 +161,7 @@
 				1AFE62C3274E00F000EC7353 /* HomeViewController.swift */,
 				1AFE62C5274E045B00EC7353 /* SecondNavigationViewController.swift */,
 				1AFE62C7274E046F00EC7353 /* ThirdTableViewController.swift */,
+				1A2D065527576D0A0005C221 /* LoginViewController.swift */,
 				1A1756AF26E883EC003997C5 /* API */,
 				1A1756AE26E883EC003997C5 /* Common */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
@@ -424,6 +427,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A2D065627576D0A0005C221 /* LoginViewController.swift in Sources */,
 				1A1756AA26E87D13003997C5 /* CommonValue.swift in Sources */,
 				1A09EE11274D08CC009C3BB5 /* MainTabBarController.swift in Sources */,
 				1A17569926E84FEF003997C5 /* API.swift in Sources */,

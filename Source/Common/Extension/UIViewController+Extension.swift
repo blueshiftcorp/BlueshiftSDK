@@ -26,37 +26,102 @@
 
 import UIKit
 
+
+
 public extension UIViewController {
     
-    func showToast(message : String, font: UIFont = UIFont.systemFont(ofSize: 12.0), completion: (() -> Void)? = nil) {
-        let toastLabel = UIPaddingLabel(frame: .zero)
-        toastLabel.backgroundColor = .white
-        toastLabel.numberOfLines = 0
-        toastLabel.lineBreakMode = .byWordWrapping
-        toastLabel.textColor = .black
-        toastLabel.font = font
-        toastLabel.textAlignment = .center
-        toastLabel.alpha = 1.0
-        toastLabel.layer.cornerRadius = 10;
-        toastLabel.setLineSpacing(lineHeightMultiple: 1.2)
-        toastLabel.clipsToBounds  =  true
-        toastLabel.borderColor = .gray
-        toastLabel.borderWidth = 1
-        toastLabel.text = message
-        toastLabel.sizeToFit()
-        self.view.addSubview(toastLabel)
+    enum BSToastAnimationType {
+        case fadeInOut
+        case fromBottom
+    }
+    
+    func showToast(message : String,
+                   animationType: BSToastAnimationType? = nil,
+                   delay: TimeInterval? = nil,
+                   font: UIFont? = nil,
+                   completion: (() -> Void)? = nil) {
         
-        toastLabel.translatesAutoresizingMaskIntoConstraints = false
-        toastLabel.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
-        toastLabel.centerYAnchor.constraint(equalTo: self.view.centerYAnchor).isActive = true
-        toastLabel.heightAnchor.constraint(equalToConstant: toastLabel.frame.height + 30).isActive = true
-        toastLabel.leadingAnchor.constraint(greaterThanOrEqualTo: self.view.leadingAnchor, constant: 30).isActive = true
-        toastLabel.trailingAnchor.constraint(lessThanOrEqualTo: self.view.trailingAnchor, constant: -30).isActive = true
+        let bottomMargin: CGFloat = 0
         
-        UIView.animate(withDuration: 1.0, delay: 3, options: .curveEaseOut, animations: {
-            toastLabel.alpha = 0.0
-        }, completion: {(isCompleted) in
-            toastLabel.removeFromSuperview()
+        let containerView = UIView()
+        let lblToast = UILabel()
+        
+        containerView.backgroundColor = .black
+        containerView.layer.cornerRadius = 10
+        containerView.clipsToBounds  =  true
+        
+        lblToast.numberOfLines = 0
+        lblToast.lineBreakMode = .byWordWrapping
+        lblToast.textColor = .white
+        lblToast.font = font ?? UIFont.systemFont(ofSize: 15)
+        lblToast.textAlignment = .center
+        lblToast.setLineSpacing(lineHeightMultiple: 1.2)
+        
+        lblToast.borderColor = .gray
+        lblToast.text = message
+        containerView.addSubview(lblToast)
+        view.addSubview(containerView)
+        
+        containerView.translatesAutoresizingMaskIntoConstraints = false
+        lblToast.translatesAutoresizingMaskIntoConstraints = false
+                
+        let bottomConstraint = NSLayoutConstraint(item: containerView,
+                                              attribute: .bottom,
+                                              relatedBy: .equal,
+                                              toItem: self.view.safeAreaLayoutGuide,
+                                              attribute: .bottom,
+                                              multiplier: 1,
+                                              constant: 0)
+        
+        NSLayoutConstraint.activate([
+            
+            lblToast.topAnchor.constraint(equalTo: containerView.topAnchor, constant: 20),
+            lblToast.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -20),
+            lblToast.bottomAnchor.constraint(equalTo: containerView.bottomAnchor, constant: -20),
+            lblToast.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: 20),
+            
+            containerView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
+            containerView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
+            bottomConstraint
+        ])
+        
+        switch animationType {
+        case .fromBottom:
+            bottomConstraint.constant = 100
+        default:
+            bottomConstraint.constant = -bottomMargin
+            containerView.alpha = 0
+        }
+        view.layoutIfNeeded()
+        
+        UIView.animateKeyframes(withDuration: 4,
+                                delay: 0,
+                                options: [],
+                                animations:  {
+            
+            UIView.addKeyframe(withRelativeStartTime: 0,
+                               relativeDuration: 0.05) {
+                switch animationType {
+                case .fromBottom:
+                    bottomConstraint.constant = -bottomMargin
+                    self.view.layoutIfNeeded()
+                default:
+                    containerView.alpha = 1.0
+                }
+            }
+            
+            UIView.addKeyframe(withRelativeStartTime: 0.9,
+                               relativeDuration: 0.05) {
+                switch animationType {
+                case .fromBottom:
+                    bottomConstraint.constant = 100
+                    self.view.layoutIfNeeded()
+                default:
+                    containerView.alpha = 0.0
+                }
+            }
+        }, completion: {_ in
+            containerView.removeFromSuperview()
             if completion != nil { completion!() }
         })
     }

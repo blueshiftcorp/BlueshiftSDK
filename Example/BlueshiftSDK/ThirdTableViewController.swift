@@ -57,10 +57,19 @@ class ThirdTableViewController: BSTableViewController {
         setData()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        self.showToast(message: "토스트 테스트 중입니다.\n토스트 메세지 입력\n세번째 줄도 입력해주세요.",
+                       animationType: .fromBottom)
+        
+    }
+    
     override func initializeUI() {
         super.initializeUI()
         
-        title = "BSTableView"
+        navigationItem.title = "BSTableView"
+//        title = "BSTableView"
     }
     
     override func setTableView() {
