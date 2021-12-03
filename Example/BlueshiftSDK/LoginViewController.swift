@@ -29,7 +29,22 @@ import BlueshiftSDK
 
 class LoginViewController: BSViewController {
     
-    private func doLogin() {
+    
+    private func doLogin(id: String, pw: String) {
+        
+        let passwordConfig = Util.Validate.PasswordConfig(upperCase: true,
+                                                          lowerCase: true,
+                                                          number: true,
+                                                          special: true,
+                                                          min: 8,
+                                                          max: 20)
+        let valid = Util.Validate(passwordConfig)
+        do {
+            guard try valid.password(pw) else { return }
+        } catch {
+            print(error)
+        }
+        
         Login(from: self)
             .withNaver()
             .execute { result in

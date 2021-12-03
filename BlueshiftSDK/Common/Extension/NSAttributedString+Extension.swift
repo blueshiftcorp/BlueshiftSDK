@@ -26,7 +26,7 @@
 
 import Foundation
 
-extension NSAttributedString {
+public extension NSAttributedString {
     func stringWithString(stringToReplace: String, replacedWithString newStringPart: String) -> NSMutableAttributedString
     {
         let mutableAttributedString = mutableCopy() as! NSMutableAttributedString

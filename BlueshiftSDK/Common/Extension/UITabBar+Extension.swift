@@ -1,5 +1,5 @@
 //
-// File name : UIView+Extension.swift
+//  File name : UITabBar+Extension.swift
 //
 //  Copyright (c) 2009-2021 Blueshift Corporation. All right reserved.
 //
@@ -21,45 +21,15 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 //
-//  Created by Blueshift on 2021/09/07
+//  Created by Blueshift on 2021/09/14
 //
 
 import UIKit
 
-public extension UIView {
-    
-    @IBInspectable var cornerRadius: CGFloat {
-        get {
-            return layer.cornerRadius
-        }
-        set {
-            layer.cornerRadius = newValue
-            layer.masksToBounds = newValue > 0
-        }
-    }
-    
-    @IBInspectable var borderWidth: CGFloat {
-        get {
-            return layer.borderWidth
-        }
-        set {
-            layer.borderWidth = newValue
-        }
-    }
-    
-    @IBInspectable var borderColor: UIColor? {
-        get {
-            return UIColor(cgColor: layer.borderColor!)
-        }
-        set {
-            layer.borderColor = newValue?.cgColor
-        }
-    }
-    
-    func addShadow() {
-        self.layer.shadowOpacity = 0.3
-        self.layer.shadowOffset = CGSize.zero
-        self.layer.shadowRadius = 10
-        self.layer.masksToBounds = false
+public extension UITabBar {
+    static func setTransparentTabbar() {
+        UITabBar.appearance().backgroundColor = .white
+        UITabBar.appearance().isTranslucent = false
+        UITabBar.appearance().tintColor = .black
     }
 }

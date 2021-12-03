@@ -1,6 +1,6 @@
 //
-//  File name : Encodable+Extension.swift
-//
+//  File name : CommonValue+Login.swift
+
 //  Copyright (c) 2009-2021 Blueshift Corporation. All right reserved.
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -21,17 +21,17 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 //
-//  Created by Blueshift on 2021/11/26
+//  Created by Blueshift on 2021/09/07
 //
 
 import Foundation
 
-extension Encodable {
-  func asDictionary() throws -> [String: Any] {
-    let data = try JSONEncoder().encode(self)
-    guard let dictionary = try JSONSerialization.jsonObject(with: data, options: .allowFragments) as? [String: Any] else {
-      throw NSError()
+public extension CV {
+    class Url {
+        static let host = ""
+        
+        class Member {
+            static let add = ""
+        }
     }
-    return dictionary
-  }
 }

@@ -1,5 +1,5 @@
 //
-// File name : UIColor+Extension.swift
+//  File name : Encodable+Extension.swift
 //
 //  Copyright (c) 2009-2021 Blueshift Corporation. All right reserved.
 //
@@ -21,27 +21,17 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 //
-//  Created by Blueshift on 2021/09/07
+//  Created by Blueshift on 2021/11/26
 //
 
-import UIKit
+import Foundation
 
-public extension UIColor {
-    
-    static var officialApplePlaceholderGray: UIColor {
-        return UIColor(red: 0, green: 0, blue: 0.0980392, alpha: 0.22)
+public extension Encodable {
+  func asDictionary() throws -> [String: Any] {
+    let data = try JSONEncoder().encode(self)
+    guard let dictionary = try JSONSerialization.jsonObject(with: data, options: .allowFragments) as? [String: Any] else {
+      throw NSError()
     }
-    
-    static var bgLightGray: UIColor {
-        return UIColor(named: "bgLightGray")!
-    }
-    
-    convenience init(rgb: UInt) {
-        self.init(
-            red: CGFloat((rgb & 0xFF0000) >> 16) / 255.0,
-            green: CGFloat((rgb & 0x00FF00) >> 8) / 255.0,
-            blue: CGFloat(rgb & 0x0000FF) / 255.0,
-            alpha: CGFloat(1.0)
-        )
-    }
+    return dictionary
+  }
 }

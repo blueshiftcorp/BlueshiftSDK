@@ -112,6 +112,34 @@
 		1AACFE29274CBD30000278AF /* JasonSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AACFE28274CBD30000278AF /* JasonSerializer.swift */; };
 		1AACFE2B274CE6D7000278AF /* BSTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AACFE2A274CE6D7000278AF /* BSTabBarController.swift */; };
 		1AFF90282758B0FA009A1A0F /* APIResponseCodeConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFF90272758B0FA009A1A0F /* APIResponseCodeConfiguration.swift */; };
+		1AFF902C2759F584009A1A0F /* CommonValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFF902B2759F584009A1A0F /* CommonValue.swift */; };
+		1AFF904B2759FB5B009A1A0F /* ValidatorDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFF902F2759FB5B009A1A0F /* ValidatorDictionary.swift */; };
+		1AFF904C2759FB5B009A1A0F /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFF90302759FB5B009A1A0F /* Validator.swift */; };
+		1AFF904D2759FB5B009A1A0F /* ValidationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFF90312759FB5B009A1A0F /* ValidationDelegate.swift */; };
+		1AFF904E2759FB5B009A1A0F /* Validatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFF90322759FB5B009A1A0F /* Validatable.swift */; };
+		1AFF904F2759FB5B009A1A0F /* ValidationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFF90332759FB5B009A1A0F /* ValidationError.swift */; };
+		1AFF90502759FB5B009A1A0F /* FullNameRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFF90352759FB5B009A1A0F /* FullNameRule.swift */; };
+		1AFF90512759FB5B009A1A0F /* CardExpiryYearRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFF90362759FB5B009A1A0F /* CardExpiryYearRule.swift */; };
+		1AFF90522759FB5B009A1A0F /* CharacterSetRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFF90372759FB5B009A1A0F /* CharacterSetRule.swift */; };
+		1AFF90532759FB5B009A1A0F /* PasswordRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFF90382759FB5B009A1A0F /* PasswordRule.swift */; };
+		1AFF90542759FB5B009A1A0F /* ExactLengthRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFF90392759FB5B009A1A0F /* ExactLengthRule.swift */; };
+		1AFF90552759FB5B009A1A0F /* ConfirmRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFF903A2759FB5B009A1A0F /* ConfirmRule.swift */; };
+		1AFF90562759FB5B009A1A0F /* MinLengthRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFF903B2759FB5B009A1A0F /* MinLengthRule.swift */; };
+		1AFF90572759FB5B009A1A0F /* FloatRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFF903C2759FB5B009A1A0F /* FloatRule.swift */; };
+		1AFF90582759FB5B009A1A0F /* MaxLengthRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFF903D2759FB5B009A1A0F /* MaxLengthRule.swift */; };
+		1AFF90592759FB5B009A1A0F /* CardExpiryMonthRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFF903E2759FB5B009A1A0F /* CardExpiryMonthRule.swift */; };
+		1AFF905A2759FB5B009A1A0F /* RegexRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFF903F2759FB5B009A1A0F /* RegexRule.swift */; };
+		1AFF905B2759FB5B009A1A0F /* ZipCodeRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFF90402759FB5B009A1A0F /* ZipCodeRule.swift */; };
+		1AFF905C2759FB5B009A1A0F /* HexColorRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFF90412759FB5B009A1A0F /* HexColorRule.swift */; };
+		1AFF905D2759FB5B009A1A0F /* EmailRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFF90422759FB5B009A1A0F /* EmailRule.swift */; };
+		1AFF905E2759FB5B009A1A0F /* AlphaNumericRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFF90432759FB5B009A1A0F /* AlphaNumericRule.swift */; };
+		1AFF905F2759FB5B009A1A0F /* PhoneNumberRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFF90442759FB5B009A1A0F /* PhoneNumberRule.swift */; };
+		1AFF90602759FB5B009A1A0F /* Rule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFF90452759FB5B009A1A0F /* Rule.swift */; };
+		1AFF90612759FB5B009A1A0F /* RequiredRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFF90462759FB5B009A1A0F /* RequiredRule.swift */; };
+		1AFF90622759FB5B009A1A0F /* IPV4Rule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFF90472759FB5B009A1A0F /* IPV4Rule.swift */; };
+		1AFF90632759FB5B009A1A0F /* ValidationRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFF90482759FB5B009A1A0F /* ValidationRule.swift */; };
+		1AFF90642759FB5B009A1A0F /* AlphaRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFF90492759FB5B009A1A0F /* AlphaRule.swift */; };
+		1AFF90652759FB5B009A1A0F /* ISBNRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFF904A2759FB5B009A1A0F /* ISBNRule.swift */; };
 		1B44662F92F56D07344E6C7725E2C2A4 /* FBLPromise+Any.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 9CB50994BC3B5E0B3421659C680ACDD3 /* FBLPromise+Any.h */; };
 		1B9E5CCB180C9C5C122ED5E58E8D019F /* GDTCOREventDataObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 71391FAE4262A44C46B69E4481FE346E /* GDTCOREventDataObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1CF925637E7BBBDA6443D48DDCBF32C7 /* FBLPromise+Timeout.h in Headers */ = {isa = PBXBuildFile; fileRef = DB790BD16BE9BEF5005CCEB16ECAF2EB /* FBLPromise+Timeout.h */; };
@@ -607,7 +635,6 @@
 		D011E3CC83287CC760FDCE3179E7C152 /* Utility+HealthKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDB57E5B55E6EF106B60EF08B7730F2 /* Utility+HealthKit.swift */; };
 		D08B8A8F83685738C9BE6455A49C950B /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920E9A24F04ECF7734D7F5E883CA6857 /* UIViewController+Extension.swift */; };
 		D08E73CE77698A4EC2EFF175667F92A8 /* OIDEndSessionRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B5E7499C52B001C10590D28283A4547 /* OIDEndSessionRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D0BF9B73DD37A1745A4F181E54146C93 /* CommonValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FA7F6A9CB509B3BF201B4FCF93A0B6 /* CommonValue.swift */; };
 		D0D8D505CFF8F9A3B836396164A486C2 /* me.nanopb.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CC92F7C770B53B8C0E8C7C26D4343D5 /* me.nanopb.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		D1459FCBF1C62C98420848930D735B11 /* GTMSessionUploadFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 13EBB12134ABA1891E06A31C65444AF8 /* GTMSessionUploadFetcher.m */; };
 		D15FEA31AA9625BBF041FB91E48A9995 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18CD267AFC93E2F6E7D7C76D9958E3D /* Validation.swift */; };
@@ -623,7 +650,6 @@
 		D47BA59859F1A943AB69DDEC53F319C8 /* GULHeartbeatDateStorageUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 83966A9A2604904CD01E82C3D7709941 /* GULHeartbeatDateStorageUserDefaults.m */; };
 		D4F2F8BBF39333359901411EC5D66E78 /* el.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 8D5087F9D5FBAB29E308F84818A072EF /* el.lproj */; };
 		D4FC7237F4D5DB2B8F0F15457795182C /* FIRDependency.h in Headers */ = {isa = PBXBuildFile; fileRef = C8B5BC0177E2CAEAFFF525A260822213 /* FIRDependency.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		D528D61C0E657DB3C8ECF8748DF1D6E5 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A82665BD5218B4AD5CF41FE8146EE9 /* test.swift */; };
 		D53A22FC806981B0E86EF25F4D1C77CA /* FBLPromiseError.h in Headers */ = {isa = PBXBuildFile; fileRef = A5E1D5C7AB922F99E40F8BE82AC513FB /* FBLPromiseError.h */; };
 		D53BA1EB19FC853BD345171432069A98 /* OIDScopeUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = CAE84C58F1D4A2E34558C44E59C29D0E /* OIDScopeUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D5642F71CE45450DF87F7190152DB0F3 /* OIDAuthorizationService+IOS.h in Headers */ = {isa = PBXBuildFile; fileRef = A4E1AFE9023B306107C11F97BB9DB438 /* OIDAuthorizationService+IOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -1198,7 +1224,6 @@
 		026F2E13B3ABEEA4DBF09BB697E158F8 /* SdkCoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SdkCoder.swift; path = sources/KakaoSDKCommon/common/common/SdkCoder.swift; sourceTree = "<group>"; };
 		0283BBEB3FD700B32B3802D81E3B1D81 /* OIDURLSessionProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDURLSessionProvider.h; path = Source/AppAuthCore/OIDURLSessionProvider.h; sourceTree = "<group>"; };
 		028BAB0DFA0E0307C0F23CF2314A39E6 /* GULLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GULLogger.m; path = GoogleUtilities/Logger/GULLogger.m; sourceTree = "<group>"; };
-		02A82665BD5218B4AD5CF41FE8146EE9 /* test.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = test.swift; path = Source/Messaging/test.swift; sourceTree = "<group>"; };
 		030D3919322A4F4A39E5B9BF830B6C95 /* Result+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Result+Alamofire.swift"; path = "Source/Result+Alamofire.swift"; sourceTree = "<group>"; };
 		031575A9E17B07C2F913BB567F02911A /* ms.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = ms.lproj; path = GoogleSignIn/Sources/Strings/ms.lproj; sourceTree = "<group>"; };
 		031D7BD6ABFD024CB8728873E8B32F0B /* GTMAppAuth-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "GTMAppAuth-Info.plist"; sourceTree = "<group>"; };
@@ -1286,7 +1311,35 @@
 		1AACFE21274CBCE6000278AF /* IndicatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndicatorViewController.swift; sourceTree = "<group>"; };
 		1AACFE28274CBD30000278AF /* JasonSerializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JasonSerializer.swift; sourceTree = "<group>"; };
 		1AACFE2A274CE6D7000278AF /* BSTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BSTabBarController.swift; sourceTree = "<group>"; };
-		1AFF90272758B0FA009A1A0F /* APIResponseCodeConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIResponseCodeConfiguration.swift; path = Source/API/APIResponseCodeConfiguration.swift; sourceTree = "<group>"; };
+		1AFF90272758B0FA009A1A0F /* APIResponseCodeConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIResponseCodeConfiguration.swift; sourceTree = "<group>"; };
+		1AFF902B2759F584009A1A0F /* CommonValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonValue.swift; sourceTree = "<group>"; };
+		1AFF902F2759FB5B009A1A0F /* ValidatorDictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidatorDictionary.swift; sourceTree = "<group>"; };
+		1AFF90302759FB5B009A1A0F /* Validator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
+		1AFF90312759FB5B009A1A0F /* ValidationDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidationDelegate.swift; sourceTree = "<group>"; };
+		1AFF90322759FB5B009A1A0F /* Validatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validatable.swift; sourceTree = "<group>"; };
+		1AFF90332759FB5B009A1A0F /* ValidationError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidationError.swift; sourceTree = "<group>"; };
+		1AFF90352759FB5B009A1A0F /* FullNameRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullNameRule.swift; sourceTree = "<group>"; };
+		1AFF90362759FB5B009A1A0F /* CardExpiryYearRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardExpiryYearRule.swift; sourceTree = "<group>"; };
+		1AFF90372759FB5B009A1A0F /* CharacterSetRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterSetRule.swift; sourceTree = "<group>"; };
+		1AFF90382759FB5B009A1A0F /* PasswordRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordRule.swift; sourceTree = "<group>"; };
+		1AFF90392759FB5B009A1A0F /* ExactLengthRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExactLengthRule.swift; sourceTree = "<group>"; };
+		1AFF903A2759FB5B009A1A0F /* ConfirmRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmRule.swift; sourceTree = "<group>"; };
+		1AFF903B2759FB5B009A1A0F /* MinLengthRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinLengthRule.swift; sourceTree = "<group>"; };
+		1AFF903C2759FB5B009A1A0F /* FloatRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatRule.swift; sourceTree = "<group>"; };
+		1AFF903D2759FB5B009A1A0F /* MaxLengthRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaxLengthRule.swift; sourceTree = "<group>"; };
+		1AFF903E2759FB5B009A1A0F /* CardExpiryMonthRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardExpiryMonthRule.swift; sourceTree = "<group>"; };
+		1AFF903F2759FB5B009A1A0F /* RegexRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegexRule.swift; sourceTree = "<group>"; };
+		1AFF90402759FB5B009A1A0F /* ZipCodeRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZipCodeRule.swift; sourceTree = "<group>"; };
+		1AFF90412759FB5B009A1A0F /* HexColorRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HexColorRule.swift; sourceTree = "<group>"; };
+		1AFF90422759FB5B009A1A0F /* EmailRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailRule.swift; sourceTree = "<group>"; };
+		1AFF90432759FB5B009A1A0F /* AlphaNumericRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlphaNumericRule.swift; sourceTree = "<group>"; };
+		1AFF90442759FB5B009A1A0F /* PhoneNumberRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneNumberRule.swift; sourceTree = "<group>"; };
+		1AFF90452759FB5B009A1A0F /* Rule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rule.swift; sourceTree = "<group>"; };
+		1AFF90462759FB5B009A1A0F /* RequiredRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequiredRule.swift; sourceTree = "<group>"; };
+		1AFF90472759FB5B009A1A0F /* IPV4Rule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IPV4Rule.swift; sourceTree = "<group>"; };
+		1AFF90482759FB5B009A1A0F /* ValidationRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidationRule.swift; sourceTree = "<group>"; };
+		1AFF90492759FB5B009A1A0F /* AlphaRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlphaRule.swift; sourceTree = "<group>"; };
+		1AFF904A2759FB5B009A1A0F /* ISBNRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ISBNRule.swift; sourceTree = "<group>"; };
 		1B01B710E14A75897F1604109DD3836F /* FIRHeartbeatInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRHeartbeatInfo.m; path = FirebaseCore/Sources/FIRHeartbeatInfo.m; sourceTree = "<group>"; };
 		1B56F72C054A46006C484E1BCA8F5830 /* OIDAuthStateChangeDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDAuthStateChangeDelegate.h; path = Source/AppAuthCore/OIDAuthStateChangeDelegate.h; sourceTree = "<group>"; };
 		1B5C0329B5A7C2FDDA82675D1E994CD2 /* GDTCORConsoleLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GDTCORConsoleLogger.m; path = GoogleDataTransport/GDTCORLibrary/GDTCORConsoleLogger.m; sourceTree = "<group>"; };
@@ -1371,7 +1424,6 @@
 		3707A1FEF31676A36011898297973A13 /* GIDGoogleUser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GIDGoogleUser.h; path = GoogleSignIn/Sources/Public/GoogleSignIn/GIDGoogleUser.h; sourceTree = "<group>"; };
 		380F0C906CC4740A5F88195EBDA34C9C /* OIDRegistrationResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDRegistrationResponse.h; path = Source/AppAuthCore/OIDRegistrationResponse.h; sourceTree = "<group>"; };
 		389A420097BDEC6166FDA4C839A17370 /* FBLPromise+Any.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FBLPromise+Any.m"; path = "Sources/FBLPromises/FBLPromise+Any.m"; sourceTree = "<group>"; };
-		38FA7F6A9CB509B3BF201B4FCF93A0B6 /* CommonValue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CommonValue.swift; path = Source/Common/CommonValue.swift; sourceTree = "<group>"; };
 		397270E6E053AF7F973E1D41F637CBF1 /* PromisedFuture.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PromisedFuture.modulemap; sourceTree = "<group>"; };
 		39788C994BD0CD214B86EFF6273AFCD7 /* KakaoSDKUser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KakaoSDKUser.release.xcconfig; sourceTree = "<group>"; };
 		39BDB20797DCB715D36631AFD3A56FBD /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
@@ -1391,7 +1443,7 @@
 		3DA044C0EB895BB7E72AA887D9E81166 /* Utility+WebView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Utility+WebView.swift"; path = "Source/WebView/Utility+WebView.swift"; sourceTree = "<group>"; };
 		3DC17FA6221184881F5704648CD9AE0A /* Api.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Api.swift; path = sources/KakaoSDKCommon/network/Api.swift; sourceTree = "<group>"; };
 		3DFF0906D75435FD215358DF0F7D3171 /* FirebaseCoreDiagnostics.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FirebaseCoreDiagnostics.release.xcconfig; sourceTree = "<group>"; };
-		3EA4F2561E471ED079BCD310DC410AE8 /* Login.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Login.swift; path = Source/Login/Login.swift; sourceTree = "<group>"; };
+		3EA4F2561E471ED079BCD310DC410AE8 /* Login.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		3ED1C4976FABCDB1AC5C7C8297FAF945 /* fi.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = fi.lproj; path = GoogleSignIn/Sources/Strings/fi.lproj; sourceTree = "<group>"; };
 		3EE05DE986F804BC75FCEAECAAA9C412 /* GIDMDMPasscodeState_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GIDMDMPasscodeState_Private.h; path = GoogleSignIn/Sources/GIDMDMPasscodeState_Private.h; sourceTree = "<group>"; };
 		3EE5BE4D77ECDF85F8E3A3B330343895 /* FirebaseCoreInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FirebaseCoreInternal.h; path = FirebaseCore/Sources/Private/FirebaseCoreInternal.h; sourceTree = "<group>"; };
@@ -1429,7 +1481,7 @@
 		498DD433C25E6ADA40F264F5A7A73E6F /* FBLPromises.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBLPromises.h; path = Sources/FBLPromises/include/FBLPromises.h; sourceTree = "<group>"; };
 		499A5F79B18D94C729A31ABDBAE2CC8B /* AppAuth-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AppAuth-dummy.m"; sourceTree = "<group>"; };
 		49C23B4C497E3D809800A1461CBE090C /* AuthRequestAdapter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthRequestAdapter.swift; path = sources/KakaoSDKAuth/auth/AuthRequestAdapter.swift; sourceTree = "<group>"; };
-		49DF6462D3612BCCD58B9A99FEDE355B /* Preferences.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Preferences.swift; path = Source/Login/Preferences.swift; sourceTree = "<group>"; };
+		49DF6462D3612BCCD58B9A99FEDE355B /* Preferences.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
 		4A057772DC4F3FE7965010EE85315140 /* FBLPromise+Then.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBLPromise+Then.h"; path = "Sources/FBLPromises/include/FBLPromise+Then.h"; sourceTree = "<group>"; };
 		4A298BB99FD81AA6B4869BD78A485E80 /* FirebaseCoreDiagnostics-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FirebaseCoreDiagnostics-dummy.m"; sourceTree = "<group>"; };
 		4A32610E50B64ED5280AF9A682232C82 /* ro.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = ro.lproj; path = GoogleSignIn/Sources/Strings/ro.lproj; sourceTree = "<group>"; };
@@ -1459,7 +1511,7 @@
 		53BB183630E8057CA3BCF2B9E94FFF36 /* BlueshiftSDK.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = BlueshiftSDK.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		53F758AA5CD8D694572F29960EAA937D /* Scope.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Scope.swift; path = sources/KakaoSDKUser/model/Scope.swift; sourceTree = "<group>"; };
 		5414705EC75F3F522189645A63F07626 /* FIRInteropParameterNames.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRInteropParameterNames.h; path = Interop/Analytics/Public/FIRInteropParameterNames.h; sourceTree = "<group>"; };
-		548F5AFC1C730F83F4CBE2DBD70CBE80 /* LoginEnum.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LoginEnum.swift; path = Source/Login/LoginEnum.swift; sourceTree = "<group>"; };
+		548F5AFC1C730F83F4CBE2DBD70CBE80 /* LoginEnum.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginEnum.swift; sourceTree = "<group>"; };
 		54C7BCF3566E4725960977D9D280C366 /* FBLPromisePrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBLPromisePrivate.h; path = Sources/FBLPromises/include/FBLPromisePrivate.h; sourceTree = "<group>"; };
 		54E91E2476207868DF3B8C54AA19D979 /* FIRMessagingBackupExcludedPlist.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRMessagingBackupExcludedPlist.m; path = FirebaseMessaging/Sources/Token/FIRMessagingBackupExcludedPlist.m; sourceTree = "<group>"; };
 		55DB9239B337B00468291D6C56782D88 /* KakaoSDKCommon-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KakaoSDKCommon-umbrella.h"; sourceTree = "<group>"; };
@@ -1486,7 +1538,7 @@
 		5BB1CB505233A29A3760F8DD555967C0 /* GDTCORTargets.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTCORTargets.h; path = GoogleDataTransport/GDTCORLibrary/Public/GoogleDataTransport/GDTCORTargets.h; sourceTree = "<group>"; };
 		5BE2B6458EB0E32D7645F41F4746F021 /* GULHeartbeatDateStorageUserDefaults.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GULHeartbeatDateStorageUserDefaults.h; path = GoogleUtilities/Environment/Public/GoogleUtilities/GULHeartbeatDateStorageUserDefaults.h; sourceTree = "<group>"; };
 		5C2AFF7BA88C3B5B046225D5B8B5E438 /* OIDResponseTypes.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDResponseTypes.m; path = Source/AppAuthCore/OIDResponseTypes.m; sourceTree = "<group>"; };
-		5C474BE1D2A0EEFD38244118335E6D1F /* Login+IdPw.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Login+IdPw.swift"; path = "Source/Login/Login+IdPw.swift"; sourceTree = "<group>"; };
+		5C474BE1D2A0EEFD38244118335E6D1F /* Login+IdPw.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Login+IdPw.swift"; sourceTree = "<group>"; };
 		5C9987727EBF4868B3AB668BFD36E5EE /* GULApplication.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GULApplication.h; path = GoogleUtilities/AppDelegateSwizzler/Public/GoogleUtilities/GULApplication.h; sourceTree = "<group>"; };
 		5CF73AFB37294811F50B0A4A2133029E /* FBLPromise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBLPromise.m; path = Sources/FBLPromises/FBLPromise.m; sourceTree = "<group>"; };
 		5D3C17E352B7D637B047F40CC015E833 /* OIDAuthorizationRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDAuthorizationRequest.h; path = Source/AppAuthCore/OIDAuthorizationRequest.h; sourceTree = "<group>"; };
@@ -1495,7 +1547,7 @@
 		5DBE5E70C809951CB7B8C43E6C242AEA /* AlamofireExtended.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlamofireExtended.swift; path = Source/AlamofireExtended.swift; sourceTree = "<group>"; };
 		5DDB7C4D5A4FBB2EAF4CD0B507F44A24 /* FIRMessagingSyncMessageManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRMessagingSyncMessageManager.h; path = FirebaseMessaging/Sources/FIRMessagingSyncMessageManager.h; sourceTree = "<group>"; };
 		5E3F6FDFE9D09C000423356E19266374 /* FIRComponentType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRComponentType.h; path = FirebaseCore/Sources/Private/FIRComponentType.h; sourceTree = "<group>"; };
-		5E721505D1F4B5B82FC1BB709CA05F27 /* CommonEnum.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CommonEnum.swift; path = Source/Common/CommonEnum.swift; sourceTree = "<group>"; };
+		5E721505D1F4B5B82FC1BB709CA05F27 /* CommonEnum.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CommonEnum.swift; sourceTree = "<group>"; };
 		5E9CC279AD69120F990D534A9F29FC51 /* FIRLoggerLevel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRLoggerLevel.h; path = FirebaseCore/Sources/Public/FirebaseCore/FIRLoggerLevel.h; sourceTree = "<group>"; };
 		5F492A9733A72AD0712F5BB1DB6E08F9 /* GDTCORPlatform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTCORPlatform.h; path = GoogleDataTransport/GDTCORLibrary/Internal/GDTCORPlatform.h; sourceTree = "<group>"; };
 		60B1986F58277CF6835333AEC51E2132 /* GULNetworkConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GULNetworkConstants.m; path = GoogleUtilities/Network/GULNetworkConstants.m; sourceTree = "<group>"; };
@@ -1504,11 +1556,11 @@
 		616AC096499416126A5D6E9CDA6FDB1B /* cs.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = cs.lproj; path = GoogleSignIn/Sources/Strings/cs.lproj; sourceTree = "<group>"; };
 		62361FE3F068CCF59BBCC0C0A754828A /* FIRInstallationsIIDTokenStore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRInstallationsIIDTokenStore.m; path = FirebaseInstallations/Source/Library/IIDMigration/FIRInstallationsIIDTokenStore.m; sourceTree = "<group>"; };
 		624E607FB11FAC8EF5A4567807C1CA21 /* GoogleUtilities.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleUtilities.debug.xcconfig; sourceTree = "<group>"; };
-		6264E9D66AD0087F2AFB43734C07B16B /* Protocols+Login.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Protocols+Login.swift"; path = "Source/Login/Protocols+Login.swift"; sourceTree = "<group>"; };
+		6264E9D66AD0087F2AFB43734C07B16B /* Protocols+Login.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Protocols+Login.swift"; sourceTree = "<group>"; };
 		6289174525808C4A545115BA19124B77 /* FIRInstallationsItem+RegisterInstallationAPI.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FIRInstallationsItem+RegisterInstallationAPI.m"; path = "FirebaseInstallations/Source/Library/InstallationsAPI/FIRInstallationsItem+RegisterInstallationAPI.m"; sourceTree = "<group>"; };
 		63718DFBAD972F55E81C5DBB6E7E3382 /* PromisesObjC-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PromisesObjC-dummy.m"; sourceTree = "<group>"; };
 		63A438289728E11E742C9CD6891F5D21 /* FirebaseCoreDiagnostics-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FirebaseCoreDiagnostics-umbrella.h"; sourceTree = "<group>"; };
-		63C64C3B77833DD8D6945FD6DC62BDE6 /* Login+Naver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Login+Naver.swift"; path = "Source/Login/Login+Naver.swift"; sourceTree = "<group>"; };
+		63C64C3B77833DD8D6945FD6DC62BDE6 /* Login+Naver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Login+Naver.swift"; sourceTree = "<group>"; };
 		63E8F7599C711D2CB832CB5DE838B166 /* firebasecore.nanopb.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = firebasecore.nanopb.h; path = Firebase/CoreDiagnostics/FIRCDLibrary/Protogen/nanopb/firebasecore.nanopb.h; sourceTree = "<group>"; };
 		6470A615B01BBACB4443E0A5206DF029 /* ParameterEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoder.swift; path = Source/ParameterEncoder.swift; sourceTree = "<group>"; };
 		647B4C162EF687F1E2FADD11AA6D7F2E /* OIDTokenRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDTokenRequest.h; path = Source/AppAuthCore/OIDTokenRequest.h; sourceTree = "<group>"; };
@@ -1554,7 +1606,7 @@
 		7221571998C6A7BC74D51B936CDB9E48 /* GULSecureCoding.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GULSecureCoding.h; path = GoogleUtilities/Environment/Public/GoogleUtilities/GULSecureCoding.h; sourceTree = "<group>"; };
 		72CF51B45CEA990767FFC079C9AC194A /* FIRInstallationsStore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRInstallationsStore.m; path = FirebaseInstallations/Source/Library/InstallationsStore/FIRInstallationsStore.m; sourceTree = "<group>"; };
 		731E622655AFED2C5FCE3CB750602DE7 /* KakaoSDKCommon-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KakaoSDKCommon-dummy.m"; sourceTree = "<group>"; };
-		73280CB61A7BD9E7A89D99C393C6D985 /* BSError+Login.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "BSError+Login.swift"; path = "Source/Login/BSError+Login.swift"; sourceTree = "<group>"; };
+		73280CB61A7BD9E7A89D99C393C6D985 /* BSError+Login.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "BSError+Login.swift"; sourceTree = "<group>"; };
 		73B5048EFCEC6087E59F4DEB742CF23B /* FirebaseCore-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FirebaseCore-dummy.m"; sourceTree = "<group>"; };
 		73EF675623AEE869183B01FA43216EAC /* GIDMDMPasscodeCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GIDMDMPasscodeCache.m; path = GoogleSignIn/Sources/GIDMDMPasscodeCache.m; sourceTree = "<group>"; };
 		73FFF6EA5EDD0D9E8B6E6ADA91057A68 /* FIRInteropEventNames.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRInteropEventNames.h; path = Interop/Analytics/Public/FIRInteropEventNames.h; sourceTree = "<group>"; };
@@ -1573,9 +1625,9 @@
 		778E6B4BE1B0315B917F9BE538B8D59D /* FirebaseCore-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FirebaseCore-umbrella.h"; sourceTree = "<group>"; };
 		78638E2ED3AAC444ECC26A76A43809F3 /* it.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = it.lproj; path = GoogleSignIn/Sources/Strings/it.lproj; sourceTree = "<group>"; };
 		78845CE86D63A9E1DD10EB298CB5CA31 /* FBLPromise+Testing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBLPromise+Testing.h"; path = "Sources/FBLPromises/include/FBLPromise+Testing.h"; sourceTree = "<group>"; };
-		78E919FBF6D9C7E0731F332464052A64 /* Login+Google.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Login+Google.swift"; path = "Source/Login/Login+Google.swift"; sourceTree = "<group>"; };
+		78E919FBF6D9C7E0731F332464052A64 /* Login+Google.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Login+Google.swift"; sourceTree = "<group>"; };
 		791B243825A60112D13E5B35BBFC6133 /* Pods-BlueshiftSDK_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BlueshiftSDK_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		7ACFA431232B6424FA863E8D0DE4C009 /* APIConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = APIConfiguration.swift; path = Source/API/APIConfiguration.swift; sourceTree = "<group>"; };
+		7ACFA431232B6424FA863E8D0DE4C009 /* APIConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = APIConfiguration.swift; sourceTree = "<group>"; };
 		7B177C449F28F7F9FF7EAB022515F53F /* FirebaseCoreDiagnostics.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FirebaseCoreDiagnostics.modulemap; sourceTree = "<group>"; };
 		7B4FE0C9187B77A820EA58FAB5F0B240 /* GULNetworkLoggerProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GULNetworkLoggerProtocol.h; path = GoogleUtilities/Network/Public/GoogleUtilities/GULNetworkLoggerProtocol.h; sourceTree = "<group>"; };
 		7BA055D297C8EE8E2C4B26E22B954C03 /* PromisesObjC-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PromisesObjC-Info.plist"; sourceTree = "<group>"; };
@@ -1649,7 +1701,7 @@
 		8FC29D14B4CD777010844BD2C2385A01 /* GDTCORUploadBatch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTCORUploadBatch.h; path = GoogleDataTransport/GDTCORLibrary/Private/GDTCORUploadBatch.h; sourceTree = "<group>"; };
 		8FD338D4F8A92EE3A6FCDE0EBFB7B660 /* GDTCORTransformer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GDTCORTransformer.m; path = GoogleDataTransport/GDTCORLibrary/GDTCORTransformer.m; sourceTree = "<group>"; };
 		8FE0E3FF8222C2B088B1C5DF5E6A155F /* KakaoSDKCommon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KakaoSDKCommon.release.xcconfig; sourceTree = "<group>"; };
-		8FEFD4B869A715182F533BDBA2743EFD /* Utility+Login.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Utility+Login.swift"; path = "Source/Login/Utility+Login.swift"; sourceTree = "<group>"; };
+		8FEFD4B869A715182F533BDBA2743EFD /* Utility+Login.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Utility+Login.swift"; sourceTree = "<group>"; };
 		900FBA2DA0142D0100B82FF8256DD9E0 /* FirebaseMessaging-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FirebaseMessaging-Info.plist"; sourceTree = "<group>"; };
 		9099C4D82478B49011F2BEB6F497D4B7 /* FIRVersion.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRVersion.m; path = FirebaseCore/Sources/FIRVersion.m; sourceTree = "<group>"; };
 		916A784A955AB4B666F1F604289E9EB5 /* FIRCoreDiagnosticsConnector.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRCoreDiagnosticsConnector.h; path = FirebaseCore/Sources/Private/FIRCoreDiagnosticsConnector.h; sourceTree = "<group>"; };
@@ -1661,7 +1713,7 @@
 		92C6996E7011A7C1F757247445660C87 /* FIROptions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIROptions.h; path = FirebaseCore/Sources/Public/FirebaseCore/FIROptions.h; sourceTree = "<group>"; };
 		932DEC18BFE5C7FFFA7AFAB8E73C6833 /* FIRApp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRApp.h; path = FirebaseCore/Sources/Public/FirebaseCore/FIRApp.h; sourceTree = "<group>"; };
 		935A74CF09318E3F99F7B11D12FC4B8B /* FIRInstallationsSingleOperationPromiseCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRInstallationsSingleOperationPromiseCache.h; path = FirebaseInstallations/Source/Library/InstallationsIDController/FIRInstallationsSingleOperationPromiseCache.h; sourceTree = "<group>"; };
-		938D1AA0DF5BF2B6723E86AB77E12F7D /* APIResponseBase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = APIResponseBase.swift; path = Source/API/APIResponseBase.swift; sourceTree = "<group>"; };
+		938D1AA0DF5BF2B6723E86AB77E12F7D /* APIResponseBase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = APIResponseBase.swift; sourceTree = "<group>"; };
 		93C0C83D4893308DC1F2C9782D4A4790 /* OIDAuthorizationService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDAuthorizationService.m; path = Source/AppAuthCore/OIDAuthorizationService.m; sourceTree = "<group>"; };
 		940B565CD7EC34067A1A3A25EF59D64C /* UserApi.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UserApi.swift; path = sources/KakaoSDKUser/UserApi.swift; sourceTree = "<group>"; };
 		943C6FA77DC5BD51C1D1963625A99ECE /* GoogleUtilities.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleUtilities.release.xcconfig; sourceTree = "<group>"; };
@@ -1679,7 +1731,7 @@
 		96CCF62847C425C23C10DC3BB4583E52 /* GoogleUtilities-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "GoogleUtilities-Info.plist"; sourceTree = "<group>"; };
 		96D05263A66F723170B47436FEC551D9 /* FIRInstallationsAPIService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRInstallationsAPIService.m; path = FirebaseInstallations/Source/Library/InstallationsAPI/FIRInstallationsAPIService.m; sourceTree = "<group>"; };
 		97A77176813AFA1443DB24ABCD7D17DA /* EncodingContainer+AnyCollection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "EncodingContainer+AnyCollection.swift"; path = "sources/KakaoSDKCommon/common/extension/EncodingContainer+AnyCollection.swift"; sourceTree = "<group>"; };
-		97FEE3F36D6DBA189EF50562EA27B60B /* Login+Apple.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Login+Apple.swift"; path = "Source/Login/Login+Apple.swift"; sourceTree = "<group>"; };
+		97FEE3F36D6DBA189EF50562EA27B60B /* Login+Apple.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Login+Apple.swift"; sourceTree = "<group>"; };
 		98FF165D56D04D9075ED71F8EEC0254D /* FBLPromise+Timeout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FBLPromise+Timeout.m"; path = "Sources/FBLPromises/FBLPromise+Timeout.m"; sourceTree = "<group>"; };
 		996717E33B7CB00612D9FBB27F0EB2FE /* GIDEMMErrorHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GIDEMMErrorHandler.h; path = GoogleSignIn/Sources/GIDEMMErrorHandler.h; sourceTree = "<group>"; };
 		99F2C1510332E70343E44C8A83F42C3F /* GIDEMMErrorHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GIDEMMErrorHandler.m; path = GoogleSignIn/Sources/GIDEMMErrorHandler.m; sourceTree = "<group>"; };
@@ -1711,7 +1763,7 @@
 		A15CF6AD0110F5D9633934D3349CB564 /* FIRAnalyticsConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRAnalyticsConfiguration.m; path = FirebaseCore/Sources/FIRAnalyticsConfiguration.m; sourceTree = "<group>"; };
 		A1665393FCD4D89071C9064A54E11D37 /* FIRMessagingRemoteNotificationsProxy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRMessagingRemoteNotificationsProxy.m; path = FirebaseMessaging/Sources/FIRMessagingRemoteNotificationsProxy.m; sourceTree = "<group>"; };
 		A18CD267AFC93E2F6E7D7C76D9958E3D /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
-		A23D035029C727DF428C064138275CF4 /* BSError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BSError.swift; path = Source/Common/BSError.swift; sourceTree = "<group>"; };
+		A23D035029C727DF428C064138275CF4 /* BSError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BSError.swift; sourceTree = "<group>"; };
 		A37C7ECA3A3F36D6B55E32E6BADEABF0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		A3957ED2A3FAB15AE28162E46A77C539 /* NSURLSession+GULPromises.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSURLSession+GULPromises.m"; path = "GoogleUtilities/Environment/URLSessionPromiseWrapper/NSURLSession+GULPromises.m"; sourceTree = "<group>"; };
 		A3996E504FC2BDA24ED681ABF3CCB799 /* SdkError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SdkError.swift; path = sources/KakaoSDKCommon/common/common/SdkError.swift; sourceTree = "<group>"; };
@@ -1792,7 +1844,7 @@
 		BB3A9AEA54F1F4422E3871DD566005CE /* GIDAuthentication.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GIDAuthentication.m; path = GoogleSignIn/Sources/GIDAuthentication.m; sourceTree = "<group>"; };
 		BB4A60EA530C2ED8FC3262D2502372C5 /* GDTCORStorageEventSelector.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GDTCORStorageEventSelector.m; path = GoogleDataTransport/GDTCORLibrary/GDTCORStorageEventSelector.m; sourceTree = "<group>"; };
 		BBD9B82F627345379DF1AC5BC539DA2C /* FIRInstallationsSingleOperationPromiseCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRInstallationsSingleOperationPromiseCache.m; path = FirebaseInstallations/Source/Library/InstallationsIDController/FIRInstallationsSingleOperationPromiseCache.m; sourceTree = "<group>"; };
-		BE7CA65AC04BA2885DE37F41915BF32E /* API.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = API.swift; path = Source/API/API.swift; sourceTree = "<group>"; };
+		BE7CA65AC04BA2885DE37F41915BF32E /* API.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		BEF7C5422C5D1A9F690650C024D55E0E /* FIRComponentContainer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRComponentContainer.h; path = FirebaseCore/Sources/Private/FIRComponentContainer.h; sourceTree = "<group>"; };
 		BF0FF8924E122BF0272B1D6F0B0D6B97 /* FirebaseInstallationsInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FirebaseInstallationsInternal.h; path = FirebaseInstallations/Source/Library/Private/FirebaseInstallationsInternal.h; sourceTree = "<group>"; };
 		BF206B1CC72A3BC455631ECEF5DE6B35 /* Pods-BlueshiftSDK_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-BlueshiftSDK_Tests"; path = Pods_BlueshiftSDK_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1819,7 +1871,7 @@
 		C42445D71978FE52665297FC9CAC5796 /* StringEncoding+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "StringEncoding+Alamofire.swift"; path = "Source/StringEncoding+Alamofire.swift"; sourceTree = "<group>"; };
 		C502D7EBE183BEE4A9F643B5D9F38537 /* FIRMessaging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRMessaging.h; path = FirebaseMessaging/Sources/Public/FirebaseMessaging/FIRMessaging.h; sourceTree = "<group>"; };
 		C5FC64126003B729C28C97FAB1842E63 /* FirebaseInstallations-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FirebaseInstallations-umbrella.h"; sourceTree = "<group>"; };
-		C6082E0684643879299275BA49C9778E /* CommonValue+Login.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CommonValue+Login.swift"; path = "Source/Login/CommonValue+Login.swift"; sourceTree = "<group>"; };
+		C6082E0684643879299275BA49C9778E /* CommonValue+Login.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "CommonValue+Login.swift"; sourceTree = "<group>"; };
 		C654EE516AF12D79772718588A603AC4 /* FIRMessagingSyncMessageManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRMessagingSyncMessageManager.m; path = FirebaseMessaging/Sources/FIRMessagingSyncMessageManager.m; sourceTree = "<group>"; };
 		C6FF3C579917930B7708BE86972B66AA /* FBLPromise+Async.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBLPromise+Async.h"; path = "Sources/FBLPromises/include/FBLPromise+Async.h"; sourceTree = "<group>"; };
 		C7C08ECEA8BBF22530F286A56623FC0B /* FBLPromise+Await.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FBLPromise+Await.m"; path = "Sources/FBLPromises/FBLPromise+Await.m"; sourceTree = "<group>"; };
@@ -1858,7 +1910,7 @@
 		D177907295A566D1A66AE2ECA1C847EA /* FBLPromise+Reduce.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FBLPromise+Reduce.m"; path = "Sources/FBLPromises/FBLPromise+Reduce.m"; sourceTree = "<group>"; };
 		D290F48D59D1E0BCED09A598D40283AA /* FIRDiagnosticsData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRDiagnosticsData.h; path = FirebaseCore/Sources/FIRDiagnosticsData.h; sourceTree = "<group>"; };
 		D2BC39BB8DB1C886C11815D818E09AA5 /* pb_common.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = pb_common.h; sourceTree = "<group>"; };
-		D351A6DA50061BE6FB65E1B048267322 /* Login+Kakao.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Login+Kakao.swift"; path = "Source/Login/Login+Kakao.swift"; sourceTree = "<group>"; };
+		D351A6DA50061BE6FB65E1B048267322 /* Login+Kakao.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Login+Kakao.swift"; sourceTree = "<group>"; };
 		D3B00B398CAF6F1D24A804F7D3ED5B63 /* GIDSignInInternalOptions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GIDSignInInternalOptions.h; path = GoogleSignIn/Sources/GIDSignInInternalOptions.h; sourceTree = "<group>"; };
 		D3E8F4D1060B2C1516887C599B824088 /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
 		D4336B8506028F4563D1EB680A5017D1 /* Common.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Common.swift; path = sources/KakaoSDKCommon/common/common/Common.swift; sourceTree = "<group>"; };
@@ -1896,7 +1948,7 @@
 		E1CB4A0D775AD9ECD6F1F45A0127268C /* FIRMessagingPendingTopicsList.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRMessagingPendingTopicsList.m; path = FirebaseMessaging/Sources/FIRMessagingPendingTopicsList.m; sourceTree = "<group>"; };
 		E2B63D462DB7F827C4B11FD51E4F8E2D /* FirebaseCore */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FirebaseCore; path = FirebaseCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2E67251D79038ADAD91170A6E6A75A3 /* KakaoSDKUser-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KakaoSDKUser-prefix.pch"; sourceTree = "<group>"; };
-		E350D6B489A36796F94CC29664F3B5A8 /* LoginKeyValue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LoginKeyValue.swift; path = Source/Login/LoginKeyValue.swift; sourceTree = "<group>"; };
+		E350D6B489A36796F94CC29664F3B5A8 /* LoginKeyValue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginKeyValue.swift; sourceTree = "<group>"; };
 		E3B2AE7909001093EDD6EA11CCE2939D /* FBLPromise+Recover.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FBLPromise+Recover.m"; path = "Sources/FBLPromises/FBLPromise+Recover.m"; sourceTree = "<group>"; };
 		E4445C2AF018177217193C172E83B101 /* PromisesObjC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PromisesObjC.debug.xcconfig; sourceTree = "<group>"; };
 		E455DC761D810BA6D5E79ABB598896D5 /* GIDAuthStateMigration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GIDAuthStateMigration.h; path = GoogleSignIn/Sources/GIDAuthStateMigration.h; sourceTree = "<group>"; };
@@ -2306,8 +2358,7 @@
 				1AACFE21274CBCE6000278AF /* IndicatorViewController.swift */,
 				1A16BFB227507160001B3814 /* AlertViewController.swift */,
 			);
-			name = UI;
-			path = Source/Common/UI;
+			path = UI;
 			sourceTree = "<group>";
 		};
 		1AACFE27274CBD30000278AF /* Utility */ = {
@@ -2317,8 +2368,57 @@
 				4C043A174ADA43192A14EE7471C4A95B /* Utility.swift */,
 				1AACFE28274CBD30000278AF /* JasonSerializer.swift */,
 			);
-			name = Utility;
-			path = Source/Common/Utility;
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		1AFF902D2759FB03009A1A0F /* Validator */ = {
+			isa = PBXGroup;
+			children = (
+				1AFF902E2759FB5B009A1A0F /* Core */,
+				1AFF90342759FB5B009A1A0F /* Rules */,
+			);
+			path = Validator;
+			sourceTree = "<group>";
+		};
+		1AFF902E2759FB5B009A1A0F /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				1AFF902F2759FB5B009A1A0F /* ValidatorDictionary.swift */,
+				1AFF90302759FB5B009A1A0F /* Validator.swift */,
+				1AFF90312759FB5B009A1A0F /* ValidationDelegate.swift */,
+				1AFF90322759FB5B009A1A0F /* Validatable.swift */,
+				1AFF90332759FB5B009A1A0F /* ValidationError.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		1AFF90342759FB5B009A1A0F /* Rules */ = {
+			isa = PBXGroup;
+			children = (
+				1AFF90352759FB5B009A1A0F /* FullNameRule.swift */,
+				1AFF90362759FB5B009A1A0F /* CardExpiryYearRule.swift */,
+				1AFF90372759FB5B009A1A0F /* CharacterSetRule.swift */,
+				1AFF90382759FB5B009A1A0F /* PasswordRule.swift */,
+				1AFF90392759FB5B009A1A0F /* ExactLengthRule.swift */,
+				1AFF903A2759FB5B009A1A0F /* ConfirmRule.swift */,
+				1AFF903B2759FB5B009A1A0F /* MinLengthRule.swift */,
+				1AFF903C2759FB5B009A1A0F /* FloatRule.swift */,
+				1AFF903D2759FB5B009A1A0F /* MaxLengthRule.swift */,
+				1AFF903E2759FB5B009A1A0F /* CardExpiryMonthRule.swift */,
+				1AFF903F2759FB5B009A1A0F /* RegexRule.swift */,
+				1AFF90402759FB5B009A1A0F /* ZipCodeRule.swift */,
+				1AFF90412759FB5B009A1A0F /* HexColorRule.swift */,
+				1AFF90422759FB5B009A1A0F /* EmailRule.swift */,
+				1AFF90432759FB5B009A1A0F /* AlphaNumericRule.swift */,
+				1AFF90442759FB5B009A1A0F /* PhoneNumberRule.swift */,
+				1AFF90452759FB5B009A1A0F /* Rule.swift */,
+				1AFF90462759FB5B009A1A0F /* RequiredRule.swift */,
+				1AFF90472759FB5B009A1A0F /* IPV4Rule.swift */,
+				1AFF90482759FB5B009A1A0F /* ValidationRule.swift */,
+				1AFF90492759FB5B009A1A0F /* AlphaRule.swift */,
+				1AFF904A2759FB5B009A1A0F /* ISBNRule.swift */,
+			);
+			path = Rules;
 			sourceTree = "<group>";
 		};
 		1B417665365C1EE864A5B711BBBCE418 /* Extension */ = {
@@ -2333,8 +2433,7 @@
 				1A16BFA727506F63001B3814 /* Encodable+Extension.swift */,
 				1A16BFA927506F7F001B3814 /* UIStackView+Extension.swift */,
 			);
-			name = Extension;
-			path = Source/Common/Extension;
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		1DE11AD9933ADC0A77A405AA9F38BE57 /* Reachability */ = {
@@ -2843,6 +2942,7 @@
 				1AFF90272758B0FA009A1A0F /* APIResponseCodeConfiguration.swift */,
 			);
 			name = API;
+			path = BlueshiftSDK/API;
 			sourceTree = "<group>";
 		};
 		77DF4B40027DE89D268156DACEE24540 /* Support Files */ = {
@@ -2863,9 +2963,9 @@
 		7FB4FA37A1AD20BC4BE5C846C2CFA4E5 /* Messaging */ = {
 			isa = PBXGroup;
 			children = (
-				02A82665BD5218B4AD5CF41FE8146EE9 /* test.swift */,
 			);
 			name = Messaging;
+			path = BlueshiftSDK/Messaging;
 			sourceTree = "<group>";
 		};
 		813A46D6BE67D1FCEC600564FBD20AC7 /* KakaoSDKUser */ = {
@@ -2888,8 +2988,7 @@
 			children = (
 				07B0D856262BFEC31CA096322AC02C1D /* UIPaddingLabel.swift */,
 			);
-			name = SubClass;
-			path = Source/Common/SubClass;
+			path = SubClass;
 			sourceTree = "<group>";
 		};
 		833258EC2C9A7CD86259C4968CB1B9DE /* GTMAppAuth */ = {
@@ -3098,6 +3197,7 @@
 				8FEFD4B869A715182F533BDBA2743EFD /* Utility+Login.swift */,
 			);
 			name = Login;
+			path = BlueshiftSDK/Login;
 			sourceTree = "<group>";
 		};
 		BD0FB23150CAE878C7E4473EE1202B96 /* naveridlogin-sdk-ios */ = {
@@ -3504,12 +3604,14 @@
 				1AACFE1C274CBCE6000278AF /* UI */,
 				A23D035029C727DF428C064138275CF4 /* BSError.swift */,
 				5E721505D1F4B5B82FC1BB709CA05F27 /* CommonEnum.swift */,
-				38FA7F6A9CB509B3BF201B4FCF93A0B6 /* CommonValue.swift */,
+				1AFF902B2759F584009A1A0F /* CommonValue.swift */,
+				1AFF902D2759FB03009A1A0F /* Validator */,
 				1AACFE27274CBD30000278AF /* Utility */,
 				1B417665365C1EE864A5B711BBBCE418 /* Extension */,
 				8319EBBB6C61862E8741A309EB71C977 /* SubClass */,
 			);
 			name = Common;
+			path = BlueshiftSDK/Common;
 			sourceTree = "<group>";
 		};
 		F62F7CB87C25FA9665407722F0AA8B3D /* encode */ = {
@@ -5165,36 +5267,62 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0782F8E457FED5DAC97B30162E234E3 /* API.swift in Sources */,
+				1AFF904D2759FB5B009A1A0F /* ValidationDelegate.swift in Sources */,
 				80B1472121C6D8EB4BB5C7F49DFEC04F /* APIConfiguration.swift in Sources */,
+				1AFF904F2759FB5B009A1A0F /* ValidationError.swift in Sources */,
+				1AFF90582759FB5B009A1A0F /* MaxLengthRule.swift in Sources */,
 				1E5BC68346314DCA38ADE35ECB4075F8 /* APIResponseBase.swift in Sources */,
+				1AFF90612759FB5B009A1A0F /* RequiredRule.swift in Sources */,
+				1AFF905E2759FB5B009A1A0F /* AlphaNumericRule.swift in Sources */,
 				1AFF90282758B0FA009A1A0F /* APIResponseCodeConfiguration.swift in Sources */,
 				70F6A5A8B81D0F39CA92050AC718CE7B /* BlueshiftSDK-dummy.m in Sources */,
+				1AFF90512759FB5B009A1A0F /* CardExpiryYearRule.swift in Sources */,
 				3A5B0A3FD11BD51980471470F5E56D2D /* BSError.swift in Sources */,
 				1AACFE22274CBCE6000278AF /* BSViewController.swift in Sources */,
 				BFA2D9C0B98993140877B7AA1C43D7F3 /* BSError+Login.swift in Sources */,
 				04456CF68DC718D5D7616D5831EABF10 /* CommonEnum.swift in Sources */,
-				D0BF9B73DD37A1745A4F181E54146C93 /* CommonValue.swift in Sources */,
+				1AFF905C2759FB5B009A1A0F /* HexColorRule.swift in Sources */,
+				1AFF905D2759FB5B009A1A0F /* EmailRule.swift in Sources */,
+				1AFF904E2759FB5B009A1A0F /* Validatable.swift in Sources */,
 				E5D34EC179A9825EF0FBADB3A1862BF2 /* CommonValue+Login.swift in Sources */,
 				B1F65EAF75BC67BE8A4B80BBD55F722F /* Login.swift in Sources */,
 				23F8B8E80B086A786EFB6C9EC9B190AC /* Login+Apple.swift in Sources */,
+				1AFF90652759FB5B009A1A0F /* ISBNRule.swift in Sources */,
+				1AFF90572759FB5B009A1A0F /* FloatRule.swift in Sources */,
 				3268416495D83205D8CEBAA7A60809B9 /* Login+IdPw.swift in Sources */,
 				1A16BFB327507160001B3814 /* AlertViewController.swift in Sources */,
+				1AFF90562759FB5B009A1A0F /* MinLengthRule.swift in Sources */,
+				1AFF90522759FB5B009A1A0F /* CharacterSetRule.swift in Sources */,
 				BCAF17EE2F81F3C3A1C197ACC5F8EA8A /* Login+Google.swift in Sources */,
+				1AFF90542759FB5B009A1A0F /* ExactLengthRule.swift in Sources */,
 				4BCFFD879D74335523DC777A8B3277F1 /* Login+Kakao.swift in Sources */,
 				DF070B7D465E306835C99921CE7325D8 /* Login+Naver.swift in Sources */,
+				1AFF90532759FB5B009A1A0F /* PasswordRule.swift in Sources */,
 				FBEF6158C23548E9A7EC81C909AB6923 /* LoginEnum.swift in Sources */,
+				1AFF90622759FB5B009A1A0F /* IPV4Rule.swift in Sources */,
 				191E8F09A51065402A5FAED143842573 /* LoginKeyValue.swift in Sources */,
 				1AACFE24274CBCE6000278AF /* BSTableViewController.swift in Sources */,
+				1AFF904B2759FB5B009A1A0F /* ValidatorDictionary.swift in Sources */,
 				1AACFE25274CBCE6000278AF /* BSTableViewCell.swift in Sources */,
+				1AFF905B2759FB5B009A1A0F /* ZipCodeRule.swift in Sources */,
 				1A16BFAA27506F7F001B3814 /* UIStackView+Extension.swift in Sources */,
+				1AFF90552759FB5B009A1A0F /* ConfirmRule.swift in Sources */,
+				1AFF90502759FB5B009A1A0F /* FullNameRule.swift in Sources */,
+				1AFF905F2759FB5B009A1A0F /* PhoneNumberRule.swift in Sources */,
+				1AFF90632759FB5B009A1A0F /* ValidationRule.swift in Sources */,
 				74D942481E43BB6980501E41E5248999 /* NSAttributedString+Extension.swift in Sources */,
+				1AFF90642759FB5B009A1A0F /* AlphaRule.swift in Sources */,
 				33FE52535174B26E1040FEAFCCA331D7 /* Preferences.swift in Sources */,
+				1AFF90592759FB5B009A1A0F /* CardExpiryMonthRule.swift in Sources */,
 				EDB60A34FD11F1E07402DB81F332F908 /* Protocols+Login.swift in Sources */,
 				1AACFE29274CBD30000278AF /* JasonSerializer.swift in Sources */,
-				D528D61C0E657DB3C8ECF8748DF1D6E5 /* test.swift in Sources */,
 				FEF6DDFF1BACD23BFE2D4AED4B94BDEE /* UIColor+Extension.swift in Sources */,
 				11426D5C18F3653BCA94268FD6B9D070 /* UILabel+Extension.swift in Sources */,
+				1AFF905A2759FB5B009A1A0F /* RegexRule.swift in Sources */,
+				1AFF90602759FB5B009A1A0F /* Rule.swift in Sources */,
+				1AFF902C2759F584009A1A0F /* CommonValue.swift in Sources */,
 				96FD4C55CD95180332559B418F3F0A6D /* UIPaddingLabel.swift in Sources */,
+				1AFF904C2759FB5B009A1A0F /* Validator.swift in Sources */,
 				225E3F9286B40927CA2FEF7061B11675 /* UITabBar+Extension.swift in Sources */,
 				3FB18A1D2F77067D2DAF592A035F2C45 /* UIView+Extension.swift in Sources */,
 				D08B8A8F83685738C9BE6455A49C950B /* UIViewController+Extension.swift in Sources */,

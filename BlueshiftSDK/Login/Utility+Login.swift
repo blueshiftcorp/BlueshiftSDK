@@ -29,9 +29,33 @@ import KakaoSDKUser
 import GoogleSignIn
 
 extension Util {
-    public class Validate {
+    public class Validate: NSObject {
         
-        public static func email(_ email: String) throws -> Bool {
+        public struct PasswordConfig {
+            var upperCase: Bool
+            var lowerCase: Bool
+            var number: Bool
+            var special: Bool
+            var min : Int
+            var max : Int
+            
+            public init(upperCase: Bool, lowerCase: Bool, number: Bool, special: Bool, min: Int, max: Int) {
+                self.upperCase = upperCase
+                self.lowerCase = lowerCase
+                self.number = number
+                self.special = special
+                self.min = min
+                self.max = max
+            }
+        }
+        
+        var passwordConfig: PasswordConfig?
+        
+        public init(_ config: PasswordConfig) {
+            self.passwordConfig = config
+        }
+        
+        public func email(_ email: String) throws -> Bool {
             let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
             let emailPred = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
             guard emailPred.evaluate(with: email) else {
@@ -40,8 +64,17 @@ extension Util {
             return true
         }
         
-        public static func password(_ pw: String) throws -> Bool {
-            let regex = try NSRegularExpression(pattern: "^(?=.*[A-Za-z])(?=.*[0-9])(?=.*[!@#$%^&*()_+=-]).{8,20}", options: NSRegularExpression.Options())
+        public func password(_ pw: String) throws -> Bool {
+            guard let config = passwordConfig else { return false }
+            var pattern = "^"
+            if config.upperCase { pattern += "(?=.*[A-Z])" }
+            if config.lowerCase { pattern += "(?=.*[a-z])" }
+            if config.number { pattern += "(?=.*[0-9])" }
+            if config.special { pattern += "(?=.*[!@#$%^&*()_+=-])" }
+            if config.min > 0, config.max > 0 { pattern += ".{\(config.min),\(config.max)}" }
+            
+//            "^(?=.*[A-Za-z])(?=.*[0-9])(?=.*[!@#$%^&*()_+=-]).{8,20}"
+            let regex = try NSRegularExpression(pattern: pattern, options: NSRegularExpression.Options())
             guard regex.firstMatch(in: pw, options: NSRegularExpression.MatchingOptions(), range:NSMakeRange(0, pw.count)) != nil else {
                 throw BSError.Validation.invalidPasswordFormat
             }
@@ -49,14 +82,14 @@ extension Util {
             return true
         }
         
-        public static func phoneNum(_ _num: String?) -> Bool {
+        public func phoneNum(_ _num: String?) -> Bool {
             guard let num = _num, num.count == 11 else { return false }
             let regex = "^010?([0-9]{8})"
 
             return NSPredicate(format: "SELF MATCHES %@", regex).evaluate(with: _num)
         }
         
-        public static func name(_ _name: String?) -> Bool {
+        public func name(_ _name: String?) -> Bool {
             guard let name = _name, name.count <= 10 else { return false }
             return true
         }
@@ -86,26 +119,26 @@ extension Util {
 ////        }
 //    }
     
-    static func setRootViewController() {
-        
-    }
-    
-    class func logout() {
-        
-        // Google Logout
-        GIDSignIn.sharedInstance.signOut()
-        
-        // Kakao Logout
-        UserApi.shared.logout { (error) in
-            if let error = error {
-                print(error)
-            } else {
-                print("kakao logout success.")
-            }
-        }
-
-        Pref.reset()
-        
-        setRootViewController()
-    }
+//    static func setRootViewController() {
+//
+//    }
+//
+//    class func logout() {
+//
+//        // Google Logout
+//        GIDSignIn.sharedInstance.signOut()
+//
+//        // Kakao Logout
+//        UserApi.shared.logout { (error) in
+//            if let error = error {
+//                print(error)
+//            } else {
+//                print("kakao logout success.")
+//            }
+//        }
+//
+//        Pref.reset()
+//
+//        setRootViewController()
+//    }
 }

@@ -28,12 +28,16 @@ import UIKit
 
 public extension UILabel {
 
-    // Pass value for any one of both parameters and see result
+    /// UILabel의 라인 높이를 설정합니다.
+    ///
+    /// line spacing 혹은 line height multiple을 이용하여 라인 높이를 설정할 수 있습니다.
+    /// UILabel의 text를 attributedString으로 변환하여 리턴합니다.
+    /// - Parameters:
+    ///     - lineSpacing: 글의 줄간격 절대값
+    ///     - lineHeightMultiple: 글의 줄간격 배수
+    ///
     func setLineSpacing(lineSpacing: CGFloat = 0.0, lineHeightMultiple: CGFloat = 0.0) {
-
         guard let labelText = self.text else { return }
-        
-        print("label line spacing set")
 
         let paragraphStyle = NSMutableParagraphStyle()
         paragraphStyle.lineSpacing = lineSpacing
