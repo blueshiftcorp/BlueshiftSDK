@@ -140,6 +140,7 @@
 		1AFF90632759FB5B009A1A0F /* ValidationRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFF90482759FB5B009A1A0F /* ValidationRule.swift */; };
 		1AFF90642759FB5B009A1A0F /* AlphaRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFF90492759FB5B009A1A0F /* AlphaRule.swift */; };
 		1AFF90652759FB5B009A1A0F /* ISBNRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFF904A2759FB5B009A1A0F /* ISBNRule.swift */; };
+		1AFF90672759FE4A009A1A0F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1AFF90662759FE4A009A1A0F /* README.md */; };
 		1B44662F92F56D07344E6C7725E2C2A4 /* FBLPromise+Any.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 9CB50994BC3B5E0B3421659C680ACDD3 /* FBLPromise+Any.h */; };
 		1B9E5CCB180C9C5C122ED5E58E8D019F /* GDTCOREventDataObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 71391FAE4262A44C46B69E4481FE346E /* GDTCOREventDataObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1CF925637E7BBBDA6443D48DDCBF32C7 /* FBLPromise+Timeout.h in Headers */ = {isa = PBXBuildFile; fileRef = DB790BD16BE9BEF5005CCEB16ECAF2EB /* FBLPromise+Timeout.h */; };
@@ -1340,6 +1341,7 @@
 		1AFF90482759FB5B009A1A0F /* ValidationRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidationRule.swift; sourceTree = "<group>"; };
 		1AFF90492759FB5B009A1A0F /* AlphaRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlphaRule.swift; sourceTree = "<group>"; };
 		1AFF904A2759FB5B009A1A0F /* ISBNRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ISBNRule.swift; sourceTree = "<group>"; };
+		1AFF90662759FE4A009A1A0F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		1B01B710E14A75897F1604109DD3836F /* FIRHeartbeatInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRHeartbeatInfo.m; path = FirebaseCore/Sources/FIRHeartbeatInfo.m; sourceTree = "<group>"; };
 		1B56F72C054A46006C484E1BCA8F5830 /* OIDAuthStateChangeDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDAuthStateChangeDelegate.h; path = Source/AppAuthCore/OIDAuthStateChangeDelegate.h; sourceTree = "<group>"; };
 		1B5C0329B5A7C2FDDA82675D1E994CD2 /* GDTCORConsoleLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GDTCORConsoleLogger.m; path = GoogleDataTransport/GDTCORLibrary/GDTCORConsoleLogger.m; sourceTree = "<group>"; };
@@ -1924,7 +1926,7 @@
 		D7FF1AC5290C6D6817AFF03C378D99FB /* PromisedFuture-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PromisedFuture-umbrella.h"; sourceTree = "<group>"; };
 		D8E15C406AAB44B3F76A22920571A0C5 /* AuthApi.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthApi.swift; path = sources/KakaoSDKAuth/auth/AuthApi.swift; sourceTree = "<group>"; };
 		DA545E83D33195FF548AA3D3F558A44A /* FIRComponentContainer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRComponentContainer.m; path = FirebaseCore/Sources/FIRComponentContainer.m; sourceTree = "<group>"; };
-		DAA1F0D1B5832F264830679FB479BA19 /* BlueshiftSDK */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = BlueshiftSDK; path = BlueshiftSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAA1F0D1B5832F264830679FB479BA19 /* BlueshiftSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BlueshiftSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAB3E74F40DA053041DBA22ED66D3E4F /* FBLPromise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBLPromise.h; path = Sources/FBLPromises/include/FBLPromise.h; sourceTree = "<group>"; };
 		DAB528F65FAC14ED8263537F3FE8C203 /* sk.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = sk.lproj; path = GoogleSignIn/Sources/Strings/sk.lproj; sourceTree = "<group>"; };
 		DB00D5DAFFA59655C51F0B8F2A76C4EA /* FIRHeartbeatInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRHeartbeatInfo.h; path = FirebaseCore/Sources/Private/FIRHeartbeatInfo.h; sourceTree = "<group>"; };
@@ -2374,6 +2376,7 @@
 		1AFF902D2759FB03009A1A0F /* Validator */ = {
 			isa = PBXGroup;
 			children = (
+				1AFF90662759FE4A009A1A0F /* README.md */,
 				1AFF902E2759FB5B009A1A0F /* Core */,
 				1AFF90342759FB5B009A1A0F /* Rules */,
 			);
@@ -3239,7 +3242,7 @@
 			children = (
 				5D797E9A5C5782CE845840781FA1CC81 /* Alamofire */,
 				3FD1B4C1246D643E9476438C28048FA8 /* AppAuth */,
-				DAA1F0D1B5832F264830679FB479BA19 /* BlueshiftSDK */,
+				DAA1F0D1B5832F264830679FB479BA19 /* BlueshiftSDK.framework */,
 				E2B63D462DB7F827C4B11FD51E4F8E2D /* FirebaseCore */,
 				8CC9178C366942FD6FF6A115604EAD58 /* FirebaseCoreDiagnostics */,
 				13C8C8B254851998F9289F71229B28A2 /* FirebaseInstallations */,
@@ -4162,7 +4165,7 @@
 			);
 			name = BlueshiftSDK;
 			productName = BlueshiftSDK;
-			productReference = DAA1F0D1B5832F264830679FB479BA19 /* BlueshiftSDK */;
+			productReference = DAA1F0D1B5832F264830679FB479BA19 /* BlueshiftSDK.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		205D6EF1B8DCC8419E2F53266F6ADCDC /* KakaoSDKCommon */ = {
@@ -4841,6 +4844,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AFF90672759FE4A009A1A0F /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5794,9 +5798,10 @@
 				PRODUCT_NAME = BlueshiftSDK;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -7183,9 +7188,10 @@
 				PRODUCT_NAME = BlueshiftSDK;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};

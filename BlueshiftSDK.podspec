@@ -29,11 +29,11 @@ Pod::Spec.new do |s|
   s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   
   s.subspec 'Common' do |ss|
-    ss.source_files       = 'Source/Common/**/*'
+    ss.source_files       = 'BlueshiftSDK/Common/**/*'
   end
   
   s.subspec 'API' do |ss|
-    ss.source_files       = 'Source/API/**/*'
+    ss.source_files       = 'BlueshiftSDK/API/**/*'
     
     ss.dependency         'BlueshiftSDK/Common'
     ss.dependency         'Alamofire', '~> 5.4'   # Networking
@@ -47,7 +47,7 @@ Pod::Spec.new do |s|
 #  end
   
   s.subspec 'Login' do |ss|
-    ss.source_files       = 'Source/Login/**/*'
+    ss.source_files       = 'BlueshiftSDK/Login/**/*'
     
     ss.dependency         'BlueshiftSDK/API'
     ss.dependency         'GoogleSignIn'          # Google Login
@@ -57,14 +57,14 @@ Pod::Spec.new do |s|
   end
   
   s.subspec 'Messaging' do |ss|
-    ss.source_files       = 'Source/Messaging/**/*'
+    ss.source_files       = 'BlueshiftSDK/Messaging/**/*'
     
     ss.dependency         'BlueshiftSDK/API'
     ss.dependency         'Firebase/Messaging'    # Firebase Cloud Messaging
   end
   
   s.subspec 'WebView' do |ss|
-    ss.source_files       = 'Source/WebView/**/*'
+    ss.source_files       = 'BlueshiftSDK/WebView/**/*'
     
     ss.dependency         'Alamofire', '~> 5.4'
     ss.dependency         'BlueshiftSDK/Common'
@@ -72,7 +72,7 @@ Pod::Spec.new do |s|
   end
   
   s.subspec 'BLE' do |ss|
-    ss.source_files       = 'Source/BLE/**/*'
+    ss.source_files       = 'BlueshiftSDK/BLE/**/*'
   end
   
 end
