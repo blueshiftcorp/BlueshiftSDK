@@ -2431,7 +2431,8 @@
 			children = (
 				1AFF906A275A078F009A1A0F /* BSMessaging.swift */,
 			);
-			path = Messaging;
+			name = Messaging;
+			path = BlueshiftSDK/Messaging;
 			sourceTree = "<group>";
 		};
 		1B417665365C1EE864A5B711BBBCE418 /* Extension */ = {
