@@ -2,6 +2,9 @@ use_frameworks!
 
 platform :ios, '13.5'
 
+# ignore all warnings from all pods
+inhibit_all_warnings!
+
 target 'BlueshiftSDK_Example' do
   pod 'BlueshiftSDK', :path => '../'
 #  pod 'BlueshiftSDK/Common', :path => '../'

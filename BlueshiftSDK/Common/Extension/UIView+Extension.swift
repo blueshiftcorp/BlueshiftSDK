@@ -56,7 +56,7 @@ public extension UIView {
         }
     }
     
-    public func addShadow() {
+    func addShadow() {
         self.layer.shadowOpacity = 0.3
         self.layer.shadowOffset = CGSize.zero
         self.layer.shadowRadius = 10

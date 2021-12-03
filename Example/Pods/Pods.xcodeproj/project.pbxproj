@@ -208,7 +208,6 @@
 		35131AC15B00CE8AB4E9E25931085F19 /* FIRMessagingExtensionHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1E5919D79EA5A43C3E3026AFACF0D5 /* FIRMessagingExtensionHelper.m */; };
 		3520FBCD6FFA6F83610C1A917F1DF53C /* FIRInstallationsStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 75F43FBA82F833DDF78F3D306533BDC8 /* FIRInstallationsStore.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		35417BC38D5285EE1F8663A4424A82DE /* FIRMessagingTokenOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0220931553C66D1DF7825727E6C69457 /* FIRMessagingTokenOperation.m */; };
-		358DE8F9454C07BCC68831C1AFC405B6 /* Utility+WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA044C0EB895BB7E72AA887D9E81166 /* Utility+WebView.swift */; };
 		35FCE936477CD784E74B15016A575B5E /* FIRInstallationsBackoffController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F8F092EB29CA75466EE124EF5D95F31 /* FIRInstallationsBackoffController.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		368DFD87BE0F1B6A3484C5E7673D9064 /* Scope.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F758AA5CD8D694572F29960EAA937D /* Scope.swift */; };
 		36DC3ACDD3D67D6800CABB2100702A0A /* OIDAuthStateChangeDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B56F72C054A46006C484E1BCA8F5830 /* OIDAuthStateChangeDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -5337,7 +5336,6 @@
 				1AACFE26274CBCE6000278AF /* IndicatorViewController.swift in Sources */,
 				084767BCA74FB65D23A198CD106F8ACF /* Utility+Login.swift in Sources */,
 				1AACFE23274CBCE6000278AF /* SpinnerView.swift in Sources */,
-				358DE8F9454C07BCC68831C1AFC405B6 /* Utility+WebView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
