@@ -141,6 +141,8 @@
 		1AFF90642759FB5B009A1A0F /* AlphaRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFF90492759FB5B009A1A0F /* AlphaRule.swift */; };
 		1AFF90652759FB5B009A1A0F /* ISBNRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFF904A2759FB5B009A1A0F /* ISBNRule.swift */; };
 		1AFF90672759FE4A009A1A0F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1AFF90662759FE4A009A1A0F /* README.md */; };
+		1AFF9068275A06F5009A1A0F /* Utility+WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA044C0EB895BB7E72AA887D9E81166 /* Utility+WebView.swift */; };
+		1AFF906B275A078F009A1A0F /* BSMessaging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFF906A275A078F009A1A0F /* BSMessaging.swift */; };
 		1B44662F92F56D07344E6C7725E2C2A4 /* FBLPromise+Any.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 9CB50994BC3B5E0B3421659C680ACDD3 /* FBLPromise+Any.h */; };
 		1B9E5CCB180C9C5C122ED5E58E8D019F /* GDTCOREventDataObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 71391FAE4262A44C46B69E4481FE346E /* GDTCOREventDataObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1CF925637E7BBBDA6443D48DDCBF32C7 /* FBLPromise+Timeout.h in Headers */ = {isa = PBXBuildFile; fileRef = DB790BD16BE9BEF5005CCEB16ECAF2EB /* FBLPromise+Timeout.h */; };
@@ -1341,6 +1343,7 @@
 		1AFF90492759FB5B009A1A0F /* AlphaRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlphaRule.swift; sourceTree = "<group>"; };
 		1AFF904A2759FB5B009A1A0F /* ISBNRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ISBNRule.swift; sourceTree = "<group>"; };
 		1AFF90662759FE4A009A1A0F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		1AFF906A275A078F009A1A0F /* BSMessaging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BSMessaging.swift; sourceTree = "<group>"; };
 		1B01B710E14A75897F1604109DD3836F /* FIRHeartbeatInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRHeartbeatInfo.m; path = FirebaseCore/Sources/FIRHeartbeatInfo.m; sourceTree = "<group>"; };
 		1B56F72C054A46006C484E1BCA8F5830 /* OIDAuthStateChangeDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDAuthStateChangeDelegate.h; path = Source/AppAuthCore/OIDAuthStateChangeDelegate.h; sourceTree = "<group>"; };
 		1B5C0329B5A7C2FDDA82675D1E994CD2 /* GDTCORConsoleLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GDTCORConsoleLogger.m; path = GoogleDataTransport/GDTCORLibrary/GDTCORConsoleLogger.m; sourceTree = "<group>"; };
@@ -1441,7 +1444,7 @@
 		3D3D0ADC4BA2730F42CD833737A9A6F4 /* PromisesObjC.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PromisesObjC.modulemap; sourceTree = "<group>"; };
 		3D8D3D4B969FC0F7B094D003FB780A8D /* GDTCORTransformer_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTCORTransformer_Private.h; path = GoogleDataTransport/GDTCORLibrary/Private/GDTCORTransformer_Private.h; sourceTree = "<group>"; };
 		3D93DDECDFB1416AC843B0BA15DB1351 /* GDTCORStorageEventSelector.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTCORStorageEventSelector.h; path = GoogleDataTransport/GDTCORLibrary/Internal/GDTCORStorageEventSelector.h; sourceTree = "<group>"; };
-		3DA044C0EB895BB7E72AA887D9E81166 /* Utility+WebView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Utility+WebView.swift"; path = "Source/WebView/Utility+WebView.swift"; sourceTree = "<group>"; };
+		3DA044C0EB895BB7E72AA887D9E81166 /* Utility+WebView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Utility+WebView.swift"; sourceTree = "<group>"; };
 		3DC17FA6221184881F5704648CD9AE0A /* Api.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Api.swift; path = sources/KakaoSDKCommon/network/Api.swift; sourceTree = "<group>"; };
 		3DFF0906D75435FD215358DF0F7D3171 /* FirebaseCoreDiagnostics.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FirebaseCoreDiagnostics.release.xcconfig; sourceTree = "<group>"; };
 		3EA4F2561E471ED079BCD310DC410AE8 /* Login.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
@@ -2423,6 +2426,14 @@
 			path = Rules;
 			sourceTree = "<group>";
 		};
+		1AFF9069275A0761009A1A0F /* Messaging */ = {
+			isa = PBXGroup;
+			children = (
+				1AFF906A275A078F009A1A0F /* BSMessaging.swift */,
+			);
+			path = Messaging;
+			sourceTree = "<group>";
+		};
 		1B417665365C1EE864A5B711BBBCE418 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
@@ -2904,9 +2915,10 @@
 				77B1F4F712FDD28D4EFA8837955562DA /* API */,
 				F21E740CD70553945A87FC2FF27E8A06 /* Common */,
 				BB61B81F7C3DF933A5644C0006D4927C /* Login */,
+				1AFF9069275A0761009A1A0F /* Messaging */,
+				777F4FEC0651D613AB74AB9B4CC6C304 /* WebView */,
 				4B00E21232A2F95893C33B3002EC88D9 /* Pod */,
 				E66E54B95F01B02197B7C235664ACC73 /* Support Files */,
-				777F4FEC0651D613AB74AB9B4CC6C304 /* WebView */,
 			);
 			name = BlueshiftSDK;
 			path = ../..;
@@ -2932,6 +2944,7 @@
 				3DA044C0EB895BB7E72AA887D9E81166 /* Utility+WebView.swift */,
 			);
 			name = WebView;
+			path = BlueshiftSDK/WebView;
 			sourceTree = "<group>";
 		};
 		77B1F4F712FDD28D4EFA8837955562DA /* API */ = {
@@ -5264,6 +5277,7 @@
 				1AFF904D2759FB5B009A1A0F /* ValidationDelegate.swift in Sources */,
 				80B1472121C6D8EB4BB5C7F49DFEC04F /* APIConfiguration.swift in Sources */,
 				1AFF904F2759FB5B009A1A0F /* ValidationError.swift in Sources */,
+				1AFF906B275A078F009A1A0F /* BSMessaging.swift in Sources */,
 				1AFF90582759FB5B009A1A0F /* MaxLengthRule.swift in Sources */,
 				1E5BC68346314DCA38ADE35ECB4075F8 /* APIResponseBase.swift in Sources */,
 				1AFF90612759FB5B009A1A0F /* RequiredRule.swift in Sources */,
@@ -5280,6 +5294,7 @@
 				1AFF904E2759FB5B009A1A0F /* Validatable.swift in Sources */,
 				E5D34EC179A9825EF0FBADB3A1862BF2 /* CommonValue+Login.swift in Sources */,
 				B1F65EAF75BC67BE8A4B80BBD55F722F /* Login.swift in Sources */,
+				1AFF9068275A06F5009A1A0F /* Utility+WebView.swift in Sources */,
 				23F8B8E80B086A786EFB6C9EC9B190AC /* Login+Apple.swift in Sources */,
 				1AFF90652759FB5B009A1A0F /* ISBNRule.swift in Sources */,
 				1AFF90572759FB5B009A1A0F /* FloatRule.swift in Sources */,
