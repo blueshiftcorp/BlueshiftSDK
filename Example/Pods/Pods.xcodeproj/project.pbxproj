@@ -2904,7 +2904,6 @@
 				77B1F4F712FDD28D4EFA8837955562DA /* API */,
 				F21E740CD70553945A87FC2FF27E8A06 /* Common */,
 				BB61B81F7C3DF933A5644C0006D4927C /* Login */,
-				7FB4FA37A1AD20BC4BE5C846C2CFA4E5 /* Messaging */,
 				4B00E21232A2F95893C33B3002EC88D9 /* Pod */,
 				E66E54B95F01B02197B7C235664ACC73 /* Support Files */,
 				777F4FEC0651D613AB74AB9B4CC6C304 /* WebView */,
@@ -2960,14 +2959,6 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/KakaoSDKCommon";
-			sourceTree = "<group>";
-		};
-		7FB4FA37A1AD20BC4BE5C846C2CFA4E5 /* Messaging */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Messaging;
-			path = BlueshiftSDK/Messaging;
 			sourceTree = "<group>";
 		};
 		813A46D6BE67D1FCEC600564FBD20AC7 /* KakaoSDKUser */ = {
