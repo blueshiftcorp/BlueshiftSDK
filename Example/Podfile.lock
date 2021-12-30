@@ -1,53 +1,62 @@
 PODS:
-  - Alamofire (5.4.4)
+  - Alamofire (5.5.0)
   - AppAuth (1.4.0):
     - AppAuth/Core (= 1.4.0)
     - AppAuth/ExternalUserAgent (= 1.4.0)
   - AppAuth/Core (1.4.0)
   - AppAuth/ExternalUserAgent (1.4.0)
-  - BlueshiftSDK (0.0.21):
-    - BlueshiftSDK/API (= 0.0.21)
-    - BlueshiftSDK/Common (= 0.0.21)
-    - BlueshiftSDK/Login (= 0.0.21)
-    - BlueshiftSDK/Messaging (= 0.0.21)
-    - BlueshiftSDK/WebView (= 0.0.21)
-  - BlueshiftSDK/API (0.0.21):
+  - BlueshiftSDK (0.0.25):
+    - BlueshiftSDK/API (= 0.0.25)
+    - BlueshiftSDK/Common (= 0.0.25)
+    - BlueshiftSDK/Login (= 0.0.25)
+    - BlueshiftSDK/Messaging (= 0.0.25)
+    - BlueshiftSDK/WebView (= 0.0.25)
+  - BlueshiftSDK/API (0.0.25):
     - Alamofire (~> 5.4)
     - BlueshiftSDK/Common
     - PromisedFuture
-  - BlueshiftSDK/Common (0.0.21)
-  - BlueshiftSDK/Login (0.0.21):
+  - BlueshiftSDK/Common (0.0.25)
+  - BlueshiftSDK/Login (0.0.25):
     - BlueshiftSDK/API
+    - FBSDKLoginKit
     - GoogleSignIn
     - KakaoSDKAuth
     - KakaoSDKUser
     - naveridlogin-sdk-ios
-  - BlueshiftSDK/Messaging (0.0.21):
+  - BlueshiftSDK/Messaging (0.0.25):
     - BlueshiftSDK/API
     - Firebase/Messaging
-  - BlueshiftSDK/WebView (0.0.21):
+  - BlueshiftSDK/WebView (0.0.25):
     - Alamofire (~> 5.4)
     - BlueshiftSDK/Common
-  - Firebase/CoreOnly (8.9.1):
-    - FirebaseCore (= 8.9.1)
-  - Firebase/Messaging (8.9.1):
+  - FBAEMKit (12.2.1):
+    - FBSDKCoreKit_Basics (= 12.2.1)
+  - FBSDKCoreKit (12.2.1):
+    - FBAEMKit (= 12.2.1)
+    - FBSDKCoreKit_Basics (= 12.2.1)
+  - FBSDKCoreKit_Basics (12.2.1)
+  - FBSDKLoginKit (12.2.1):
+    - FBSDKCoreKit (= 12.2.1)
+  - Firebase/CoreOnly (8.10.0):
+    - FirebaseCore (= 8.10.0)
+  - Firebase/Messaging (8.10.0):
     - Firebase/CoreOnly
-    - FirebaseMessaging (~> 8.9.0)
-  - FirebaseCore (8.9.1):
+    - FirebaseMessaging (~> 8.10.0)
+  - FirebaseCore (8.10.0):
     - FirebaseCoreDiagnostics (~> 8.0)
     - GoogleUtilities/Environment (~> 7.6)
     - GoogleUtilities/Logger (~> 7.6)
-  - FirebaseCoreDiagnostics (8.9.0):
+  - FirebaseCoreDiagnostics (8.10.0):
     - GoogleDataTransport (~> 9.1)
     - GoogleUtilities/Environment (~> 7.6)
     - GoogleUtilities/Logger (~> 7.6)
     - nanopb (~> 2.30908.0)
-  - FirebaseInstallations (8.9.0):
+  - FirebaseInstallations (8.10.0):
     - FirebaseCore (~> 8.0)
     - GoogleUtilities/Environment (~> 7.6)
     - GoogleUtilities/UserDefaults (~> 7.6)
     - PromisesObjC (< 3.0, >= 1.2)
-  - FirebaseMessaging (8.9.0):
+  - FirebaseMessaging (8.10.0):
     - FirebaseCore (~> 8.0)
     - FirebaseInstallations (~> 8.0)
     - GoogleDataTransport (~> 9.1)
@@ -60,7 +69,7 @@ PODS:
     - GoogleUtilities/Environment (~> 7.2)
     - nanopb (~> 2.30908.0)
     - PromisesObjC (< 3.0, >= 1.2)
-  - GoogleSignIn (6.0.2):
+  - GoogleSignIn (6.1.0):
     - AppAuth (~> 1.4)
     - GTMAppAuth (~> 1.0)
     - GTMSessionFetcher/Core (~> 1.1)
@@ -85,17 +94,17 @@ PODS:
     - AppAuth/Core (~> 1.4)
     - GTMSessionFetcher/Core (~> 1.5)
   - GTMSessionFetcher/Core (1.7.0)
-  - KakaoSDKAuth (2.8.3):
-    - KakaoSDKCommon (= 2.8.3)
-  - KakaoSDKCommon (2.8.3):
-    - KakaoSDKCommon/Common (= 2.8.3)
-    - KakaoSDKCommon/Network (= 2.8.3)
-  - KakaoSDKCommon/Common (2.8.3)
-  - KakaoSDKCommon/Network (2.8.3):
+  - KakaoSDKAuth (2.8.4):
+    - KakaoSDKCommon (= 2.8.4)
+  - KakaoSDKCommon (2.8.4):
+    - KakaoSDKCommon/Common (= 2.8.4)
+    - KakaoSDKCommon/Network (= 2.8.4)
+  - KakaoSDKCommon/Common (2.8.4)
+  - KakaoSDKCommon/Network (2.8.4):
     - Alamofire (~> 5.1)
-    - KakaoSDKCommon/Common (= 2.8.3)
-  - KakaoSDKUser (2.8.3):
-    - KakaoSDKAuth (= 2.8.3)
+    - KakaoSDKCommon/Common (= 2.8.4)
+  - KakaoSDKUser (2.8.4):
+    - KakaoSDKAuth (= 2.8.4)
   - nanopb (2.30908.0):
     - nanopb/decode (= 2.30908.0)
     - nanopb/encode (= 2.30908.0)
@@ -112,6 +121,10 @@ SPEC REPOS:
   trunk:
     - Alamofire
     - AppAuth
+    - FBAEMKit
+    - FBSDKCoreKit
+    - FBSDKCoreKit_Basics
+    - FBSDKLoginKit
     - Firebase
     - FirebaseCore
     - FirebaseCoreDiagnostics
@@ -135,27 +148,31 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Alamofire: f3b09a368f1582ab751b3fff5460276e0d2cf5c9
+  Alamofire: 1c4fb5369c3fe93d2857c780d8bbe09f06f97e7c
   AppAuth: 31bcec809a638d7bd2f86ea8a52bd45f6e81e7c7
-  BlueshiftSDK: 1637468a0f7979db8802df4d09dfd37d004a7c6a
-  Firebase: fb5114cd2bf96e2ff7bcb01d0d9a156cf5fd2f07
-  FirebaseCore: c5aab092d9c4b8efea894946166b04c9d9ef0e68
-  FirebaseCoreDiagnostics: 5daa63f1c1409d981a2d5007daa100b36eac6a34
-  FirebaseInstallations: caa7c8e0d3e2345b8829d2fa9ca1b4dfbf2fcc85
-  FirebaseMessaging: 82c4a48638f53f7b184f3cc9f6cd2cbe533ab316
+  BlueshiftSDK: 472b54857e709c28db8e13ab7b5a1066611b5d0d
+  FBAEMKit: 4cea610d0bc1680572f2aad7b25db7a2f2690d82
+  FBSDKCoreKit: 5b1992fe65802ca26be7e68bc4fac5f59fa39908
+  FBSDKCoreKit_Basics: a6a92ca628e05f86f458a4721574c5ddfb058ba3
+  FBSDKLoginKit: 7467b7f988ca4fdf48f12a839bcfce4264752429
+  Firebase: 44213362f1dcc52555b935dc925ed35ac55f1b20
+  FirebaseCore: 04186597c095da37d90ff9fd3e53bc61a1ff2440
+  FirebaseCoreDiagnostics: 56fb7216d87e0e6ec2feddefa9d8a392fe8b2c18
+  FirebaseInstallations: 830327b45345ffc859eaa9c17bcd5ae893fd5425
+  FirebaseMessaging: b0aeba17332ee1ee610662b4d1e02a86db82f08f
   GoogleDataTransport: 629c20a4d363167143f30ea78320d5a7eb8bd940
-  GoogleSignIn: fd381840dbe7c1137aa6dc30849a5c3e070c034a
+  GoogleSignIn: c90b5bec45e780f54c6a8e1e3c182a86e3dda69d
   GoogleUtilities: 684ee790a24f73ebb2d1d966e9711c203f2a4237
   GTMAppAuth: ad5c2b70b9a8689e1a04033c9369c4915bfcbe89
   GTMSessionFetcher: 43748f93435c2aa068b1cbe39655aaf600652e91
-  KakaoSDKAuth: 36597989cec6dd54707c2fc6501091bb9e32e3f0
-  KakaoSDKCommon: b86ad0c899b93eaf0edb94c6deb5f0dbf7116398
-  KakaoSDKUser: 7debff9ff539b095aa4858469163fed7e3bce73e
+  KakaoSDKAuth: b9b693995f98b1821ccd22b39d383e1dede5ca45
+  KakaoSDKCommon: 33c9902ee9ce13e9d1cac3549896406229836ff5
+  KakaoSDKUser: d878977e0ba6b365cfeac3b6319cdf4231713bea
   nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
   naveridlogin-sdk-ios: b9d7c20677981177ed994ecb1c8c2b49f223277d
   PromisedFuture: 15ab3542f9d9c9d62886e2228c606a3e0fd16ccd
   PromisesObjC: 68159ce6952d93e17b2dfe273b8c40907db5ba58
 
-PODFILE CHECKSUM: 5549813e926a816ab8c05a22488eefa81f4669a1
+PODFILE CHECKSUM: b29a47af3edc0f275b98ac94bf8c44558a91dcf0
 
 COCOAPODS: 1.11.2

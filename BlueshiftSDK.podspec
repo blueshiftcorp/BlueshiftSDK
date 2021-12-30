@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name                  = 'BlueshiftSDK'
-  s.version               = '0.0.24'
+  s.version               = '0.0.26'
   s.summary               = 'Official Blueshift SDK for developing iOS application.'
   
   s.description           = <<-DESC
@@ -52,8 +52,9 @@ Pod::Spec.new do |s|
     ss.dependency         'BlueshiftSDK/API'
     ss.dependency         'GoogleSignIn'          # Google Login
     ss.dependency         'naveridlogin-sdk-ios'  # Naver Login
-    ss.dependency         'KakaoSDKAuth'          # 카카오 로그인
-    ss.dependency         'KakaoSDKUser'          # 사용자 관리
+    ss.dependency         'KakaoSDKAuth'          # Kakao Login
+    ss.dependency         'KakaoSDKUser'          # Kakao Login
+    ss.dependency         'FBSDKLoginKit'         # Facebook Login
   end
   
   s.subspec 'Messaging' do |ss|

@@ -95,7 +95,7 @@ open class BSViewController: UIViewController {
         }
     }
     
-    public func initializeUI() {
+    open func initializeUI() {
         self.view.backgroundColor = .white
         
         self.navigationController?.navigationBar.isTranslucent = true
@@ -128,20 +128,20 @@ open class BSViewController: UIViewController {
     open func options() -> [BSVCOption]? { return nil }
     
     //MARK: - Actions
-    @objc public func dismissKeyboard() {
+    @objc func dismissKeyboard() {
         view.endEditing(true)
     }
     
-    @objc public func backButtonClicked() {
+    @objc func backButtonClicked() {
         navigationController?.popViewController(animated: true)
     }
     
-    @objc public func closeButtonClicked() {
+    @objc func closeButtonClicked() {
         dismiss(animated: true)
     }
     
     //MARK: - Keyboard hide & show
-    @objc public func keyboardWillShow(notification: NSNotification) {
+    @objc open func keyboardWillShow(notification: NSNotification) {
         guard let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue
         else { return }
         
@@ -158,7 +158,7 @@ open class BSViewController: UIViewController {
         }
     }
     
-    @objc func keyboardWillHide(notification: NSNotification) {
+    @objc open func keyboardWillHide(notification: NSNotification) {
         let contentInsets = UIEdgeInsets(top: 0.0, left: 0.0, bottom: 0.0, right: 0.0)
         
         if scrollView != nil {
