@@ -67,7 +67,8 @@ Pod::Spec.new do |s|
   s.subspec 'WebView' do |ss|
     ss.source_files       = 'BlueshiftSDK/WebView/**/*'
     
-    ss.dependency         'Alamofire', '~> 5.4'
+#    ss.dependency         'Alamofire', '~> 5.4'
+    ss.dependency         'BlueshiftSDK/API'
     ss.dependency         'BlueshiftSDK/Common'
 #    ss.dependency         'BlueshiftSDK/UI'
   end

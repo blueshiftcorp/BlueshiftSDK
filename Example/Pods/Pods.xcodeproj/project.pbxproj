@@ -148,7 +148,7 @@
 		19B13120456AABD89036E9F4D7302368 /* GDTCORTransport_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AD28490A5BCA0205859C0C9DE823362 /* GDTCORTransport_Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		19B2EC82BC49CF885683FB7D78C9114B /* FIRMessagingAPNSInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 67DB1C11B093B32B70FB0E88E54768E7 /* FIRMessagingAPNSInfo.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		1A6FDA12501EEF76DC242F12979CF70E /* FBLPromise+Wrap.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 5390FDB5526BEAE4A34544C99D5CB8C1 /* FBLPromise+Wrap.h */; };
-		1A9D33A0277D4F74004308DB /* SocialLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9D339F277D4F74004308DB /* SocialLogin.swift */; };
+		1A9D33A4277D8439004308DB /* SocialLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9D33A3277D8439004308DB /* SocialLogin.swift */; };
 		1B20C28BFD3F1A9B53AB615591302DF7 /* FirebaseCore-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EDAB6EAF8FFFA1736ED54782F68F1C07 /* FirebaseCore-dummy.m */; };
 		1B74BDACD3E66FAA71DCE598EB21C767 /* FIRMessagingUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E14DDD6DBAFE30667802E6F82236134 /* FIRMessagingUtilities.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		1B7D4619D4365DC3A6FA5B65105B241B /* GULMutableDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CA9B3D9F6BA20FE59C56A0AB5C15813 /* GULMutableDictionary.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -1408,7 +1408,7 @@
 		1A08B38A83E467D29F6C7B5E0C1D851C /* KakaoSDKCommon-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KakaoSDKCommon-prefix.pch"; sourceTree = "<group>"; };
 		1A7797BD9223EF339CA042C50C591078 /* FIRMessaging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRMessaging.h; path = FirebaseMessaging/Sources/Public/FirebaseMessaging/FIRMessaging.h; sourceTree = "<group>"; };
 		1A7E86C4DC62F8B628B0E0E2FE19080F /* Pods-BlueshiftSDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BlueshiftSDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		1A9D339F277D4F74004308DB /* SocialLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialLogin.swift; sourceTree = "<group>"; };
+		1A9D33A3277D8439004308DB /* SocialLogin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SocialLogin.swift; path = BlueshiftSDK/Login/SocialLogin.swift; sourceTree = "<group>"; };
 		1B218D8BE06CBF024AFB6688D20BCEE2 /* en.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = en.lproj; path = GoogleSignIn/Sources/Strings/en.lproj; sourceTree = "<group>"; };
 		1C38A18DDE1FE9C150430F87E9074811 /* OIDExternalUserAgentSession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDExternalUserAgentSession.h; path = Source/AppAuthCore/OIDExternalUserAgentSession.h; sourceTree = "<group>"; };
 		1C3ACC8BC58692F913F58DAEC1110500 /* FBAEMKit.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcframework; name = FBAEMKit.xcframework; path = XCFrameworks/FBAEMKit.xcframework; sourceTree = "<group>"; };
@@ -2630,7 +2630,7 @@
 				6E5D95357DCE230A713B59C8A28A05D5 /* Preferences.swift */,
 				93E1265B528FE86092AD67B39C5909DB /* Protocols+Login.swift */,
 				A9971F618D8F7CE0AFD6E6AF2D996F73 /* Utility+Login.swift */,
-				1A9D339F277D4F74004308DB /* SocialLogin.swift */,
+				1A9D33A3277D8439004308DB /* SocialLogin.swift */,
 			);
 			name = Login;
 			sourceTree = "<group>";
@@ -5250,7 +5250,6 @@
 			files = (
 				45E3A23F93EE7FF8B23114D49160BE67 /* AlertViewController.swift in Sources */,
 				BC2005E1F0BABE603A4E80A8D7BEC31B /* AlphaNumericRule.swift in Sources */,
-				1A9D33A0277D4F74004308DB /* SocialLogin.swift in Sources */,
 				AF5995E3D6126A253CA235FBFFA2DC64 /* AlphaRule.swift in Sources */,
 				33485B58DEB91D5AD2354DAE35D48AAA /* API.swift in Sources */,
 				00A8733E8DF28C5C1DAC860D3ED75C3B /* APIConfiguration.swift in Sources */,
@@ -5311,6 +5310,7 @@
 				F9ACED06307D19EA38957F9F670950C1 /* UIView+Extension.swift in Sources */,
 				ED60ED07A86BC018EEAC3BD43005FA8A /* UIViewController+Extension.swift in Sources */,
 				D754D397C944C7968E9004265E8B3A30 /* Utility.swift in Sources */,
+				1A9D33A4277D8439004308DB /* SocialLogin.swift in Sources */,
 				1D33299B7B00F4E699B28A05C5B092F4 /* Utility+HealthKit.swift in Sources */,
 				E567E626C43AE6C77413C65A3156FCC1 /* Utility+Login.swift in Sources */,
 				E11376C156C2E9C1CB2A1238623526EA /* Utility+WebView.swift in Sources */,
